@@ -71,3 +71,7 @@ Skills actually read: kinetic-studio-collab,TDD and writing-good-tests,agent-bro
 Independent reviewer receipt: `work/kinetic-tour-r3f/tests/m6-evidence/independent-review.md`. Publication is a feature-branch DRAFT PR linked to issue #1 and merged PR #10; never merge/deploy.
 
 Publication preparation: staged whitespace check found trailing spaces emitted by build/test tools. Review text copies were normalized; raw-command-output.json preserves original strings/digests. Initial git commit failed because the isolated checkout had no author identity; no commit was created by that attempt. Identity resolution uses authenticated GitHub public identity for this commit only, without global or repository configuration changes.
+
+## Publication receipt
+
+Tested source/evidence commit `29c15e086caf08822d3944675f74629d8865863e` pushed only to `fix/kinetic-m6-mobile-hotspots-20261028`. DRAFT PR [#11](https://github.com/sorensadrgit-art/spline-3d-/pull/11) targets main and links issue #1 and merged PR #10. Fresh `gh pr view 11` verified OPEN, isDraft=true, base=main and matching source SHA before this documentation-only receipt. No merge or deployment.
