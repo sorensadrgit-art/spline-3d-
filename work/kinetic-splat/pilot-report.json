@@ -1,0 +1,88 @@
+{
+  "trainer": "Brush v0.3.0, local Windows CLI",
+  "training_steps": 3000,
+  "training_frames": 132,
+  "held_out_frames": 12,
+  "gaussians": 21516,
+  "source_scene": "v005 (preserved cinematic checkpoint, before v006 normal correction)",
+  "ply": "work\\kinetic-splat\\pilot-v005\\engineering_3000.ply",
+  "ply_bytes": 5079326,
+  "ply_sha256": "1783357e5fc61a00a4173fda158f0f942e0cc3930778cf74cf1d2e1286db89e5",
+  "mean_held_out_psnr_db": 24.577,
+  "min_held_out_psnr_db": 21.965,
+  "views": [
+    {
+      "view": "005.png",
+      "psnr_db": 21.965,
+      "rgb_rmse": 0.07976
+    },
+    {
+      "view": "017.png",
+      "psnr_db": 25.462,
+      "rgb_rmse": 0.05332
+    },
+    {
+      "view": "029.png",
+      "psnr_db": 25.025,
+      "rgb_rmse": 0.05607
+    },
+    {
+      "view": "041.png",
+      "psnr_db": 22.787,
+      "rgb_rmse": 0.07255
+    },
+    {
+      "view": "053.png",
+      "psnr_db": 23.103,
+      "rgb_rmse": 0.06996
+    },
+    {
+      "view": "065.png",
+      "psnr_db": 24.855,
+      "rgb_rmse": 0.05718
+    },
+    {
+      "view": "077.png",
+      "psnr_db": 26.072,
+      "rgb_rmse": 0.0497
+    },
+    {
+      "view": "089.png",
+      "psnr_db": 23.202,
+      "rgb_rmse": 0.06917
+    },
+    {
+      "view": "101.png",
+      "psnr_db": 24.334,
+      "rgb_rmse": 0.06071
+    },
+    {
+      "view": "113.png",
+      "psnr_db": 25.741,
+      "rgb_rmse": 0.05164
+    },
+    {
+      "view": "125.png",
+      "psnr_db": 27.266,
+      "rgb_rmse": 0.04332
+    },
+    {
+      "view": "137.png",
+      "psnr_db": 25.108,
+      "rgb_rmse": 0.05554
+    }
+  ],
+  "status": "trained-and-browser-reviewed-experimental-not-promoted",
+  "limitations": "Synthetic single-zone views. Pixel metrics do not establish full-room coverage, thin-edge quality or physical-phone performance. v006 remains the editable master.",
+  "visual_review": "Reviewed all twelve held-out metrics and four paired images. Pegboard, warm shelf lighting and actuator remain recognizable; fine screen traces, thin edges and some foliage retain artifacts.",
+  "browser_review": "Loaded trained PLY in the actual local PlayCanvas gsplat viewer; verified scene readiness and an inspected screenshot.",
+  "native_project": "kinetic-engineering-pilot-v001.ssproj",
+  "native_project_reopened": true,
+  "sog": {
+    "file": "kinetic-engineering-pilot-v001.sog",
+    "bytes": 957256,
+    "sha256": "055943172455e5bb8984fec74d4e1ff1123a7e126f73179c9c56c77fc4875e20",
+    "browser_loaded": true
+  },
+  "compression_size_reduction_percent": 81.15
+}

@@ -1,0 +1,50 @@
+{
+  "marker": "KINETIC_BROWSER_QA_PASS",
+  "checks": [
+    {
+      "check": "desktop renderer ready",
+      "result": {
+        "ready": true,
+        "status": "Workstation ready in 3D. Drag to look around; choose a zone to travel."
+      }
+    },
+    {
+      "check": "canvas follows viewport",
+      "result": {
+        "canvas": [
+          1920,
+          1080
+        ],
+        "view": [
+          1920,
+          1080
+        ]
+      }
+    },
+    {
+      "check": "all zones and Home",
+      "pass": true
+    },
+    {
+      "check": "browser Back and Forward restore zones",
+      "pass": true
+    },
+    {
+      "check": "rapid retargeting and keyboard",
+      "pass": true
+    },
+    {
+      "check": "mobile image tour and no horizontal overflow",
+      "pass": true
+    },
+    {
+      "check": "mobile delivery model loads on emulated viewport",
+      "pass": true,
+      "physical_phone_test": false
+    },
+    {
+      "check": "context loss preserves all image navigation",
+      "pass": true
+    }
+  ]
+}

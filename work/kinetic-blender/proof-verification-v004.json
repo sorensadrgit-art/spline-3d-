@@ -1,0 +1,117 @@
+{
+  "status": "rendered-visually-reviewed-and-source-reopened",
+  "blender_version": "4.5.3 LTS",
+  "cycles_device": "GPU",
+  "engine": "CYCLES",
+  "samples": 128,
+  "resolution": [
+    1920,
+    540
+  ],
+  "objects": 3275,
+  "mesh_objects": 3052,
+  "materials": 67,
+  "collections": {
+    "01_ARCHITECTURE": 639,
+    "02_CENTRAL_WORKSTATION": 153,
+    "03_ZONE_01_MOTION_SYSTEMS": 85,
+    "04_ZONE_02_CLINICAL_THINKING": 142,
+    "05_ZONE_03_CREATIVE_ENGINEERING": 633,
+    "06_ZONE_04_PROJECTS": 112,
+    "07_LOUNGE_AND_PLANTS": 362,
+    "08_EXTERIOR": 322,
+    "09_LIGHTING": 11,
+    "10_CAMERAS": 5,
+    "11_REFINED_FURNITURE": 11,
+    "12_REFINED_PLANTS": 794,
+    "13_REFINED_EXTERIOR": 4,
+    "14_SCREEN_ARTWORK": 2
+  },
+  "camera": {
+    "name": "CAM_Hero_Reference_Fit",
+    "position": [
+      0.0,
+      -15.199999809265137,
+      3.049999952316284
+    ],
+    "lens_mm": 27.0,
+    "anchor_projection": {
+      "ring_center": {
+        "x": 0.5,
+        "y_from_top": 0.13061463832855225,
+        "depth": 16.902904510498047
+      },
+      "workstation_center": {
+        "x": 0.5,
+        "y_from_top": 0.6963062584400177,
+        "depth": 17.940210342407227
+      },
+      "motion_center": {
+        "x": 0.10831862688064575,
+        "y_from_top": 0.8226975798606873,
+        "depth": 16.371726989746094
+      },
+      "clinical_center": {
+        "x": 0.32772862911224365,
+        "y_from_top": 0.6766635477542877,
+        "depth": 19.068750381469727
+      },
+      "engineering_center": {
+        "x": 0.6929396986961365,
+        "y_from_top": 0.6719917953014374,
+        "depth": 19.35837745666504
+      },
+      "projects_center": {
+        "x": 0.9147091507911682,
+        "y_from_top": 0.7096873223781586,
+        "depth": 17.090290069580078
+      }
+    },
+    "reference_assumptions": "Primary upper hero panel, approximate 3.56:1 crop; inferred room width 23 m and nominal eye height 3.05 m."
+  },
+  "source_hashes": {
+    "The Kinetic Studio Concept Board-2.png": "1551521e6c9c8cfc8272e5d6c177ef613050ba70fbbe5bc6eb7f48a7fc3f6e32",
+    "The Kinetic Studio_ Four-Zone Creative Hub-3.png": "f64f766c5a84dcba9eb3b35b7ed3c24842c116a34f2ffd9a4188adb7cee2fd4d"
+  },
+  "asset_provenance": "Authored studio and terrain plus six selected Poly Haven CC0 assets; source URLs, author metadata, and file hashes are recorded in assets/asset-provenance.json.",
+  "limitations": "Anatomy and technical screens remain schematic. Terrain is artist-authored. Hero camera remains an inferred fit, not measured calibration.",
+  "render_seconds": 23.49,
+  "blend": "work\\kinetic-blender\\kinetic-studio-proof-v004.blend",
+  "render": "work\\kinetic-blender\\kinetic-studio-proof-v004.png",
+  "revision": "v004",
+  "observed_corrections": [
+    "Moved embedded capture-platform diffusers outside opaque platform faces.",
+    "Reduced flat fill illumination and concealed helper light panels from camera/reflection/transmission rays.",
+    "Reduced grazing reflection of the meeting partition while retaining an editable glass shader."
+  ],
+  "visual_review": "Compared v002, v003, and v004 actual PNGs. Corrected oversized terracotta planters and soft mountain ridges in v003. v004 preserves the hero camera and four-zone order, with warmer interior contrast, a blue-hour HDR sky, rugged editable terrain, photographed plant detail, and leather furniture detail.",
+  "refinement": {
+    "hero_camera_unchanged": true,
+    "original_zone_collections_preserved": true,
+    "packed_file_images": 20,
+    "missing_images": [],
+    "terrain_meshes": [
+      "Editable alpine range 01",
+      "Editable alpine range 02",
+      "Editable alpine range 03"
+    ],
+    "licensed_assets": [
+      "potted_plant_02",
+      "potted_plant_04",
+      "mid_century_lounge_chair",
+      "qwantani_dusk_2_puresky",
+      "brown_leather",
+      "wood_cabinet_worn_long"
+    ],
+    "corrections_after_v003": [
+      "Fit licensed broadleaf foliage to slim stoneware planters with credible dimensions.",
+      "Sharpened alpine ridge geometry and snow breakup.",
+      "Graded the dusk sky toward blue-hour through glazing and retained warm interior fixtures."
+    ]
+  },
+  "render_device_selection": {
+    "backend": "OPTIX",
+    "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "evidence": "balance_refinement.py enabled only OPTIX devices immediately before the final render; source retains Cycles GPU selection."
+  }
+}

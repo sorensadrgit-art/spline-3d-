@@ -1,0 +1,61 @@
+{
+  "source_sha256": "8b121564f8895917a9a0f820f95da5d0ef8069ea2715e8312d51f1096e962cfe",
+  "desktop": {
+    "bytes": 12023904,
+    "sha256": "6a586e3d2115d226664a042c021f9432672f324b37cb9f29e50b27855a96c913"
+  },
+  "mobile": {
+    "bytes": 5972736,
+    "sha256": "d0c5fc11b5d7ac0b24523aed651e66d1d8df5aedfa53c639f4b77110911451e9"
+  },
+  "groups": {
+    "architecture": {
+      "triangles": 30000,
+      "atlas": "work\\kinetic-blender\\tour-bakes\\architecture.png",
+      "resolution": 2048
+    },
+    "workstation": {
+      "triangles": 18952,
+      "atlas": "work\\kinetic-blender\\tour-bakes\\workstation.png",
+      "resolution": 2048
+    },
+    "motion": {
+      "triangles": 12820,
+      "atlas": "work\\kinetic-blender\\tour-bakes\\motion.png",
+      "resolution": 1024
+    },
+    "clinical": {
+      "triangles": 29998,
+      "atlas": "work\\kinetic-blender\\tour-bakes\\clinical.png",
+      "resolution": 2048
+    },
+    "engineering": {
+      "triangles": 17852,
+      "atlas": "work\\kinetic-blender\\tour-bakes\\engineering.png",
+      "resolution": 2048
+    },
+    "projects": {
+      "triangles": 22952,
+      "atlas": "work\\kinetic-blender\\tour-bakes\\projects.png",
+      "resolution": 2048
+    },
+    "plants": {
+      "triangles": 41999,
+      "atlas": "work\\kinetic-blender\\tour-bakes\\plants.png",
+      "resolution": 1024
+    },
+    "exterior": {
+      "triangles": 17999,
+      "atlas": "work\\kinetic-blender\\tour-bakes\\exterior.png",
+      "resolution": 1024
+    },
+    "lounge": {
+      "triangles": 11324,
+      "atlas": "work\\kinetic-blender\\tour-bakes\\lounge.png",
+      "resolution": 1024
+    }
+  },
+  "seconds": 338.68,
+  "bake": "Cycles COMBINED diffuse, glossy, direct, indirect, color and emission; transmission excluded. glTF unlit atlases preserve static warm illumination.",
+  "source_editability": "Authoritative v006 unchanged. Delivery meshes are decimated, grouped, and baked."
+}

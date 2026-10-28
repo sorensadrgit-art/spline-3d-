@@ -1,0 +1,207 @@
+{
+  "provider": "Poly Haven",
+  "license": "CC0",
+  "license_url": "https://polyhaven.com/license",
+  "assets": {
+    "potted_plant_02": {
+      "kind": "model",
+      "source": "https://polyhaven.com/a/potted_plant_02",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "files": [
+        {
+          "path": "potted_plant_02\\potted_plant_02_1k.blend",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/potted_plant_02/potted_plant_02_1k.blend",
+          "bytes": 8110012,
+          "sha256": "965c69cccdfe590965aef12d73608eb00da74006b319b167ec6e40f0fc2063f5"
+        },
+        {
+          "path": "potted_plant_02\\textures\\potted_plant_02_pot_rough_1k.png",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/potted_plant_02/potted_plant_02_pot_rough_1k.png",
+          "bytes": 1220537,
+          "sha256": "d848d54ff81db3818cc4df8c75e617362098e3677fc545551d62e386b7345be5"
+        },
+        {
+          "path": "potted_plant_02\\textures\\potted_plant_02_pot_diff_1k.png",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/potted_plant_02/potted_plant_02_pot_diff_1k.png",
+          "bytes": 4980098,
+          "sha256": "8988e4ce4d985162e5753b9864eb0971c72532d6f1e9914a513b04570a5b3449"
+        },
+        {
+          "path": "potted_plant_02\\textures\\potted_plant_02_leaves_rough_1k.png",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/potted_plant_02/potted_plant_02_leaves_rough_1k.png",
+          "bytes": 1348122,
+          "sha256": "41e2714a8647e4f189f0c48708960eec38817f566e10949e4dae66d0084f80b8"
+        },
+        {
+          "path": "potted_plant_02\\textures\\potted_plant_02_leaves_nor_gl_1k.png",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/potted_plant_02/potted_plant_02_leaves_nor_gl_1k.png",
+          "bytes": 4442426,
+          "sha256": "b77d02419d03704b5551fdd797493822dfe083e0661aafd5778e6cd5aa4229f8"
+        },
+        {
+          "path": "potted_plant_02\\textures\\potted_plant_02_leaves_alpha_1k.png",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/potted_plant_02/potted_plant_02_leaves_alpha_1k.png",
+          "bytes": 100823,
+          "sha256": "af56887c4a14b1ace924906529ee56d46ad102e0738bcdf53569a57ce1a56bd1"
+        },
+        {
+          "path": "potted_plant_02\\textures\\potted_plant_02_pot_nor_gl_1k.png",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/potted_plant_02/potted_plant_02_pot_nor_gl_1k.png",
+          "bytes": 3580734,
+          "sha256": "ca1e14ed985c58c4a3f64b48d1f9efd51e407e8e99eafa6d92ccab3e8de664b1"
+        },
+        {
+          "path": "potted_plant_02\\textures\\potted_plant_02_leaves_diff_1k.png",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/potted_plant_02/potted_plant_02_leaves_diff_1k.png",
+          "bytes": 4282900,
+          "sha256": "c664ad56c2117d82ea3b6907d0e6554f1d627da05e0f3e28f71e31bea98c667f"
+        }
+      ]
+    },
+    "potted_plant_04": {
+      "kind": "model",
+      "source": "https://polyhaven.com/a/potted_plant_04",
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "files": [
+        {
+          "path": "potted_plant_04\\potted_plant_04_1k.blend",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/potted_plant_04/potted_plant_04_1k.blend",
+          "bytes": 297186,
+          "sha256": "b88e49bbf42b2d6c7178b25e89c54922944e7c1a2bef504a9033b300ab3d8b98"
+        },
+        {
+          "path": "potted_plant_04\\textures\\potted_plant_04_nor_gl_1k.exr",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/potted_plant_04/potted_plant_04_nor_gl_1k.exr",
+          "bytes": 1667301,
+          "sha256": "0c4324b220959b8de709a2352ff6f3fa509c831d58068356c46bc7f72e228421"
+        },
+        {
+          "path": "potted_plant_04\\textures\\potted_plant_04_rough_1k.exr",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/potted_plant_04/potted_plant_04_rough_1k.exr",
+          "bytes": 481924,
+          "sha256": "a52498a2410201bbe8055a28a4ff3a3aa468ddfbf63b229be99a5dd216f8996c"
+        },
+        {
+          "path": "potted_plant_04\\textures\\potted_plant_04_diff_1k.jpg",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_04/potted_plant_04_diff_1k.jpg",
+          "bytes": 577545,
+          "sha256": "8693a971557fbafb12a24a2e23c1a04ab6b04ecdc4d26808c5ad3516a4971f24"
+        }
+      ]
+    },
+    "mid_century_lounge_chair": {
+      "kind": "model",
+      "source": "https://polyhaven.com/a/mid_century_lounge_chair",
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "files": [
+        {
+          "path": "mid_century_lounge_chair\\mid_century_lounge_chair_1k.blend",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/mid_century_lounge_chair/mid_century_lounge_chair_1k.blend",
+          "bytes": 280449,
+          "sha256": "a1eb5d0f8bf233af1efee7952867fdde67135d877b71ba3758da37011b2453f4"
+        },
+        {
+          "path": "mid_century_lounge_chair\\textures\\mid_century_lounge_chair_diff_1k.jpg",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/mid_century_lounge_chair/mid_century_lounge_chair_diff_1k.jpg",
+          "bytes": 627298,
+          "sha256": "ae1f80e964426b49f70b402403c444a655bdaa363d8d43fee5b57fcb3b492c54"
+        },
+        {
+          "path": "mid_century_lounge_chair\\textures\\mid_century_lounge_chair_metal_1k.exr",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/mid_century_lounge_chair/mid_century_lounge_chair_metal_1k.exr",
+          "bytes": 149944,
+          "sha256": "e6dcf3f98c315f3c2a990ba8d4860834ad1dea97715cf78000c15208ee1e5ac1"
+        },
+        {
+          "path": "mid_century_lounge_chair\\textures\\mid_century_lounge_chair_nor_gl_1k.exr",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/mid_century_lounge_chair/mid_century_lounge_chair_nor_gl_1k.exr",
+          "bytes": 1448551,
+          "sha256": "aebd96d171cbfb596c40053f3c98d5086905f370a3e16adebf60954fe0591892"
+        },
+        {
+          "path": "mid_century_lounge_chair\\textures\\mid_century_lounge_chair_rough_1k.exr",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/mid_century_lounge_chair/mid_century_lounge_chair_rough_1k.exr",
+          "bytes": 634997,
+          "sha256": "db17956fed8c00bf2b351ed210f62784902e48f083ab21675a31ee66a7a920bc"
+        }
+      ]
+    },
+    "qwantani_dusk_2_puresky": {
+      "kind": "hdri",
+      "source": "https://polyhaven.com/a/qwantani_dusk_2_puresky",
+      "authors": {
+        "Greg Zaal": "Photography",
+        "Jarod Guest": "Processing"
+      },
+      "files": [
+        {
+          "path": "qwantani_dusk_2_puresky\\qwantani_dusk_2_puresky_2k.hdr",
+          "source": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/qwantani_dusk_2_puresky_2k.hdr",
+          "bytes": 4612798,
+          "sha256": "440d1b5d29c79bea0985a13777642df6829e80399602a9d5f39bc20203ae6d1b"
+        }
+      ]
+    },
+    "brown_leather": {
+      "kind": "texture",
+      "source": "https://polyhaven.com/a/brown_leather",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "files": [
+        {
+          "path": "brown_leather\\brown_leather_diff_2k.jpg",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/brown_leather/brown_leather_albedo_2k.jpg",
+          "bytes": 2137518,
+          "sha256": "b0de2403a31efa31e501b0028c0bd8e504d5bd6318f4a5ce90c550c3067f96d8"
+        },
+        {
+          "path": "brown_leather\\brown_leather_rough_2k.jpg",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/brown_leather/brown_leather_rough_2k.jpg",
+          "bytes": 2801956,
+          "sha256": "8a47afca2630310849034fe40ca9497db0956c67c0d933e6efd49d3cd2befe83"
+        },
+        {
+          "path": "brown_leather\\brown_leather_nor_gl_2k.jpg",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/brown_leather/brown_leather_nor_gl_2k.jpg",
+          "bytes": 3030702,
+          "sha256": "3386277290af50b4d464dc9a9f195bbf8dd6f137b9ae0274552397d2f0135c98"
+        }
+      ]
+    },
+    "wood_cabinet_worn_long": {
+      "kind": "texture",
+      "source": "https://polyhaven.com/a/wood_cabinet_worn_long",
+      "authors": {
+        "Dimitrios Savva": "Photography",
+        "Rico Cilliers": "Processing"
+      },
+      "files": [
+        {
+          "path": "wood_cabinet_worn_long\\wood_cabinet_worn_long_diff_2k.jpg",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_cabinet_worn_long/wood_cabinet_worn_long_diff_2k.jpg",
+          "bytes": 1681201,
+          "sha256": "de86a6c12fed2284c57be666abfabfa6601dcd5226bd56e70fd6c9722df3291a"
+        },
+        {
+          "path": "wood_cabinet_worn_long\\wood_cabinet_worn_long_rough_2k.jpg",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_cabinet_worn_long/wood_cabinet_worn_long_rough_2k.jpg",
+          "bytes": 1320234,
+          "sha256": "0f63854881c9c94145c9b06a9299493d74cd8d7bfd2ec12875573cd23dd14508"
+        },
+        {
+          "path": "wood_cabinet_worn_long\\wood_cabinet_worn_long_nor_gl_2k.jpg",
+          "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_cabinet_worn_long/wood_cabinet_worn_long_nor_gl_2k.jpg",
+          "bytes": 1863837,
+          "sha256": "c39684e3d84e9e639a9f5e53008d1efab9d3661f8bcdd385eadbd0dc67d14775"
+        }
+      ]
+    }
+  }
+}

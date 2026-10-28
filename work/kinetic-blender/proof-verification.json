@@ -1,0 +1,102 @@
+{
+  "status": "rendered-visually-reviewed-and-source-reopened",
+  "blender_version": "4.5.3 LTS",
+  "devices": [
+    {
+      "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "type": "CUDA",
+      "enabled": true
+    },
+    {
+      "name": "Intel Core i9-14900HX",
+      "type": "CPU",
+      "enabled": false
+    },
+    {
+      "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+      "type": "OPTIX",
+      "enabled": true
+    }
+  ],
+  "cycles_device": "GPU",
+  "engine": "CYCLES",
+  "samples": 64,
+  "resolution": [
+    1600,
+    450
+  ],
+  "objects": 2464,
+  "mesh_objects": 2293,
+  "materials": 57,
+  "collections": {
+    "01_ARCHITECTURE": 639,
+    "02_CENTRAL_WORKSTATION": 153,
+    "03_ZONE_01_MOTION_SYSTEMS": 85,
+    "04_ZONE_02_CLINICAL_THINKING": 142,
+    "05_ZONE_03_CREATIVE_ENGINEERING": 633,
+    "06_ZONE_04_PROJECTS": 112,
+    "07_LOUNGE_AND_PLANTS": 362,
+    "08_EXTERIOR": 322,
+    "09_LIGHTING": 11,
+    "10_CAMERAS": 5
+  },
+  "camera": {
+    "name": "CAM_Hero_Reference_Fit",
+    "position": [
+      0.0,
+      -15.199999809265137,
+      3.049999952316284
+    ],
+    "lens_mm": 27.0,
+    "anchor_projection": {
+      "ring_center": {
+        "x": 0.5,
+        "y_from_top": 0.13061463832855225,
+        "depth": 16.902904510498047
+      },
+      "workstation_center": {
+        "x": 0.5,
+        "y_from_top": 0.6963062584400177,
+        "depth": 17.940210342407227
+      },
+      "motion_center": {
+        "x": 0.10831862688064575,
+        "y_from_top": 0.8226975798606873,
+        "depth": 16.371726989746094
+      },
+      "clinical_center": {
+        "x": 0.32772862911224365,
+        "y_from_top": 0.6766635477542877,
+        "depth": 19.068750381469727
+      },
+      "engineering_center": {
+        "x": 0.6929396986961365,
+        "y_from_top": 0.6719917953014374,
+        "depth": 19.35837745666504
+      },
+      "projects_center": {
+        "x": 0.9147091507911682,
+        "y_from_top": 0.7096873223781586,
+        "depth": 17.090290069580078
+      }
+    },
+    "reference_assumptions": "Primary upper hero panel, approximate 3.56:1 crop; inferred room width 23 m and nominal eye height 3.05 m."
+  },
+  "source_hashes": {
+    "The Kinetic Studio Concept Board-2.png": "1551521e6c9c8cfc8272e5d6c177ef613050ba70fbbe5bc6eb7f48a7fc3f6e32",
+    "The Kinetic Studio_ Four-Zone Creative Hub-3.png": "f64f766c5a84dcba9eb3b35b7ed3c24842c116a34f2ffd9a4188adb7cee2fd4d"
+  },
+  "asset_provenance": "All geometry, shaders, and display graphics directly authored by build_kinetic_studio.py; no third-party asset dependencies.",
+  "limitations": "First composition and lighting proof; schematic anatomy, procedural foliage, and layered exterior require later asset refinement.",
+  "render_seconds": 38.11,
+  "total_seconds": 21.26,
+  "blend": "work\\kinetic-blender\\kinetic-studio-proof-v002.blend",
+  "render": "work\\kinetic-blender\\kinetic-studio-proof-v002.png",
+  "revision": "v002",
+  "observed_corrections": [
+    "Moved embedded capture-platform diffusers outside opaque platform faces.",
+    "Reduced flat fill illumination and concealed helper light panels from camera/reflection/transmission rays.",
+    "Reduced grazing reflection of the meeting partition while retaining an editable glass shader."
+  ],
+  "visual_review": "Reviewed v001 and v002. Refined proof retains four-zone order, central workstation, warm task lighting, cool exterior, and visible cyan capture-platform accents. Remaining geometry and exterior fidelity limitations are documented in README.md."
+}

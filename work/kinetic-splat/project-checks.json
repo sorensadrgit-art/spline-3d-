@@ -1,0 +1,15 @@
+{
+  "project": "kinetic-engineering-pilot-v001.ssproj",
+  "bytes": 5274326,
+  "sha256": "777a4c64ba9e1993f5472dfb1712b414ffc99fc0666d0c7dad68e3d3f92c1016",
+  "native_archive_members": [
+    "document.json",
+    "resource_0.ply",
+    "instances_0.bin"
+  ],
+  "gaussians": 21516,
+  "reopened_in_supersplat": "3.7.0",
+  "restored_layer_and_rotation": true,
+  "restored_camera": true,
+  "source_ply_unchanged": true
+}

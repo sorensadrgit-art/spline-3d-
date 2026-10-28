@@ -1,0 +1,16 @@
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+*.log
+*.blend1
+*.blend2
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.ai-architect/
+work/kinetic-blender/tour-bakes/
+work/kinetic-splat/dataset-*/
+work/kinetic-splat/tools/

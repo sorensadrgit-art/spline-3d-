@@ -1,0 +1,26 @@
+{
+  "marker": "KINETIC_EDITABLE_PROOF_PASS",
+  "version": "v006",
+  "blend_reopened": true,
+  "png_dimensions": [
+    3840,
+    1080
+  ],
+  "objects": 3642,
+  "materials": 71,
+  "mesh_objects": 3358,
+  "zone_objects": {
+    "03_ZONE_01_MOTION_SYSTEMS": 85,
+    "04_ZONE_02_CLINICAL_THINKING": 142,
+    "05_ZONE_03_CREATIVE_ENGINEERING": 633,
+    "06_ZONE_04_PROJECTS": 112
+  },
+  "image_rgb_std": 0.16629628837108612,
+  "image_rgb_mean": 0.1691158264875412,
+  "blend_sha256": "8b121564f8895917a9a0f820f95da5d0ef8069ea2715e8312d51f1096e962cfe",
+  "png_sha256": "a963c7d6346dff769b6dabcc333cea99b755bb1d6d26ed4abe05ec1f1c29459e",
+  "source_references_unchanged": true,
+  "hero_camera_matches_v002": true,
+  "packed_file_images": 20,
+  "limits": "Software and image checks do not establish final photoreal quality, exact camera calibration, or Spline interchange fidelity."
+}

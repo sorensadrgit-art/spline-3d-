@@ -1,0 +1,184 @@
+{
+  "potted_plant_02": [
+    {
+      "name": "potted_plant_02_pot",
+      "dimensions": [
+        0.4741479456424713,
+        0.4741479158401489,
+        0.3361419439315796
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 2594,
+      "materials": [
+        "potted_plant_02_pot"
+      ]
+    },
+    {
+      "name": "potted_plant_02_leaves",
+      "dimensions": [
+        0.7011570334434509,
+        0.6432233452796936,
+        0.6325739026069641
+      ],
+      "location": [
+        -0.0029038283973932266,
+        -0.0006859108689241111,
+        0.30528968572616577
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 6191,
+      "materials": [
+        "potted_plant_02_leaves"
+      ]
+    },
+    {
+      "name": "potted_plant_02_dirt",
+      "dimensions": [
+        0.41418060660362244,
+        0.41085389256477356,
+        0.04387693107128143
+      ],
+      "location": [
+        -0.12862031161785126,
+        0.13355804979801178,
+        0.31752803921699524
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 27932,
+      "materials": [
+        "potted_plant_02_pot"
+      ]
+    }
+  ],
+  "potted_plant_04": [
+    {
+      "name": "potted_plant_04_pot",
+      "dimensions": [
+        0.17027407884597778,
+        0.17027407884597778,
+        0.15603511035442352
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 458,
+      "materials": [
+        "potted_plant_04"
+      ]
+    },
+    {
+      "name": "potted_plant_04_plant",
+      "dimensions": [
+        0.14611169695854187,
+        0.17312735319137573,
+        0.132341206073761
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 1927,
+      "materials": [
+        "potted_plant_04"
+      ]
+    },
+    {
+      "name": "potted_plant_04_ground",
+      "dimensions": [
+        0.1473338007926941,
+        0.14888179302215576,
+        0.021731257438659668
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 847,
+      "materials": [
+        "potted_plant_04"
+      ]
+    },
+    {
+      "name": "potted_plant_04_dirt",
+      "dimensions": [
+        0.15638068318367004,
+        0.15623123943805695,
+        0.019160091876983643
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 320,
+      "materials": [
+        "potted_plant_04"
+      ]
+    }
+  ],
+  "mid_century_lounge_chair": [
+    {
+      "name": "mid_century_lounge_chair",
+      "dimensions": [
+        1.0086143016815186,
+        1.1903107166290283,
+        1.1690846681594849
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vertices": 3086,
+      "materials": [
+        "mid_century_lounge_chair"
+      ]
+    }
+  ]
+}
