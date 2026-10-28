@@ -1,0 +1,40 @@
+[
+  {
+    "name": "r3f-unit",
+    "args": [
+      "npm.cmd",
+      "test"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m4-20261028\\work\\kinetic-tour-r3f",
+    "exit": 0
+  },
+  {
+    "name": "r3f-build",
+    "args": [
+      "npm.cmd",
+      "run",
+      "build"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m4-20261028\\work\\kinetic-tour-r3f",
+    "exit": 0
+  },
+  {
+    "name": "legacy-unit",
+    "args": [
+      "npm.cmd",
+      "test"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m4-20261028\\work\\kinetic-tour",
+    "exit": 0
+  },
+  {
+    "name": "legacy-build",
+    "args": [
+      "npm.cmd",
+      "run",
+      "build"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m4-20261028\\work\\kinetic-tour",
+    "exit": 0
+  }
+]
