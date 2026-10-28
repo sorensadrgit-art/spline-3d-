@@ -1,0 +1,25 @@
+✔ navigation and reset start from the displayed inspected pose (1.0231ms)
+✔ home: actual UI enables 3D, selects its image/details and has no pending label (7.0279ms)
+✔ motion: actual UI enables 3D, selects its image/details and has no pending label (2.0088ms)
+✔ clinical: actual UI enables 3D, selects its image/details and has no pending label (0.8537ms)
+✔ engineering: actual UI enables 3D, selects its image/details and has no pending label (0.9927ms)
+✔ projects: actual UI enables 3D, selects its image/details and has no pending label (1.3223ms)
+✔ every ordered zone pair retargets continuously and reaches exact position and target (1.0497ms)
+✔ shared model resources dispose once, including bitmap source (1.5672ms)
+✔ camera data has no drift from delivered tour (3.2073ms)
+✔ 1350ms transition reaches target and clamps (0.6709ms)
+✔ rapid retarget samples actual pose without jump (0.1779ms)
+✔ reduced motion immediately cuts and reset restores destination (0.1772ms)
+✔ unknown route returns Home and five destinations remain discoverable (0.173ms)
+✔ orbit clamps drag and wheel to original safe bounds (0.1405ms)
+✔ late load cannot reopen a failed or dismissed generation (0.1915ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 559.4435
+npm notice run kinetic-studio-r3f-proof@0.1.0 test
+npm notice run node --experimental-strip-types --test tests/*.test.ts

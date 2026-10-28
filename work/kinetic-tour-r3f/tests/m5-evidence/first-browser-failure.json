@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "name": "baseline image/history/keys/skip",
+      "pass": true,
+      "observed": {
+        "images": 2,
+        "history": true,
+        "skipFocus": true,
+        "keyboard": true
+      }
+    },
+    {
+      "name": "1350ms/model/rapid/wheel/reset/Escape",
+      "pass": false,
+      "error": "False"
+    }
+  ],
+  "timing": {
+    "end": "-8.4,2.25,5.2",
+    "firstDone": 119.79999999981374,
+    "mid": "-1.565676375552507,2.9008879642330943,13.336099552913682"
+  },
+  "note": "First fresh run failed strict timing assertion; retained without threshold changes."
+}

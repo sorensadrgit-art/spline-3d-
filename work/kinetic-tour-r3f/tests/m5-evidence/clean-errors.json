@@ -1,0 +1,23 @@
+{
+  "errors": [
+    {
+      "column": 16757,
+      "line": 3842,
+      "text": "Error: Could not load /models/blue-hour.jpg: undefined\n    at http://127.0.0.1:4190/assets/StudioCanvas-Ctkwt1Kv.js:3843:16758\n    at HTMLImageElement.c (http://127.0.0.1:4190/assets/StudioCanvas-Ctkwt1Kv.js:40:134724)",
+      "url": null
+    }
+  ],
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 11677035664275010974
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "not_configured",
+    "reused": true,
+    "saveStatus": "not_attempted"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "command": "Get-CimInstance Win32_PnPEntity filtered for PNPClass WPD or Name iPhone/Android/MTP",
+  "observedEntries": [],
+  "physicalBrowserSession": false,
+  "claim": "No matching query entries; absence is not proof that no physical phone exists."
+}

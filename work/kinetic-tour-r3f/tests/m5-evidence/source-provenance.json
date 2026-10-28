@@ -1,0 +1,97 @@
+{
+  "platform": "Windows-11-10.0.26300-SP0",
+  "commands": [
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": "9ba41ff4a2210e1fa67242ece3cf826c59e512bb\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "FETCH_HEAD"
+      ],
+      "exit": 0,
+      "stdout": "16d2a6b20bc5d29ef777bd3bf81dc8e16af9218f\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main"
+      ],
+      "exit": 0,
+      "stdout": "16d2a6b20bc5d29ef777bd3bf81dc8e16af9218f\trefs/heads/main\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "cat-file",
+        "-p",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": "tree 594cca5cb6aea696c063ef7abe6ccdf467b3e2ab\nparent 16d2a6b20bc5d29ef777bd3bf81dc8e16af9218f\nauthor sorensadrgit-art <sorensadr.git@gmail.com> 1793195737 -0400\ncommitter sorensadrgit-art <sorensadr.git@gmail.com> 1793195737 -0400\n\nPlan isolated M5 merged-main release readiness acceptance with no deployment",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "exit": 0,
+      "stdout": "?? docs/collaboration/CODEX_M5_PLAN_FORGE.md\n?? work/kinetic-tour-r3f/tests/m5-evidence/\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--name-status",
+        "16d2a6b20bc5d29ef777bd3bf81dc8e16af9218f",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": "A\tdocs/collaboration/CODEX_M5_EXECUTION_BRIEF.md\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "v24.19.0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "npm.cmd",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "12.1.0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\soren\\AppData\\Roaming\\npm\\agent-browser.CMD",
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "agent-browser 0.39.4\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "isolated checkout only; old desktop clone untouched"
+}
