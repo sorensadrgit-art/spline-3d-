@@ -1,0 +1,382 @@
+{
+  "home": {
+    "actualDirection": [
+      0,
+      -0.05420590230503085,
+      -0.9985297793032
+    ],
+    "actualPosition": [
+      0,
+      3.05,
+      15.2
+    ],
+    "details": [
+      "The shared center",
+      "Material language",
+      "At blue hour"
+    ],
+    "dpr": 1,
+    "expanded": 0,
+    "fov": 46,
+    "markers": [
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect The shared center",
+        "x": 960,
+        "y": 572.154
+      },
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Material language",
+        "x": 899.047,
+        "y": 735.458
+      },
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect At blue hour",
+        "x": 960,
+        "y": 473.992
+      }
+    ],
+    "mode": "three",
+    "model": [
+      {
+        "meshes": 14,
+        "type": "Group"
+      }
+    ],
+    "position": "0,3.05,15.2",
+    "resources": [
+      "http://127.0.0.1:4183/models/studio-desktop.glb"
+    ],
+    "target": "0,2.1,-2.3",
+    "zone": "home",
+    "independentProjections": [
+      {
+        "x": 960,
+        "y": 572.1542335548762
+      },
+      {
+        "x": 899.0470197662559,
+        "y": 735.4583522067325
+      },
+      {
+        "x": 960,
+        "y": 473.9918887696039
+      }
+    ]
+  },
+  "motion": {
+    "actualDirection": [
+      -0.022594743517569932,
+      -0.10544213641532608,
+      -0.9941687147730748
+    ],
+    "actualPosition": [
+      -8.4,
+      2.25,
+      5.199999999999999
+    ],
+    "details": [
+      "Capture rig",
+      "Calibration floor",
+      "Motion display"
+    ],
+    "dpr": 1,
+    "expanded": 0,
+    "fov": 46,
+    "markers": [
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Capture rig",
+        "x": 459.669,
+        "y": 378.494
+      },
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Calibration floor",
+        "x": 958.187,
+        "y": 806.259
+      },
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Motion display",
+        "x": 1177.64,
+        "y": 534.573
+      }
+    ],
+    "mode": "three",
+    "model": [
+      {
+        "meshes": 14,
+        "type": "Group"
+      }
+    ],
+    "position": "-8.4,2.25,5.2",
+    "resources": [
+      "http://127.0.0.1:4183/models/studio-desktop.glb"
+    ],
+    "target": "-8.55,1.55,-1.4",
+    "zone": "motion",
+    "independentProjections": [
+      {
+        "x": 459.6690303466407,
+        "y": 378.4937324645423
+      },
+      {
+        "x": 958.1872230980828,
+        "y": 806.258882380692
+      },
+      {
+        "x": 1177.6356114376758,
+        "y": 534.5729181802348
+      }
+    ]
+  },
+  "clinical": {
+    "actualDirection": [
+      0.018486846666163327,
+      -0.05546053999849019,
+      -0.9982897199728232
+    ],
+    "actualPosition": [
+      -4.5,
+      2,
+      1.4000000000000012
+    ],
+    "details": [
+      "Study model",
+      "Anatomy prints",
+      "Analysis desk"
+    ],
+    "dpr": 1,
+    "expanded": 0,
+    "fov": 46,
+    "markers": [
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Study model",
+        "x": 687.429,
+        "y": 665.587
+      },
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Anatomy prints",
+        "x": 894.966,
+        "y": 386.514
+      },
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Analysis desk",
+        "x": 985.269,
+        "y": 749.036
+      }
+    ],
+    "mode": "three",
+    "model": [
+      {
+        "meshes": 14,
+        "type": "Group"
+      }
+    ],
+    "position": "-4.5,2,1.4",
+    "resources": [
+      "http://127.0.0.1:4183/models/studio-desktop.glb"
+    ],
+    "target": "-4.4,1.7,-4",
+    "zone": "clinical",
+    "independentProjections": [
+      {
+        "x": 687.4293644211298,
+        "y": 665.5871913784507
+      },
+      {
+        "x": 894.9656884447013,
+        "y": 386.5144287597683
+      },
+      {
+        "x": 985.2693006491616,
+        "y": 749.0361850566443
+      }
+    ]
+  },
+  "engineering": {
+    "actualDirection": [
+      0.09117100541931132,
+      -0.04972963931962435,
+      -0.9945927863924874
+    ],
+    "actualPosition": [
+      4.4,
+      2.05,
+      1.8000000000000007
+    ],
+    "details": [
+      "Actuator study",
+      "Electronics bench",
+      "Tool wall"
+    ],
+    "dpr": 1,
+    "expanded": 0,
+    "fov": 46,
+    "markers": [
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Actuator study",
+        "x": 1103.13,
+        "y": 638.153
+      },
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Electronics bench",
+        "x": 977.907,
+        "y": 736.184
+      },
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Tool wall",
+        "x": 941.345,
+        "y": 466.872
+      }
+    ],
+    "mode": "three",
+    "model": [
+      {
+        "meshes": 14,
+        "type": "Group"
+      }
+    ],
+    "position": "4.4,2.05,1.8",
+    "resources": [
+      "http://127.0.0.1:4183/models/studio-desktop.glb"
+    ],
+    "target": "4.95,1.75,-4.2",
+    "zone": "engineering",
+    "independentProjections": [
+      {
+        "x": 1103.1324748876095,
+        "y": 638.1532755589127
+      },
+      {
+        "x": 977.9068027545198,
+        "y": 736.1835691396539
+      },
+      {
+        "x": 941.344922457868,
+        "y": 466.8715567296885
+      }
+    ]
+  },
+  "projects": {
+    "actualDirection": [
+      0.06113828587094308,
+      -0.06987232670964928,
+      -0.9956806556125024
+    ],
+    "actualPosition": [
+      9.1,
+      2,
+      2.999999999999999
+    ],
+    "details": [
+      "Materials table",
+      "Project wall",
+      "Shared seating"
+    ],
+    "dpr": 1,
+    "expanded": 0,
+    "fov": 46,
+    "markers": [
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Materials table",
+        "x": 961.371,
+        "y": 743.828
+      },
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Project wall",
+        "x": 1116.18,
+        "y": 369.87
+      },
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Shared seating",
+        "x": 717.752,
+        "y": 882.195
+      }
+    ],
+    "mode": "three",
+    "model": [
+      {
+        "meshes": 14,
+        "type": "Group"
+      }
+    ],
+    "position": "9.1,2,3",
+    "resources": [
+      "http://127.0.0.1:4183/models/studio-desktop.glb"
+    ],
+    "target": "9.45,1.6,-2.7",
+    "zone": "projects",
+    "independentProjections": [
+      {
+        "x": 961.3706270860904,
+        "y": 743.8281497357549
+      },
+      {
+        "x": 1116.180934605587,
+        "y": 369.87001939941473
+      },
+      {
+        "x": 717.7524018635219,
+        "y": 882.1952850946323
+      }
+    ]
+  }
+}

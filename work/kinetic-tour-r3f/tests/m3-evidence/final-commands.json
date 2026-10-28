@@ -1,0 +1,39 @@
+[
+  {
+    "name": "verification",
+    "command": [
+      "C:\\Users\\soren\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m3-20261028\\work\\kinetic-tour-r3f\\tests\\m3-evidence\\verify.py"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m3-20261028",
+    "exit": 0
+  },
+  {
+    "name": "browser",
+    "command": [
+      "C:\\Users\\soren\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m3-20261028\\work\\kinetic-tour-r3f\\tests\\m3-evidence\\browser.py"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m3-20261028",
+    "exit": 0
+  },
+  {
+    "name": "comparison",
+    "command": [
+      "C:\\Users\\soren\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m3-20261028\\work\\kinetic-tour-r3f\\tests\\m3-evidence\\compare.py"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m3-20261028",
+    "exit": 0
+  },
+  {
+    "name": "sky",
+    "command": [
+      "C:\\Users\\soren\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "-c",
+      "import importlib.util,json;from pathlib import Path;p=Path('C:\\\\ProgramData\\\\SentinelX\\\\workspace\\\\kinetic-m3-20261028\\\\work\\\\kinetic-tour-r3f\\\\tests\\\\sky-parity\\\\check.py');s=importlib.util.spec_from_file_location('sky',p);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);e=Path('C:\\\\ProgramData\\\\SentinelX\\\\workspace\\\\kinetic-m3-20261028\\\\work\\\\kinetic-tour-r3f\\\\tests\\\\m3-evidence');r={z:{'legacy':m.measure(e/('legacy-'+z+'-3d.png'),z),'r3f':m.measure(e/(z+'-3d.png'),z)} for z in m.PATCHES};(e/'sky-direction.json').write_text(json.dumps(r,indent=2),encoding='utf-8');assert all(v['legacy']['direction']>.1 and v['r3f']['direction']>.1 for v in r.values());print('SKY_DIRECTION_PASS',json.dumps(r))"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m3-20261028",
+    "exit": 0
+  }
+]

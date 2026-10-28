@@ -1,0 +1,80 @@
+{
+  "imageFirst": true,
+  "actual": {
+    "actualDirection": [
+      0.06113828587094308,
+      -0.06987232670964928,
+      -0.9956806556125024
+    ],
+    "actualPosition": [
+      9.1,
+      2,
+      2.999999999999999
+    ],
+    "details": [
+      "Materials table",
+      "Project wall",
+      "Shared seating"
+    ],
+    "dpr": 1,
+    "expanded": 0,
+    "fov": 65,
+    "markers": [
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Materials table",
+        "x": 195.357,
+        "y": 264.066
+      },
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Project wall",
+        "x": 235.661,
+        "y": 166.707
+      },
+      {
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Shared seating",
+        "x": 131.931,
+        "y": 300.09
+      }
+    ],
+    "mode": "three",
+    "model": [
+      {
+        "meshes": 14,
+        "type": "Group"
+      }
+    ],
+    "position": "9.1,2,3",
+    "resources": [
+      "http://127.0.0.1:4183/models/studio-mobile.glb"
+    ],
+    "target": "9.45,1.6,-2.7",
+    "zone": "projects",
+    "independentProjections": [
+      {
+        "x": 195.3568392371594,
+        "y": 264.06613461929237
+      },
+      {
+        "x": 235.6613046897179,
+        "y": 166.70709705684698
+      },
+      {
+        "x": 131.93146078902188,
+        "y": 300.08966248509046
+      }
+    ]
+  },
+  "overflow": false
+}

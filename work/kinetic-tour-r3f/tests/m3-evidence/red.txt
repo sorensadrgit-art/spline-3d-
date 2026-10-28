@@ -1,0 +1,120 @@
+✖ home: actual UI enables 3D, selects its image/details and has no pending label (9.1689ms)
+✖ motion: actual UI enables 3D, selects its image/details and has no pending label (1.1121ms)
+✖ clinical: actual UI enables 3D, selects its image/details and has no pending label (0.9782ms)
+✖ engineering: actual UI enables 3D, selects its image/details and has no pending label (0.7799ms)
+✖ projects: actual UI enables 3D, selects its image/details and has no pending label (0.9046ms)
+✔ every ordered zone pair retargets continuously and reaches exact position and target (0.9739ms)
+✔ shared model resources dispose once, including bitmap source (1.5483ms)
+✔ camera data has no drift from delivered tour (0.9307ms)
+✔ 1350ms transition reaches target and clamps (0.5589ms)
+✔ rapid retarget samples actual pose without jump (0.1359ms)
+✔ reduced motion immediately cuts and reset restores destination (0.0972ms)
+✔ unknown route returns Home and five destinations remain discoverable (0.1031ms)
+✔ orbit clamps drag and wheel to original safe bounds (0.0943ms)
+✔ late load cannot reopen a failed or dismissed generation (0.6322ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 9
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 317.2393
+
+✖ failing tests:
+
+test at tests\m3.test.ts:23:3
+✖ home: actual UI enables 3D, selects its image/details and has no pending label (9.1689ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(!html.includes('pending'))
+
+      at TestContext.<anonymous> (file:///C:/ProgramData/SentinelX/workspace/kinetic-m3-20261028/work/kinetic-tour-r3f/tests/m3.test.ts:33:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\m3.test.ts:23:3
+✖ motion: actual UI enables 3D, selects its image/details and has no pending label (1.1121ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(!html.includes('pending'))
+
+      at TestContext.<anonymous> (file:///C:/ProgramData/SentinelX/workspace/kinetic-m3-20261028/work/kinetic-tour-r3f/tests/m3.test.ts:33:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\m3.test.ts:23:3
+✖ clinical: actual UI enables 3D, selects its image/details and has no pending label (0.9782ms)
+  AssertionError [ERR_ASSERTION]: clinical must be eligible for actual GLB navigation
+      at TestContext.<anonymous> (file:///C:/ProgramData/SentinelX/workspace/kinetic-m3-20261028/work/kinetic-tour-r3f/tests/m3.test.ts:30:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\m3.test.ts:23:3
+✖ engineering: actual UI enables 3D, selects its image/details and has no pending label (0.7799ms)
+  AssertionError [ERR_ASSERTION]: engineering must be eligible for actual GLB navigation
+      at TestContext.<anonymous> (file:///C:/ProgramData/SentinelX/workspace/kinetic-m3-20261028/work/kinetic-tour-r3f/tests/m3.test.ts:30:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\m3.test.ts:23:3
+✖ projects: actual UI enables 3D, selects its image/details and has no pending label (0.9046ms)
+  AssertionError [ERR_ASSERTION]: projects must be eligible for actual GLB navigation
+      at TestContext.<anonymous> (file:///C:/ProgramData/SentinelX/workspace/kinetic-m3-20261028/work/kinetic-tour-r3f/tests/m3.test.ts:30:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+npm notice run kinetic-studio-r3f-proof@0.1.0 test
+npm notice run node --experimental-strip-types --test tests/*.test.ts

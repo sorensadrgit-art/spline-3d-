@@ -17,8 +17,11 @@ export class CameraMotion {
     this.from = { position: [...zone.position], target: [...zone.target] };
     this.current = this.from;
   }
-  select(zone: Zone, now: number, reduced = false) {
-    this.from = this.sample(now, reduced);
+  select(zone: Zone, now: number, reduced = false, displayed?: Pose) {
+    // Inspection offsets live in CameraDirector; preserve the last painted pose
+    // when that owner starts a trip or resets the view.
+    const from = displayed ?? this.sample(now, reduced);
+    this.from = { position: [...from.position], target: [...from.target] };
     this.destination = zone;
     this.start = now;
   }

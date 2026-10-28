@@ -1,0 +1,84 @@
+unit exit 0 ✔ navigation and reset start from the displayed inspected pose (1.6884ms)
+✔ home: actual UI enables 3D, selects its image/details and has no pending label (6.0031ms)
+✔ motion: actual UI enables 3D, selects its image/details and has no pending label (1.5405ms)
+✔ clinical: actual UI enables 3D, selects its image/details and has no pending label (0.855ms)
+✔ engineering: actual UI enables 3D, selects its image/details and has no pending label (0.7274ms)
+✔ projects: actual UI enables 3D, selects its image/details and has no pending label (0.8296ms)
+✔ every ordered zone pair retargets continuously and reaches exact position and target (0.9624ms)
+✔ shared model resources dispose once, including bitmap source (2.2314ms)
+✔ camera data has no drift from delivered tour (1.2113ms)
+✔ 1350ms transition reaches target and clamps (0.5646ms)
+✔ rapid retarget samples actual pose without jump (0.1362ms)
+✔ reduced motion immediately cuts and reset restores destination (0.1013ms)
+✔ unknown route returns Home and five destinations remain discoverable (0.3654ms)
+✔ orbit clamps drag and wheel to original safe bounds (0.1048ms)
+✔ late load cannot reopen a failed or dismissed generation (0.9081ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 400.0927
+ npm notice run kinetic-studio-r3f-proof@0.1.0 test
+npm notice run node --experimental-strip-types --test tests/*.test.ts
+
+build exit 0 vite v8.3.5 building client environment for production...
+transforming...
+✓ 41 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                         0.41 kB │ gzip:   0.30 kB
+dist/assets/index-D7Rxnub5.css          4.50 kB │ gzip:   1.75 kB
+dist/assets/index-ETbihH4Q.js         202.37 kB │ gzip:  64.89 kB
+dist/assets/StudioCanvas-Ctkwt1Kv.js  894.98 kB │ gzip: 238.83 kB
+
+✓ built in 269ms
+ npm notice run kinetic-studio-r3f-proof@0.1.0 build
+npm notice run tsc --noEmit && vite build
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+legacy-unit exit 0 ✔ all five destinations have distinct poses and three factual details (0.927ms)
+✔ unknown hashes return Home and browser history hashes map deterministically (0.1656ms)
+✔ camera interpolation clamps and can retarget from its actual intermediate pose (0.1511ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 94.563
+ npm notice run kinetic-studio-tour@1.0.0 test
+npm notice run node --experimental-strip-types --test tests/*.test.ts
+
+legacy-build exit 0 vite v8.3.5 building client environment for production...
+transforming...
+✓ 1259 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/pilot.html                             2.12 kB │ gzip:   1.18 kB
+dist/index.html                             3.41 kB │ gzip:   1.52 kB
+dist/assets/studio-Dvor0B6X.css             6.79 kB │ gzip:   2.25 kB
+dist/assets/pilot-FV0ivgpb.js               2.03 kB │ gzip:   1.06 kB
+dist/assets/preload-helper-CFijIu3R.js      2.19 kB │ gzip:   1.06 kB
+dist/assets/studio-BsPzjhTE.js             11.47 kB │ gzip:   5.31 kB
+dist/assets/src-DtptDQoW.js             2,498.25 kB │ gzip: 642.67 kB
+
+✓ built in 1.22s
+ npm notice run kinetic-studio-tour@1.0.0 build
+npm notice run tsc --noEmit && vite build
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+validator exit 0 KINETIC_GLTF_VALIDATION_PASS {"desktop":{"bytes":12023904,"sha256":"6a586e3d2115d226664a042c021f9432672f324b37cb9f29e50b27855a96c913","meshes":14,"materials":14,"images":9,"errors":0,"warnings":0,"extensions":["KHR_materials_unlit"]},"mobile":{"bytes":5972736,"sha256":"d0c5fc11b5d7ac0b24523aed651e66d1d8df5aedfa53c639f4b77110911451e9","meshes":14,"materials":14,"images":9,"errors":0,"warnings":0,"extensions":["KHR_materials_unlit"]}}
+
+SOURCE_HASHES_PASS 13

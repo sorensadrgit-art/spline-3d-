@@ -1,0 +1,26 @@
+{
+  "work\\kinetic-tour-r3f\\src\\main.tsx": {
+    "sha256": "5e88858325dc8568d95994e21c03df53538d64e1448239e221daa03a839589fe",
+    "bytes": 9034
+  },
+  "work\\kinetic-tour-r3f\\src\\resources.ts": {
+    "sha256": "3320cb3615aca415106ee627403282d6166587ac52f6d4ab67fd9de26fadbde0",
+    "bytes": 1153
+  },
+  "work\\kinetic-tour-r3f\\src\\state.ts": {
+    "sha256": "59fb3c2cf0f0329826378d0b2bbd21d5c1dfe8c221af213917aa082809faa45a",
+    "bytes": 2166
+  },
+  "work\\kinetic-tour-r3f\\src\\StudioCanvas.tsx": {
+    "sha256": "714b1d912cde7a23d60de942bfcc91dd78db3ae3be1c82ec811065d1852665ef",
+    "bytes": 10919
+  },
+  "work\\kinetic-tour-r3f\\src\\style.css": {
+    "sha256": "882378b9247832db443e03a2b138605562249f48ae2be8c5180fa6a24348d6a2",
+    "bytes": 6173
+  },
+  "work\\kinetic-tour-r3f\\src\\tour.ts": {
+    "sha256": "c9efc78b316d01531dae5e4370e892706fa9970177aac2f2e2c32c301861b5bb",
+    "bytes": 4421
+  }
+}
