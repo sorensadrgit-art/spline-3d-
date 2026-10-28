@@ -1,0 +1,18 @@
+✔ shared model resources dispose once, including bitmap source (1.4117ms)
+✔ camera data has no drift from delivered tour (4.1254ms)
+✔ 1350ms transition reaches target and clamps (0.598ms)
+✔ rapid retarget samples actual pose without jump (0.1339ms)
+✔ reduced motion immediately cuts and reset restores destination (0.0958ms)
+✔ unknown route returns Home and five destinations remain discoverable (0.1018ms)
+✔ orbit clamps drag and wheel to original safe bounds (0.0904ms)
+✔ late load cannot reopen a failed or dismissed generation (0.6364ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 119.4184
+npm notice run kinetic-studio-r3f-proof@0.1.0 test
+npm notice run node --experimental-strip-types --test tests/*.test.ts

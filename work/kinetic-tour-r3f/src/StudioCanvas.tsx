@@ -3,6 +3,7 @@ import { Canvas, useFrame, useLoader, useThree } from "@react-three/fiber";
 import {
   BackSide,
   NoToneMapping,
+  RepeatWrapping,
   SRGBColorSpace,
   TextureLoader,
   Vector3,
@@ -37,6 +38,10 @@ function Model({
 function Sky() {
   const texture = useLoader(TextureLoader, "/models/blue-hour.jpg");
   texture.colorSpace = SRGBColorSpace;
+  // Match the inward PlayCanvas sphere UV direction without editing the sky asset.
+  texture.wrapS = RepeatWrapping;
+  texture.repeat.x = -1;
+  texture.offset.x = 1;
   return (
     <mesh scale={140} rotation={[0, (92 * Math.PI) / 180, 0]}>
       <sphereGeometry args={[1, 40, 24]} />

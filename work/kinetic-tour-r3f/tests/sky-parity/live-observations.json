@@ -1,0 +1,404 @@
+{
+  "home": {
+    "markers": [
+      {
+        "ancestors": [
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "BUTTON"
+          },
+          {
+            "filter": "none",
+            "id": "hotspots",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "studio",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "MAIN"
+          },
+          {
+            "filter": "none",
+            "id": "root",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "BODY"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "HTML"
+          }
+        ],
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "label": "1",
+        "opacity": "1"
+      },
+      {
+        "ancestors": [
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "BUTTON"
+          },
+          {
+            "filter": "none",
+            "id": "hotspots",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "studio",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "MAIN"
+          },
+          {
+            "filter": "none",
+            "id": "root",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "BODY"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "HTML"
+          }
+        ],
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "label": "2",
+        "opacity": "1"
+      },
+      {
+        "ancestors": [
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "BUTTON"
+          },
+          {
+            "filter": "none",
+            "id": "hotspots",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "studio",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "MAIN"
+          },
+          {
+            "filter": "none",
+            "id": "root",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "BODY"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "HTML"
+          }
+        ],
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "label": "3",
+        "opacity": "1"
+      }
+    ],
+    "position": "0,3.05,15.2",
+    "target": "0,2.1,-2.3"
+  },
+  "motion": {
+    "markers": [
+      {
+        "ancestors": [
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "BUTTON"
+          },
+          {
+            "filter": "none",
+            "id": "hotspots",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "studio",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "MAIN"
+          },
+          {
+            "filter": "none",
+            "id": "root",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "BODY"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "HTML"
+          }
+        ],
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "label": "1",
+        "opacity": "1"
+      },
+      {
+        "ancestors": [
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "BUTTON"
+          },
+          {
+            "filter": "none",
+            "id": "hotspots",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "studio",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "MAIN"
+          },
+          {
+            "filter": "none",
+            "id": "root",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "BODY"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "HTML"
+          }
+        ],
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "label": "2",
+        "opacity": "1"
+      },
+      {
+        "ancestors": [
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "BUTTON"
+          },
+          {
+            "filter": "none",
+            "id": "hotspots",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "studio",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "MAIN"
+          },
+          {
+            "filter": "none",
+            "id": "root",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "DIV"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "BODY"
+          },
+          {
+            "filter": "none",
+            "id": "",
+            "mixBlendMode": "normal",
+            "opacity": "1",
+            "tag": "HTML"
+          }
+        ],
+        "background": "rgb(21, 35, 36)",
+        "color": "rgb(243, 238, 228)",
+        "hidden": false,
+        "label": "3",
+        "opacity": "1"
+      }
+    ],
+    "position": "-8.4,2.25,5.2",
+    "target": "-8.55,1.55,-1.4"
+  }
+}

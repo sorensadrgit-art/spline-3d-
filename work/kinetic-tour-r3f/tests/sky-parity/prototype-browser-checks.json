@@ -1,0 +1,84 @@
+[
+  {
+    "name": "image/history/keyboard/skip",
+    "pass": true,
+    "observed": {
+      "images": 2,
+      "history": true,
+      "skipFocus": true,
+      "keyboard": true
+    }
+  },
+  {
+    "name": "model/camera/rapid/wheel/reset/Escape",
+    "pass": true,
+    "observed": {
+      "end": "-8.4,2.25,5.2",
+      "firstDone": 1363,
+      "mid": "-2.5390364439714768,2.8081870053360496,12.177337566700622"
+    }
+  },
+  {
+    "name": "reduced-motion/drag/focus",
+    "pass": true,
+    "observed": {
+      "reducedMotionCut": true,
+      "boundedDrag": {
+        "distance": 1,
+        "pitch": 0.3,
+        "yaw": 0.15
+      },
+      "staleDragCancelled": true,
+      "hotspotFocus": true
+    }
+  },
+  {
+    "name": "mobile",
+    "pass": true,
+    "observed": {
+      "imageFirst": true,
+      "mobileModel": true,
+      "overflow": false
+    }
+  },
+  {
+    "name": "model failure/retry",
+    "pass": true,
+    "observed": {
+      "mode": "three",
+      "status": "3D ready. Drag to inspect; wheel adjusts distance."
+    }
+  },
+  {
+    "name": "sky failure/retry",
+    "pass": true,
+    "observed": {
+      "mode": "three",
+      "status": "3D ready. Drag to inspect; wheel adjusts distance."
+    }
+  },
+  {
+    "name": "timeout",
+    "pass": true,
+    "observed": {
+      "mode": "images",
+      "status": "3D loading timed out. Image navigation remains ready."
+    }
+  },
+  {
+    "name": "no WebGL",
+    "pass": true,
+    "observed": {
+      "mode": "images",
+      "status": "WebGL unavailable. Image navigation remains ready."
+    }
+  },
+  {
+    "name": "context loss",
+    "pass": true,
+    "observed": {
+      "mode": "images",
+      "status": "Graphics context lost. Image navigation remains ready."
+    }
+  }
+]
