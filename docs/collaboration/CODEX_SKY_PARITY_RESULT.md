@@ -1,14 +1,14 @@
-# M2 sky-parity correction â€” 2026-10-28
+# M2 sky-parity correction — 2026-10-28
 
 RESULT: PASS for bounded horizontal sky orientation; full visual/adoption acceptance PENDING. PlayCanvas remains authoritative. No M3, merge or deployment.
 
 Branch: `fix/kinetic-r3f-sky-parity-20261028`. Parent `9b960ee0de9b230761340b9ee99c4f5bcf2594e4`. Verified implementation/evidence commit `a025ba11a0560133cade087b63041fb22bc5d077`; subsequent receipt commit adds this report and strips one trailing space from captured build output (first diff whitespace check reported it; corrected before publication). Source rendering code is identical to the verified implementation commit.
 
-## Understand â†’ Investigate â†’ Rederive â†’ Plan Forge â†’ Acceptance
+## Understand → Investigate → Rederive → Plan Forge → Acceptance
 
-Read complete follow-up, AGENTS, collaboration contract, status, independent review and sibling README. Used only the assigned isolated checkout. PlayCanvas inward/front-culled sphere and Three BackSide sphere both use 92Â° yaw, but their U direction differs. Locked Home/Motion captures confirm reversal. Keep PlayCanvas authoritative; a parallel R3F correction is bounded/reversible. Spline embed or asset/model rebuild would not address this local mapping defect and would expand scope.
+Read complete follow-up, AGENTS, collaboration contract, status, independent review and sibling README. Used only the assigned isolated checkout. PlayCanvas inward/front-culled sphere and Three BackSide sphere both use 92° yaw, but their U direction differs. Locked Home/Motion captures confirm reversal. Keep PlayCanvas authoritative; a parallel R3F correction is bounded/reversible. Spline embed or asset/model rebuild would not address this local mapping defect and would expand scope.
 
-Authorized plan: reproduce failure from committed locked captures before source edits; reflect sky U only; capture full 1920Ã—1080 matching anchors; rerun unit/build/nine browser groups and hashes; independently audit, report and publish draft stacked PR. The follow-up explicitly authorizes this bounded correction under the existing parent plan. Antigravity plan/result participation is not claimed; review remains PENDING.
+Authorized plan: reproduce failure from committed locked captures before source edits; reflect sky U only; capture full 1920×1080 matching anchors; rerun unit/build/nine browser groups and hashes; independently audit, report and publish draft stacked PR. The follow-up explicitly authorizes this bounded correction under the existing parent plan. Antigravity plan/result participation is not claimed; review remains PENDING.
 
 ## Changes
 
@@ -16,7 +16,7 @@ Only production change: `work/kinetic-tour-r3f/src/StudioCanvas.tsx`, five added
 
 New files: this report and `work/kinetic-tour-r3f/tests/sky-parity/` (scripts, README, full captures, command/test/error/a11y/contrast/hash receipts, independent audit and comparison HTML). Exact paths in `git show --stat a025ba1` and the stacked PR diff. Original follow-up brief and its backup were pre-existing untracked inputs, deliberately unstaged and preserved. No protected tracked paths changed. LFS materialization fetched the recorded master, without authoring it.
 
-## RED â†’ GREEN â†’ REFACTOR evidence
+## RED → GREEN → REFACTOR evidence
 
 Before source edits, ran from repository root:
 
@@ -24,7 +24,7 @@ Before source edits, ran from repository root:
 python work/kinetic-tour-r3f/tests/sky-parity/check.py --receipt work/kinetic-tour-r3f/tests/sky-parity/red.json
 ```
 
-Exit 1, meaningful orientation failure at both anchors. Median sky-only sRGB boxes: Home L (300,110)-(340,140), R (1500,110)-(1540,140); Motion L same, R (1550,200)-(1590,225), exclusive right/bottom. No foreground/text in these boxes. Hue 240Â° means blue, 300Â° magenta. Direction = right R/B minus left R/B; require >0.10 in legacy and candidate. Ratios reduce effects of left UI scrim but do not prove exact color parity.
+Exit 1, meaningful orientation failure at both anchors. Median sky-only sRGB boxes: Home L (300,110)-(340,140), R (1500,110)-(1540,140); Motion L same, R (1550,200)-(1590,225), exclusive right/bottom. No foreground/text in these boxes. Hue 240° means blue, 300° magenta. Direction = right R/B minus left R/B; require >0.10 in legacy and candidate. Ratios reduce effects of left UI scrim but do not prove exact color parity.
 
 | View | Legacy RGB L / R | Before RGB L / R | After RGB L / R | Direction legacy / before / after |
 | --- | --- | --- | --- | --- |
@@ -62,7 +62,7 @@ Home camera: position 0,3.05,15.2; target 0,2.1,-2.3. Motion: -8.4,2.25,5.2; tar
 | Home | [reference](../../work/kinetic-tour-r3f/tests/evidence/legacy-home-3d.png) | [before](../../work/kinetic-tour-r3f/tests/evidence/prototype-home-3d.png) | [after](../../work/kinetic-tour-r3f/tests/sky-parity/after-home-3d.png) |
 | Motion | [reference](../../work/kinetic-tour-r3f/tests/evidence/legacy-motion-3d.png) | [before](../../work/kinetic-tour-r3f/tests/evidence/prototype-motion-3d.png) | [after](../../work/kinetic-tour-r3f/tests/sky-parity/after-motion-3d.png) |
 
-All six complete images were visually inspected by lead and separate read-only native sky_audit session. Auditor independently recomputed patch values, confirmed sky-only patches, blue-left â†’ violet/magenta-right after, and empty protected-path diff. Receipt: tests/sky-parity/independent-audit.md. Auditor did not run browser/unit/build or claim Antigravity involvement.
+All six complete images were visually inspected by lead and separate read-only native sky_audit session. Auditor independently recomputed patch values, confirmed sky-only patches, blue-left → violet/magenta-right after, and empty protected-path diff. Receipt: tests/sky-parity/independent-audit.md. Auditor did not run browser/unit/build or claim Antigravity involvement.
 
 Remaining material/sky differences: stronger magenta/saturation and darker/more contrasty geometry than PlayCanvas; cloud/gradient alignment and absolute colors are not pixel-exact. No geometry darkening was introduced by this fix. Separate intentional UI difference: R3F oversized upper-left serif hero and right detail panel versus compact lower-left legacy hero and inline details. Preserved unchanged; no redesign authorized.
 
@@ -86,3 +86,7 @@ All ten manifest artifacts match expected SHA-256 after LFS materialization; sky
 Physical-phone performance/thermals and actual GPU reset **UNVERIFIED**; synthetic loss and desktop mobile emulation do not prove either. No new performance superiority claim. Antigravity review **PENDING**. Accept the bounded orientation correction for draft stacked review; retain PlayCanvas and defer adoption/full visual parity/M3 until owner and Antigravity review.
 
 Local skill bodies actually read: kinetic-studio-collab, test-driven-development and writing-good-tests, soren-learning-loop, router, threejs-textures (guidance targets newer r186; used installed r180 API), agent-browser plus CLI core, soren-universal-deployment plus actual read-only preflight, verification-before-completion, github-outside-sandbox. No callable soren-skills/Open Design tools were exposed; no registrations changed. Requested caveman/chisle skills were absent from local skill roots. Normal scoped escalation review approved writes; no permission bypass.
+
+## Publication receipt
+
+Draft stacked PR: https://github.com/sorensadrgit-art/spline-3d-/pull/5, targeting `feat/kinetic-r3f-pilot-20261028-codex`, linked to PR #4 and issue #1. Branch push and draft creation exit 0. Verified source commit `a025ba11a0560133cade087b63041fb22bc5d077`; report commits follow. A receipt append encountered Windows cp1252 decoding failure; corrected with explicit UTF-8 and repaired document punctuation before final delivery. Rendering source/evidence are unchanged. Final delivery SHA is the PR head and git log. No merge/deployment. Pre-existing untracked brief/backup remain unstaged and preserved.
