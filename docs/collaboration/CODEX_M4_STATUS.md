@@ -48,3 +48,7 @@ Tools/skills actually read: kinetic-studio-collab, soren-learning-loop, agent-br
 Final diagnostic supplement: separate fresh success-only errors/messages empty for both engines; active WebGL adapter Intel UHD ANGLE/D3D11. Active-camera scheduling legacy median12.1ms/p9524.2ms versus R3F6.1ms/p9512.2ms, no GPU/FPS claim. Fresh Home/Motion sky-direction comparator PASS.
 
 Artifact note: r3f-mobile-3d.png is the actual scrolled detail/navigation viewport after opt-in; prototype-mobile-3d.png from the regression suite shows the upper scene. Captured logs have trailing whitespace/extra EOF blank lines normalized solely for git diff --check. Root .vite cache from an initial owned preview launch is excluded from staging.
+
+## Publication receipt
+
+Evidence delivery commit:7bd0ae58a1595d5422b37849ea59109fb1f21dab. Feature push exit0. Draft creation exit0: https://github.com/sorensadrgit-art/spline-3d-/pull/8 . gh pr view8 verified OPEN,isDraft=true,base feat/kinetic-r3f-pilot-20261028-codex,head feat/kinetic-r3f-m4-visual-20261028 and matching head SHA. This follow-up changes only publication text; tested production source remains unchanged. Final git diff --check passed; protected/R3F source diff empty. Removed only this task's generated root .vite cache after verifying its resolved absolute workspace path. No global Git identity changed; commit uses existing repository author via command-only options. No main push, merge, deployment or policy changes.
