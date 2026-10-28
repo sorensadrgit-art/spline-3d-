@@ -1,0 +1,42 @@
+[
+  {
+    "command": [
+      "npm.cmd",
+      "test"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-sky-parity-20261028\\work\\kinetic-tour-r3f",
+    "exit": 0
+  },
+  {
+    "command": [
+      "npm.cmd",
+      "run",
+      "build"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-sky-parity-20261028\\work\\kinetic-tour-r3f",
+    "exit": 0
+  },
+  {
+    "command": [
+      "C:\\Users\\soren\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "C:\\ProgramData\\SentinelX\\workspace\\kinetic-sky-parity-20261028\\work\\kinetic-tour-r3f\\tests\\sky-parity\\browser.py",
+      "--suite"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-sky-parity-20261028",
+    "exit": 0
+  },
+  {
+    "command": [
+      "C:\\Users\\soren\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "C:\\ProgramData\\SentinelX\\workspace\\kinetic-sky-parity-20261028\\work\\kinetic-tour-r3f\\tests\\sky-parity\\check.py",
+      "--candidate",
+      "C:\\ProgramData\\SentinelX\\workspace\\kinetic-sky-parity-20261028\\work\\kinetic-tour-r3f\\tests\\sky-parity",
+      "--prefix",
+      "after",
+      "--receipt",
+      "C:\\ProgramData\\SentinelX\\workspace\\kinetic-sky-parity-20261028\\work\\kinetic-tour-r3f\\tests\\sky-parity\\green.json"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-sky-parity-20261028",
+    "exit": 0
+  }
+]

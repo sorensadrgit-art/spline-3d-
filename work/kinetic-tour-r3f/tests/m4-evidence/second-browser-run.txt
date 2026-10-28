@@ -1,0 +1,30 @@
+PASS baseline image/history/keys/skip {"images": 2, "history": true, "skipFocus": true, "keyboard": true}
+PASS 1350ms/model/rapid/wheel/reset/Escape {"end": "-8.4,2.25,5.2", "firstDone": 1367.8000000000466, "mid": "-2.509663741486811,2.8109844055726847,12.212305069658559"}
+PASS reduced/native drag/focus {"reducedMotionCut": true, "boundedDrag": {"distance": 1, "pitch": 0.3, "yaw": 0.15}, "staleDragCancelled": true, "hotspotFocus": true}
+PASS mobile image/model/overflow {"imageFirst": true, "mobileModel": true, "overflow": false}
+PASS model failure/retry {"mode": "three", "status": "3D ready. Drag to inspect; wheel adjusts distance."}
+PASS sky failure/retry {"mode": "three", "status": "3D ready. Drag to inspect; wheel adjusts distance."}
+PASS accelerated timeout {"mode": "images", "status": "3D loading timed out. Image navigation remains ready."}
+PASS no WebGL {"mode": "images", "status": "WebGL unavailable. Image navigation remains ready."}
+PASS synthetic context loss {"mode": "images", "status": "Graphics context lost. Image navigation remains ready."}
+PASS cancelled stale load {"lateModelCannotReopen": true}
+FAIL five real destinations/cameras/hotspots/details/history/keys {"success":false,"data":null,"error":"Failed to read: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (os error 10060) (the command reached the daemon but no response came back; it may or may not have run, so it was not retried)","code":"outcome_unknown"}
+
+Traceback (most recent call last):
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m4-20261028\work\kinetic-tour-r3f\tests\m4-evidence\browser.py", line 118, in <module>
+    b.check('five real destinations/cameras/hotspots/details/history/keys',five_views)
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m4-20261028\work\kinetic-tour-r3f\tests\browser_qa.py", line 21, in check
+    result=fn();checks.append({'name':name,'pass':True,'observed':result});print('PASS',name,json.dumps(result),flush=True)
+           ^^^^
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m4-20261028\work\kinetic-tour-r3f\tests\m4-evidence\browser.py", line 51, in five_views
+    b.click('.details button[aria-controls=detail-'+str(i)+']')
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m4-20261028\work\kinetic-tour-r3f\tests\browser_qa.py", line 18, in click
+    def click(selector):run('snapshot','-i');run('click',selector)
+                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m4-20261028\work\kinetic-tour-r3f\tests\m4-evidence\browser.py", line 9, in run
+    return original_run(*(x.replace('127.0.0.1:4180','127.0.0.1:4187') if isinstance(x,str) else x for x in args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m4-20261028\work\kinetic-tour-r3f\tests\browser_qa.py", line 9, in run
+    if p.returncode:raise RuntimeError(p.stdout[-1200:]+p.stderr[-1200:])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: {"success":false,"data":null,"error":"Failed to read: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (os error 10060) (the command reached the daemon but no response came back; it may or may not have run, so it was not retried)","code":"outcome_unknown"}

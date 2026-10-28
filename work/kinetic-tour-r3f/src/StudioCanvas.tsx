@@ -3,6 +3,7 @@ import { Canvas, useFrame, useLoader, useThree } from "@react-three/fiber";
 import {
   BackSide,
   NoToneMapping,
+  RepeatWrapping,
   SRGBColorSpace,
   TextureLoader,
   Vector3,
@@ -37,6 +38,10 @@ function Model({
 function Sky() {
   const texture = useLoader(TextureLoader, "/models/blue-hour.jpg");
   texture.colorSpace = SRGBColorSpace;
+  // Match the inward PlayCanvas sphere UV direction without editing the sky asset.
+  texture.wrapS = RepeatWrapping;
+  texture.repeat.x = -1;
+  texture.offset.x = 1;
   return (
     <mesh scale={140} rotation={[0, (92 * Math.PI) / 180, 0]}>
       <sphereGeometry args={[1, 40, 24]} />
@@ -64,11 +69,14 @@ function CameraDirector({
   const point = useRef(new Vector3());
   useEffect(() => {
     interactionEpoch.current++;
-    motion.current.select(zone, performance.now(), reduced.current);
+    motion.current.select(zone, performance.now(), reduced.current, {
+      position: camera.position.toArray(),
+      target: [...motion.current.current.target],
+    });
     deadline.current = performance.now() + 1350;
     orbit.current = { yaw: 0, pitch: 0, distance: 1 };
     invalidate();
-  }, [zone, reset, invalidate]);
+  }, [zone, reset, camera, invalidate]);
   useEffect(() => {
     const mq = matchMedia("(prefers-reduced-motion: reduce)");
     const change = () => {
@@ -156,14 +164,26 @@ function CameraDirector({
     el.dataset.target = pose.target.join(",");
     el.dataset.orbit = JSON.stringify(o);
     el.dataset.transition = String(!reduced.current && now < deadline.current);
+    // Keep markers out of UI hit areas; all details remain in the side panel.
+    // Read layout once before writing marker styles (demand-rendered frames only).
+    const bounds = el.getBoundingClientRect();
+    const overlays = Array.from(document.querySelectorAll(
+      "#studio header, #studio .intro, #studio .details, #studio footer",
+    ), (node) => node.getBoundingClientRect());
     anchors[zone.id].forEach((anchor, i) => {
       const marker = markers.current[i];
       if (!marker) return;
       const p = point.current.set(...anchor).project(camera);
-      marker.hidden =
+      const x = ((p.x + 1) * size.width) / 2;
+      const y = ((1 - p.y) * size.height) / 2;
+      const covered = overlays.some((r) =>
+        x + bounds.left + 22 > r.left && x + bounds.left - 22 < r.right &&
+        y + bounds.top + 22 > r.top && y + bounds.top - 22 < r.bottom,
+      );
+      marker.hidden = covered ||
         p.z < -1 || p.z > 1 || Math.abs(p.x) > 0.92 || Math.abs(p.y) > 0.82;
-      marker.style.left = ((p.x + 1) * size.width) / 2 + "px";
-      marker.style.top = ((1 - p.y) * size.height) / 2 + "px";
+      marker.style.left = x + "px";
+      marker.style.top = y + "px";
     });
     if (now < deadline.current && !reduced.current) invalidate();
   });

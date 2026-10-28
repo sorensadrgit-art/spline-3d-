@@ -1,0 +1,54 @@
+{
+  "result": "PASS for bounded M3 functional proof",
+  "adoption": "NO-GO pending owner visual/device review",
+  "criteria": {
+    "A": "PASS",
+    "B": "PASS",
+    "C": "PASS (synthetic loss; accelerated timeout)",
+    "D": "PASS direction; visual acceptance pending",
+    "E": "PASS",
+    "F": "PASS scoped browser/desktop evidence; phone/real GPU reset pending",
+    "G": "PASS"
+  },
+  "antigravity": "PENDING - not contacted",
+  "browserGroups": 15,
+  "axe": {
+    "a11y-clinical": {
+      "inapplicable": 54,
+      "incomplete": 1,
+      "passes": 35,
+      "violations": 0
+    },
+    "a11y-engineering": {
+      "inapplicable": 54,
+      "incomplete": 1,
+      "passes": 35,
+      "violations": 0
+    },
+    "a11y-home": {
+      "inapplicable": 54,
+      "incomplete": 1,
+      "passes": 35,
+      "violations": 0
+    },
+    "a11y-images": {
+      "inapplicable": 53,
+      "incomplete": 0,
+      "passes": 36,
+      "violations": 0
+    },
+    "a11y-motion": {
+      "inapplicable": 54,
+      "incomplete": 1,
+      "passes": 35,
+      "violations": 0
+    },
+    "a11y-projects": {
+      "inapplicable": 54,
+      "incomplete": 1,
+      "passes": 35,
+      "violations": 0
+    }
+  },
+  "nextGate": "Draft stacked PR + owner/Antigravity review"
+}

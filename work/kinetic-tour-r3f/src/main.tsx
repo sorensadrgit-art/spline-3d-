@@ -43,26 +43,30 @@ function AppShell() {
     mode: "images",
   });
   const [message, setMessage] = useState(
-    "Image tour ready. Home + Motion Systems proof.",
+    "Image tour ready. Five connected studio spaces.",
   );
   const [detail, setDetail] = useState<number | null>(null);
   const [reset, setReset] = useState(0);
   const loadRef = useRef(load);
   loadRef.current = load;
   const select = useCallback((z: Zone, push = true) => {
+    // A key/history change can remove the focused zone-specific control.
+    if (document.activeElement?.closest(".details, #hotspots"))
+      requestAnimationFrame(() =>
+        document.querySelector<HTMLButtonElement>("nav [data-zone=" + z.id + "]")
+          ?.focus({ preventScroll: true }),
+      );
     setZone(z);
     setDetail(null);
     if (push && location.hash !== "#" + z.id)
       history.pushState(null, "", "#" + z.id);
-    if (z.id !== "home" && z.id !== "motion") {
-      setLoad((s) => loadState(s, "dismiss"));
-      setMessage("Future 3D proof. Existing cinematic image available.");
-    } else
-      setMessage(
-        z.id === "home" ? "Home selected." : "Motion Systems selected.",
-      );
+    setMessage(names[zones.indexOf(z)] + " selected.");
   }, []);
   const images = useCallback((text = "Image tour ready.") => {
+    if (document.activeElement?.closest("#hotspots, .canvas-layer, .controls button"))
+      requestAnimationFrame(() =>
+        document.getElementById("mode")?.focus({ preventScroll: true }),
+      );
     setLoad((s) => loadState(s, "dismiss"));
     setMessage(text);
   }, []);
@@ -114,7 +118,6 @@ function AppShell() {
     if (loadRef.current.generation === token)
       setMessage("3D ready. Drag to inspect; wheel adjusts distance.");
   }, []);
-  const implemented = zone.id === "home" || zone.id === "motion";
   return (
     <>
       <a
@@ -140,7 +143,7 @@ function AppShell() {
             }
             hidden={load.mode === "three"}
           />
-          {load.mode !== "images" && implemented && (
+          {load.mode !== "images" && (
             <GraphicsBoundary key={load.generation} onFailure={failed}>
               <Suspense fallback={null}>
                 <StudioCanvas
@@ -182,9 +185,7 @@ function AppShell() {
           <h1 dangerouslySetInnerHTML={{ __html: zone.title }} />
           <p className="description">{zone.description}</p>
           <p className="proof-note">
-            {implemented
-              ? "Home + Motion Systems / isolated proof"
-              : "Cinematic image / 3D proof pending"}
+            Five connected spaces / isolated R3F proof
           </p>
         </section>
         <aside className="details" aria-label="Studio details">
@@ -210,7 +211,7 @@ function AppShell() {
             <button
               id="mode"
               aria-pressed={load.mode === "three"}
-              disabled={!implemented || load.mode === "loading"}
+              disabled={load.mode === "loading"}
               onClick={() =>
                 load.mode === "three"
                   ? images()
@@ -245,7 +246,6 @@ function AppShell() {
               >
                 <span className="nav-number">0{i}</span>
                 {names[i]}
-                {i > 1 && <small>Image / 3D pending</small>}
               </button>
             ))}
           </nav>

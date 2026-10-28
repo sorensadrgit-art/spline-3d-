@@ -1,0 +1,66 @@
+{
+  "kinetic-blender\\kinetic-studio-proof-v006.blend": {
+    "bytes": 133,
+    "actual": "873128e7c5e3fcf49c21ac316d4c58f5687fc0ef39a6355a7e8d4cf0bbc54cee",
+    "expected": "8b121564f8895917a9a0f820f95da5d0ef8069ea2715e8312d51f1096e962cfe",
+    "matches": false
+  },
+  "kinetic-blender\\kinetic-studio-proof-v006.png": {
+    "bytes": 4465732,
+    "actual": "a963c7d6346dff769b6dabcc333cea99b755bb1d6d26ed4abe05ec1f1c29459e",
+    "expected": "a963c7d6346dff769b6dabcc333cea99b755bb1d6d26ed4abe05ec1f1c29459e",
+    "matches": true
+  },
+  "kinetic-blender\\kinetic-studio-motion-v006.png": {
+    "bytes": 1805728,
+    "actual": "c3719c3fb5a2931ab43537227537ccbbb42f75d6052e1cd741bdec1cdc59d323",
+    "expected": "c3719c3fb5a2931ab43537227537ccbbb42f75d6052e1cd741bdec1cdc59d323",
+    "matches": true
+  },
+  "kinetic-blender\\kinetic-studio-clinical-v006.png": {
+    "bytes": 1820322,
+    "actual": "fe907ef76795ae1bc60d7f4783bf4f3f6a2dda882fda135eb1d82f5c57d592cc",
+    "expected": "fe907ef76795ae1bc60d7f4783bf4f3f6a2dda882fda135eb1d82f5c57d592cc",
+    "matches": true
+  },
+  "kinetic-blender\\kinetic-studio-engineering-v006.png": {
+    "bytes": 1801552,
+    "actual": "4771d2bf555c54bbc795babc75ec6e86e1abb34410a4f939167bfb5b2fdc63ac",
+    "expected": "4771d2bf555c54bbc795babc75ec6e86e1abb34410a4f939167bfb5b2fdc63ac",
+    "matches": true
+  },
+  "kinetic-blender\\kinetic-studio-projects-v006.png": {
+    "bytes": 1682778,
+    "actual": "7f05a0b82fdf972dd2b4c66cab2721910665f9c46c917e28a2adf7c6d7f86e1a",
+    "expected": "7f05a0b82fdf972dd2b4c66cab2721910665f9c46c917e28a2adf7c6d7f86e1a",
+    "matches": true
+  },
+  "kinetic-tour\\public\\models\\studio-desktop.glb": {
+    "bytes": 12023904,
+    "actual": "6a586e3d2115d226664a042c021f9432672f324b37cb9f29e50b27855a96c913",
+    "expected": "6a586e3d2115d226664a042c021f9432672f324b37cb9f29e50b27855a96c913",
+    "matches": true
+  },
+  "kinetic-tour\\public\\models\\studio-mobile.glb": {
+    "bytes": 5972736,
+    "actual": "d0c5fc11b5d7ac0b24523aed651e66d1d8df5aedfa53c639f4b77110911451e9",
+    "expected": "d0c5fc11b5d7ac0b24523aed651e66d1d8df5aedfa53c639f4b77110911451e9",
+    "matches": true
+  },
+  "kinetic-splat\\kinetic-engineering-pilot-v001.ssproj": {
+    "bytes": 5274326,
+    "actual": "777a4c64ba9e1993f5472dfb1712b414ffc99fc0666d0c7dad68e3d3f92c1016",
+    "expected": "777a4c64ba9e1993f5472dfb1712b414ffc99fc0666d0c7dad68e3d3f92c1016",
+    "matches": true
+  },
+  "kinetic-splat\\kinetic-engineering-pilot-v001.sog": {
+    "bytes": 957256,
+    "actual": "055943172455e5bb8984fec74d4e1ff1123a7e126f73179c9c56c77fc4875e20",
+    "expected": "055943172455e5bb8984fec74d4e1ff1123a7e126f73179c9c56c77fc4875e20",
+    "matches": true
+  },
+  "sky": {
+    "actual": "c45d164f9ebcc307feb66f9adcdd19182e1701e8ec2f51e1099cb0aaf7e8bc40",
+    "expected": "c45d164f9ebcc307feb66f9adcdd19182e1701e8ec2f51e1099cb0aaf7e8bc40"
+  }
+}

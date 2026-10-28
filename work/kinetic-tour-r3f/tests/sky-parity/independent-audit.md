@@ -1,0 +1,3 @@
+Independent native sky_audit session, read-only, 2026-10-28.
+Viewed all six complete Home/Motion legacy/before/after captures. Confirmed blue-left to violet/magenta-right after, reversed before. Independently recomputed Home -.317907 -> +.270483 and Motion -.475023 -> +.590785. Patch regions contain sky, no geometry/text; intentional left UI scrim remains, so direction only. Protected tracked diff empty; sky SHA c45d164f9ebcc307feb66f9adcdd19182e1701e8ec2f51e1099cb0aaf7e8bc40 matches HEAD.
+Remaining: stronger magenta and darker geometry/material response; giant upper-left hero/right panel versus compact lower-left legacy UI. Did not run browser/unit/build checks or approve adoption. No edits. Antigravity PENDING.

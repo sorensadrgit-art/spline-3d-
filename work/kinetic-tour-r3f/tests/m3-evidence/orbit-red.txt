@@ -1,0 +1,59 @@
+✖ navigation and reset start from the displayed inspected pose (1.7522ms)
+✔ home: actual UI enables 3D, selects its image/details and has no pending label (6.1785ms)
+✔ motion: actual UI enables 3D, selects its image/details and has no pending label (0.8996ms)
+✔ clinical: actual UI enables 3D, selects its image/details and has no pending label (0.7645ms)
+✔ engineering: actual UI enables 3D, selects its image/details and has no pending label (0.8442ms)
+✔ projects: actual UI enables 3D, selects its image/details and has no pending label (0.8724ms)
+✔ every ordered zone pair retargets continuously and reaches exact position and target (0.974ms)
+✔ shared model resources dispose once, including bitmap source (1.5786ms)
+✔ camera data has no drift from delivered tour (21.391ms)
+✔ 1350ms transition reaches target and clamps (0.7715ms)
+✔ rapid retarget samples actual pose without jump (0.1817ms)
+✔ reduced motion immediately cuts and reset restores destination (0.1156ms)
+✔ unknown route returns Home and five destinations remain discoverable (0.133ms)
+✔ orbit clamps drag and wheel to original safe bounds (0.1029ms)
+✔ late load cannot reopen a failed or dismissed generation (0.7451ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 14
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 346.1593
+
+✖ failing tests:
+
+test at tests\inspection.test.ts:6:1
+✖ navigation and reset start from the displayed inspected pose (1.7522ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+
+    {
+      position: [
+  +     0,
+  +     3.05,
+  +     15.2
+  -     2.9289873965,
+  -     3.514,
+  -     17.0799131275
+      ],
+      target: [
+        0,
+        2.1,
+        -2.3
+
+      at TestContext.<anonymous> (file:///C:/ProgramData/SentinelX/workspace/kinetic-m3-20261028/work/kinetic-tour-r3f/tests/inspection.test.ts:10:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { position: [ 0, 3.05, 15.2 ], target: [ 0, 2.1, -2.3 ] },
+    expected: { position: [ 2.9289873965, 3.514, 17.0799131275 ], target: [ 0, 2.1, -2.3 ] },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+npm notice run kinetic-studio-r3f-proof@0.1.0 test
+npm notice run node --experimental-strip-types --test tests/*.test.ts

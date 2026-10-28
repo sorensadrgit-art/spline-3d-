@@ -1,0 +1,25 @@
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 1259 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/pilot.html                             2.12 kB │ gzip:   1.18 kB
+dist/index.html                             3.41 kB │ gzip:   1.52 kB
+dist/assets/studio-Dvor0B6X.css             6.79 kB │ gzip:   2.25 kB
+dist/assets/pilot-FV0ivgpb.js               2.03 kB │ gzip:   1.06 kB
+dist/assets/preload-helper-CFijIu3R.js      2.19 kB │ gzip:   1.06 kB
+dist/assets/studio-BsPzjhTE.js             11.47 kB │ gzip:   5.31 kB
+dist/assets/src-DtptDQoW.js             2,498.25 kB │ gzip: 642.67 kB
+
+✓ built in 31.06s
+npm notice run kinetic-studio-tour@1.0.0 build
+npm notice run tsc --noEmit && vite build
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 1.5s of this 31.0s build (5%).
+1 callback is listed without a time. Its calls overlapped, so the time inside one call includes work from other calls. To find its cost, profile the build with `node --cpu-prof`:
+  - plugin vite:build-html transform (2 calls)
+See https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.

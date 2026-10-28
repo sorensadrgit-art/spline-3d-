@@ -1,0 +1,78 @@
+{
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 11677035664275010974
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "not_configured",
+    "reused": true,
+    "saveStatus": "not_attempted"
+  },
+  "messages": [
+    {
+      "args": [
+        {
+          "className": "Error",
+          "description": "Error: Could not load /models/blue-hour.jpg: undefined\n    at http://127.0.0.1:4182/assets/StudioCanvas-C616ymzq.js:3843:16758\n    at HTMLImageElement.c (http://127.0.0.1:4182/assets/StudioCanvas-C616ymzq.js:40:134724)",
+          "objectId": "-6520263615225042862.7.2",
+          "preview": {
+            "description": "Error: Could not load /models/blue-hour.jpg: undefined\n    at http://127.0.0.1:4182/assets/StudioCanvas-C616ymzq.js:3843:16758\n    at HTMLImageElement.c (http://127.0.0.1:4182/assets/StudioCanvas-C616ymzq.js:40:134724)",
+            "overflow": false,
+            "properties": [
+              {
+                "name": "stack",
+                "type": "string",
+                "value": "Error: Could not load /models/blue-hour.jpg: undef\u20261:4182/assets/StudioCanvas-C616ymzq.js:40:134724)"
+              },
+              {
+                "name": "message",
+                "type": "string",
+                "value": "Could not load /models/blue-hour.jpg: undefined"
+              }
+            ],
+            "subtype": "error",
+            "type": "object"
+          },
+          "subtype": "error",
+          "type": "object"
+        }
+      ],
+      "text": "{stack: \"Error: Could not load /models/blue-hour.jpg: undef\u20261:4182/assets/StudioCanvas-C616ymzq.js:40:134724)\", message: \"Could not load /models/blue-hour.jpg: undefined\"}",
+      "type": "error"
+    },
+    {
+      "args": [
+        {
+          "type": "string",
+          "value": "THREE.WebGLRenderer: Context Lost."
+        }
+      ],
+      "text": "THREE.WebGLRenderer: Context Lost.",
+      "type": "log"
+    },
+    {
+      "args": [
+        {
+          "type": "string",
+          "value": "THREE.WebGLRenderer: Context Lost."
+        }
+      ],
+      "text": "THREE.WebGLRenderer: Context Lost.",
+      "type": "log"
+    },
+    {
+      "args": [
+        {
+          "type": "string",
+          "value": "THREE.WebGLRenderer: Context Lost."
+        }
+      ],
+      "text": "THREE.WebGLRenderer: Context Lost.",
+      "type": "log"
+    }
+  ]
+}

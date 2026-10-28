@@ -1,0 +1,1273 @@
+[
+  {
+    "name": "legacy",
+    "viewport": "desktop",
+    "cache": "cold-browser",
+    "initial": {
+      "imageFirst": false,
+      "modelBeforeOptIn": [
+        {}
+      ]
+    },
+    "environment": {
+      "cores": 32,
+      "dpr": 1,
+      "memory": 16,
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "heapBefore": 36936290,
+    "rafSchedulingIntervalsMs": {
+      "mean": 13.005208333333334,
+      "median": 12.099999999999907,
+      "p95": 24.300000000000185,
+      "samples": 192
+    },
+    "navigation": [
+      {
+        "activationStart": 0,
+        "confidence": {},
+        "connectEnd": 0.6999999999534339,
+        "connectStart": 0.6999999999534339,
+        "contentEncoding": "gzip",
+        "contentType": "text/html",
+        "criticalCHRestart": 0,
+        "decodedBodySize": 3412,
+        "deliveryType": "",
+        "domComplete": 120.69999999995343,
+        "domContentLoadedEventEnd": 91.5,
+        "domContentLoadedEventStart": 91.5,
+        "domInteractive": 84,
+        "domainLookupEnd": 0.6999999999534339,
+        "domainLookupStart": 0.6999999999534339,
+        "duration": 120.69999999995343,
+        "encodedBodySize": 1521,
+        "entryType": "navigation",
+        "fetchStart": 0.6999999999534339,
+        "finalResponseHeadersStart": 66.30000000004657,
+        "firstInterimResponseStart": 0,
+        "initiatorType": "navigation",
+        "loadEventEnd": 120.69999999995343,
+        "loadEventStart": 120.69999999995343,
+        "name": "http://127.0.0.1:4186/#home",
+        "navigationId": 7071,
+        "nextHopProtocol": "http/1.1",
+        "notRestoredReasons": null,
+        "redirectCount": 0,
+        "redirectEnd": 0,
+        "redirectStart": 0,
+        "renderBlockingStatus": "non-blocking",
+        "requestStart": 48.39999999990687,
+        "responseEnd": 66.69999999995343,
+        "responseStart": 66.30000000004657,
+        "responseStatus": 200,
+        "secureConnectionStart": 0,
+        "serverTiming": [],
+        "startTime": 0,
+        "transferSize": 1821,
+        "type": "navigate",
+        "unloadEventEnd": 0,
+        "unloadEventStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerFinalSourceType": "",
+        "workerMatchedSourceType": "",
+        "workerRouterEvaluationStart": 0,
+        "workerStart": 0
+      }
+    ],
+    "resources": [
+      {
+        "decodedBodySize": 11470,
+        "duration": 15.600000000093132,
+        "encodedBodySize": 5282,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4186/assets/studio-BsPzjhTE.js",
+        "transferSize": 5582
+      },
+      {
+        "decodedBodySize": 2193,
+        "duration": 15.899999999906868,
+        "encodedBodySize": 1065,
+        "initiatorType": "other",
+        "name": "http://127.0.0.1:4186/assets/preload-helper-CFijIu3R.js",
+        "transferSize": 1365
+      },
+      {
+        "decodedBodySize": 6796,
+        "duration": 9.699999999953434,
+        "encodedBodySize": 2240,
+        "initiatorType": "link",
+        "name": "http://127.0.0.1:4186/assets/studio-Dvor0B6X.css",
+        "transferSize": 2540
+      },
+      {
+        "decodedBodySize": 126588,
+        "duration": 15.899999999906868,
+        "encodedBodySize": 126588,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4186/media/home.webp",
+        "transferSize": 126888
+      },
+      {
+        "decodedBodySize": 2498256,
+        "duration": 114.5999999998603,
+        "encodedBodySize": 638484,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4186/assets/src-DtptDQoW.js",
+        "transferSize": 638784
+      },
+      {
+        "decodedBodySize": 0,
+        "duration": 2.4000000001396984,
+        "encodedBodySize": 0,
+        "initiatorType": "other",
+        "name": "http://127.0.0.1:4186/favicon.ico",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 12023904,
+        "duration": 103.19999999995343,
+        "encodedBodySize": 12023904,
+        "initiatorType": "xmlhttprequest",
+        "name": "http://127.0.0.1:4186/models/studio-desktop.glb",
+        "transferSize": 12024204
+      },
+      {
+        "decodedBodySize": 60027,
+        "duration": 5.899999999906868,
+        "encodedBodySize": 60027,
+        "initiatorType": "xmlhttprequest",
+        "name": "http://127.0.0.1:4186/models/blue-hour.jpg",
+        "transferSize": 60327
+      }
+    ],
+    "longTasks": [
+      {
+        "duration": 389,
+        "start": 220.89999999990687
+      },
+      {
+        "duration": 136,
+        "start": 1290.1999999999534
+      }
+    ],
+    "heapAfter": 37231097
+  },
+  {
+    "name": "legacy",
+    "viewport": "desktop",
+    "cache": "warm-browser",
+    "initial": {
+      "imageFirst": false,
+      "modelBeforeOptIn": [
+        {}
+      ]
+    },
+    "environment": {
+      "cores": 32,
+      "dpr": 1,
+      "memory": 16,
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "heapBefore": 36610997,
+    "rafSchedulingIntervalsMs": {
+      "mean": 6.8617079889807195,
+      "median": 6.100000000000364,
+      "p95": 12.100000000000364,
+      "samples": 363
+    },
+    "navigation": [
+      {
+        "activationStart": 0,
+        "confidence": {},
+        "connectEnd": 9.5,
+        "connectStart": 9.5,
+        "contentEncoding": "gzip",
+        "contentType": "text/html",
+        "criticalCHRestart": 0,
+        "decodedBodySize": 3412,
+        "deliveryType": "cache",
+        "domComplete": 246.19999999995343,
+        "domContentLoadedEventEnd": 243,
+        "domContentLoadedEventStart": 242.89999999990687,
+        "domInteractive": 241,
+        "domainLookupEnd": 9.5,
+        "domainLookupStart": 9.5,
+        "duration": 246.19999999995343,
+        "encodedBodySize": 1521,
+        "entryType": "navigation",
+        "fetchStart": 9.5,
+        "finalResponseHeadersStart": 14.199999999953434,
+        "firstInterimResponseStart": 0,
+        "initiatorType": "navigation",
+        "loadEventEnd": 246.19999999995343,
+        "loadEventStart": 246.19999999995343,
+        "name": "http://127.0.0.1:4186/#home",
+        "navigationId": 6943,
+        "nextHopProtocol": "",
+        "notRestoredReasons": null,
+        "redirectCount": 0,
+        "redirectEnd": 0,
+        "redirectStart": 0,
+        "renderBlockingStatus": "non-blocking",
+        "requestStart": 11.699999999953434,
+        "responseEnd": 14.800000000046566,
+        "responseStart": 14.199999999953434,
+        "responseStatus": 200,
+        "secureConnectionStart": 0,
+        "serverTiming": [],
+        "startTime": 0,
+        "transferSize": 300,
+        "type": "reload",
+        "unloadEventEnd": 155.5,
+        "unloadEventStart": 155.5,
+        "workerCacheLookupStart": 0,
+        "workerFinalSourceType": "",
+        "workerMatchedSourceType": "",
+        "workerRouterEvaluationStart": 0,
+        "workerStart": 0
+      }
+    ],
+    "resources": [
+      {
+        "decodedBodySize": 11470,
+        "duration": 3.1000000000931323,
+        "encodedBodySize": 5282,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4186/assets/studio-BsPzjhTE.js",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 2193,
+        "duration": 3.3999999999068677,
+        "encodedBodySize": 1065,
+        "initiatorType": "other",
+        "name": "http://127.0.0.1:4186/assets/preload-helper-CFijIu3R.js",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 6796,
+        "duration": 4.300000000046566,
+        "encodedBodySize": 2240,
+        "initiatorType": "link",
+        "name": "http://127.0.0.1:4186/assets/studio-Dvor0B6X.css",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 0,
+        "duration": 24.200000000186265,
+        "encodedBodySize": 0,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4186/media/home.webp",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 2498256,
+        "duration": 8.099999999860302,
+        "encodedBodySize": 638484,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4186/assets/src-DtptDQoW.js",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 12023904,
+        "duration": 41.4000000001397,
+        "encodedBodySize": 12023904,
+        "initiatorType": "xmlhttprequest",
+        "name": "http://127.0.0.1:4186/models/studio-desktop.glb",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 60027,
+        "duration": 2,
+        "encodedBodySize": 60027,
+        "initiatorType": "xmlhttprequest",
+        "name": "http://127.0.0.1:4186/models/blue-hour.jpg",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 106948,
+        "duration": 3.800000000046566,
+        "encodedBodySize": 106948,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4186/media/motion.webp",
+        "transferSize": 107248
+      },
+      {
+        "decodedBodySize": 105628,
+        "duration": 4.699999999953434,
+        "encodedBodySize": 105628,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4186/media/clinical.webp",
+        "transferSize": 105928
+      },
+      {
+        "decodedBodySize": 109048,
+        "duration": 22.600000000093132,
+        "encodedBodySize": 109048,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4186/media/engineering.webp",
+        "transferSize": 109348
+      },
+      {
+        "decodedBodySize": 79416,
+        "duration": 3.4000000001396984,
+        "encodedBodySize": 79416,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4186/media/projects.webp",
+        "transferSize": 79716
+      }
+    ],
+    "longTasks": [
+      {
+        "duration": 131,
+        "start": 546.8999999999069
+      }
+    ],
+    "heapAfter": 36011487
+  },
+  {
+    "name": "r3f",
+    "viewport": "desktop",
+    "cache": "cold-browser",
+    "initial": {
+      "imageFirst": true,
+      "modelBeforeOptIn": []
+    },
+    "environment": {
+      "cores": 32,
+      "dpr": 1,
+      "memory": 16,
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "heapBefore": 31067199,
+    "rafSchedulingIntervalsMs": {
+      "mean": 6.514621409921671,
+      "median": 6.099999999999454,
+      "p95": 12.099999999999454,
+      "samples": 383
+    },
+    "navigation": [
+      {
+        "activationStart": 0,
+        "confidence": {},
+        "connectEnd": 0.5999999998603016,
+        "connectStart": 0.5999999998603016,
+        "contentEncoding": "",
+        "contentType": "text/html",
+        "criticalCHRestart": 0,
+        "decodedBodySize": 412,
+        "deliveryType": "",
+        "domComplete": 298.39999999990687,
+        "domContentLoadedEventEnd": 298.19999999995343,
+        "domContentLoadedEventStart": 298.19999999995343,
+        "domInteractive": 255.69999999995343,
+        "domainLookupEnd": 0.5999999998603016,
+        "domainLookupStart": 0.5999999998603016,
+        "duration": 298.5,
+        "encodedBodySize": 412,
+        "entryType": "navigation",
+        "fetchStart": 0.5999999998603016,
+        "finalResponseHeadersStart": 249.5,
+        "firstInterimResponseStart": 0,
+        "initiatorType": "navigation",
+        "loadEventEnd": 298.5,
+        "loadEventStart": 298.5,
+        "name": "http://127.0.0.1:4187/#home",
+        "navigationId": 3892,
+        "nextHopProtocol": "http/1.1",
+        "notRestoredReasons": null,
+        "redirectCount": 0,
+        "redirectEnd": 0,
+        "redirectStart": 0,
+        "renderBlockingStatus": "non-blocking",
+        "requestStart": 246.69999999995343,
+        "responseEnd": 249.69999999995343,
+        "responseStart": 249.5,
+        "responseStatus": 200,
+        "secureConnectionStart": 0,
+        "serverTiming": [],
+        "startTime": 0,
+        "transferSize": 712,
+        "type": "navigate",
+        "unloadEventEnd": 0,
+        "unloadEventStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerFinalSourceType": "",
+        "workerMatchedSourceType": "",
+        "workerRouterEvaluationStart": 0,
+        "workerStart": 0
+      }
+    ],
+    "resources": [
+      {
+        "decodedBodySize": 202372,
+        "duration": 28.69999999995343,
+        "encodedBodySize": 64218,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4187/assets/index-ETbihH4Q.js",
+        "transferSize": 64518
+      },
+      {
+        "decodedBodySize": 4506,
+        "duration": 21.899999999906868,
+        "encodedBodySize": 1753,
+        "initiatorType": "link",
+        "name": "http://127.0.0.1:4187/assets/index-D7Rxnub5.css",
+        "transferSize": 2053
+      },
+      {
+        "decodedBodySize": 126588,
+        "duration": 6,
+        "encodedBodySize": 126588,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4187/media/home.webp",
+        "transferSize": 126888
+      },
+      {
+        "decodedBodySize": 0,
+        "duration": 1.3999999999068675,
+        "encodedBodySize": 0,
+        "initiatorType": "other",
+        "name": "http://127.0.0.1:4187/favicon.ico",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 894984,
+        "duration": 38.700000000186265,
+        "encodedBodySize": 236728,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4187/assets/StudioCanvas-Ctkwt1Kv.js",
+        "transferSize": 237028
+      },
+      {
+        "decodedBodySize": 12023904,
+        "duration": 215.89999999990687,
+        "encodedBodySize": 12023904,
+        "initiatorType": "fetch",
+        "name": "http://127.0.0.1:4187/models/studio-desktop.glb",
+        "transferSize": 12024204
+      },
+      {
+        "decodedBodySize": 60027,
+        "duration": 37.10000000009313,
+        "encodedBodySize": 60027,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4187/models/blue-hour.jpg",
+        "transferSize": 60327
+      }
+    ],
+    "longTasks": [
+      {
+        "duration": 198,
+        "start": 1340.6999999999534
+      }
+    ],
+    "heapAfter": 31160795,
+    "renderer": {
+      "dpr": 1,
+      "memory": {
+        "geometries": 15,
+        "textures": 10
+      },
+      "programs": 4,
+      "render": {
+        "calls": 20,
+        "frame": 150,
+        "lines": 0,
+        "points": 0,
+        "triangles": 205766
+      }
+    }
+  },
+  {
+    "name": "r3f",
+    "viewport": "desktop",
+    "cache": "warm-browser",
+    "initial": {
+      "imageFirst": true,
+      "modelBeforeOptIn": []
+    },
+    "environment": {
+      "cores": 32,
+      "dpr": 1,
+      "memory": 16,
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "heapBefore": 43748590,
+    "rafSchedulingIntervalsMs": {
+      "mean": 6.535248041775457,
+      "median": 6.099999999998545,
+      "p95": 12.099999999998545,
+      "samples": 383
+    },
+    "navigation": [
+      {
+        "activationStart": 0,
+        "confidence": {},
+        "connectEnd": 1.6000000000931325,
+        "connectStart": 1.6000000000931325,
+        "contentEncoding": "",
+        "contentType": "text/html",
+        "criticalCHRestart": 0,
+        "decodedBodySize": 412,
+        "deliveryType": "cache",
+        "domComplete": 43.300000000046566,
+        "domContentLoadedEventEnd": 43.199999999953434,
+        "domContentLoadedEventStart": 43.10000000009313,
+        "domInteractive": 37.199999999953434,
+        "domainLookupEnd": 1.6000000000931325,
+        "domainLookupStart": 1.6000000000931325,
+        "duration": 43.300000000046566,
+        "encodedBodySize": 412,
+        "entryType": "navigation",
+        "fetchStart": 1.6000000000931325,
+        "finalResponseHeadersStart": 6.100000000093132,
+        "firstInterimResponseStart": 0,
+        "initiatorType": "navigation",
+        "loadEventEnd": 43.300000000046566,
+        "loadEventStart": 43.300000000046566,
+        "name": "http://127.0.0.1:4187/#home",
+        "navigationId": 9869,
+        "nextHopProtocol": "",
+        "notRestoredReasons": null,
+        "redirectCount": 0,
+        "redirectEnd": 0,
+        "redirectStart": 0,
+        "renderBlockingStatus": "non-blocking",
+        "requestStart": 3.699999999953434,
+        "responseEnd": 6.699999999953434,
+        "responseStart": 6.100000000093132,
+        "responseStatus": 200,
+        "secureConnectionStart": 0,
+        "serverTiming": [],
+        "startTime": 0,
+        "transferSize": 300,
+        "type": "reload",
+        "unloadEventEnd": 30.30000000004657,
+        "unloadEventStart": 30.30000000004657,
+        "workerCacheLookupStart": 0,
+        "workerFinalSourceType": "",
+        "workerMatchedSourceType": "",
+        "workerRouterEvaluationStart": 0,
+        "workerStart": 0
+      }
+    ],
+    "resources": [
+      {
+        "decodedBodySize": 202372,
+        "duration": 3.3999999999068677,
+        "encodedBodySize": 64218,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4187/assets/index-ETbihH4Q.js",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 4506,
+        "duration": 3.2999999998137355,
+        "encodedBodySize": 1753,
+        "initiatorType": "link",
+        "name": "http://127.0.0.1:4187/assets/index-D7Rxnub5.css",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 0,
+        "duration": 1.699999999953434,
+        "encodedBodySize": 0,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4187/media/home.webp",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 894984,
+        "duration": 4.399999999906868,
+        "encodedBodySize": 236728,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4187/assets/StudioCanvas-Ctkwt1Kv.js",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 12023904,
+        "duration": 12.300000000046566,
+        "encodedBodySize": 12023904,
+        "initiatorType": "fetch",
+        "name": "http://127.0.0.1:4187/models/studio-desktop.glb",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 60027,
+        "duration": 2.2999999998137355,
+        "encodedBodySize": 60027,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4187/models/blue-hour.jpg",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 106948,
+        "duration": 5.199999999953434,
+        "encodedBodySize": 106948,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4187/media/motion.webp",
+        "transferSize": 107248
+      },
+      {
+        "decodedBodySize": 105628,
+        "duration": 5.199999999953434,
+        "encodedBodySize": 105628,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4187/media/clinical.webp",
+        "transferSize": 105928
+      },
+      {
+        "decodedBodySize": 109048,
+        "duration": 4.199999999953434,
+        "encodedBodySize": 109048,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4187/media/engineering.webp",
+        "transferSize": 109348
+      },
+      {
+        "decodedBodySize": 79416,
+        "duration": 22.30000000004657,
+        "encodedBodySize": 79416,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4187/media/projects.webp",
+        "transferSize": 79716
+      }
+    ],
+    "longTasks": [
+      {
+        "duration": 164,
+        "start": 821.9000000001397
+      }
+    ],
+    "heapAfter": 18264683,
+    "renderer": {
+      "dpr": 1,
+      "memory": {
+        "geometries": 15,
+        "textures": 10
+      },
+      "programs": 4,
+      "render": {
+        "calls": 14,
+        "frame": 749,
+        "lines": 0,
+        "points": 0,
+        "triangles": 132648
+      }
+    }
+  },
+  {
+    "name": "legacy",
+    "viewport": "emulated-mobile",
+    "cache": "cold-browser",
+    "initial": {
+      "imageFirst": false,
+      "modelBeforeOptIn": []
+    },
+    "environment": {
+      "cores": 32,
+      "dpr": 1,
+      "memory": 16,
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "heapBefore": 25165237,
+    "rafSchedulingIntervalsMs": {
+      "mean": 10.19142857142857,
+      "median": 6.099999999999909,
+      "p95": 24.299999999999272,
+      "samples": 245
+    },
+    "navigation": [
+      {
+        "activationStart": 0,
+        "confidence": {},
+        "connectEnd": 0.5999999998603016,
+        "connectStart": 0.5999999998603016,
+        "contentEncoding": "gzip",
+        "contentType": "text/html",
+        "criticalCHRestart": 0,
+        "decodedBodySize": 3412,
+        "deliveryType": "",
+        "domComplete": 189.89999999990687,
+        "domContentLoadedEventEnd": 188.80000000004657,
+        "domContentLoadedEventStart": 188.80000000004657,
+        "domInteractive": 180.30000000004657,
+        "domainLookupEnd": 0.5999999998603016,
+        "domainLookupStart": 0.5999999998603016,
+        "duration": 189.89999999990687,
+        "encodedBodySize": 1521,
+        "entryType": "navigation",
+        "fetchStart": 0.5999999998603016,
+        "finalResponseHeadersStart": 172.80000000004657,
+        "firstInterimResponseStart": 0,
+        "initiatorType": "navigation",
+        "loadEventEnd": 189.89999999990687,
+        "loadEventStart": 189.89999999990687,
+        "name": "http://127.0.0.1:4186/#home",
+        "navigationId": 9490,
+        "nextHopProtocol": "http/1.1",
+        "notRestoredReasons": null,
+        "redirectCount": 0,
+        "redirectEnd": 0,
+        "redirectStart": 0,
+        "renderBlockingStatus": "non-blocking",
+        "requestStart": 168.5999999998603,
+        "responseEnd": 173.19999999995343,
+        "responseStart": 172.80000000004657,
+        "responseStatus": 200,
+        "secureConnectionStart": 0,
+        "serverTiming": [],
+        "startTime": 0,
+        "transferSize": 1821,
+        "type": "navigate",
+        "unloadEventEnd": 0,
+        "unloadEventStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerFinalSourceType": "",
+        "workerMatchedSourceType": "",
+        "workerRouterEvaluationStart": 0,
+        "workerStart": 0
+      }
+    ],
+    "resources": [
+      {
+        "decodedBodySize": 11470,
+        "duration": 7.099999999860302,
+        "encodedBodySize": 5282,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4186/assets/studio-BsPzjhTE.js",
+        "transferSize": 5582
+      },
+      {
+        "decodedBodySize": 6796,
+        "duration": 8.300000000046566,
+        "encodedBodySize": 2240,
+        "initiatorType": "link",
+        "name": "http://127.0.0.1:4186/assets/studio-Dvor0B6X.css",
+        "transferSize": 2540
+      },
+      {
+        "decodedBodySize": 2193,
+        "duration": 6.800000000046566,
+        "encodedBodySize": 1065,
+        "initiatorType": "other",
+        "name": "http://127.0.0.1:4186/assets/preload-helper-CFijIu3R.js",
+        "transferSize": 1365
+      },
+      {
+        "decodedBodySize": 126588,
+        "duration": 8,
+        "encodedBodySize": 126588,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4186/media/home.webp",
+        "transferSize": 126888
+      },
+      {
+        "decodedBodySize": 0,
+        "duration": 1.699999999953434,
+        "encodedBodySize": 0,
+        "initiatorType": "other",
+        "name": "http://127.0.0.1:4186/favicon.ico",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 2498256,
+        "duration": 71.60000000009313,
+        "encodedBodySize": 638484,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4186/assets/src-DtptDQoW.js",
+        "transferSize": 638784
+      },
+      {
+        "decodedBodySize": 5972736,
+        "duration": 62.300000000046566,
+        "encodedBodySize": 5972736,
+        "initiatorType": "xmlhttprequest",
+        "name": "http://127.0.0.1:4186/models/studio-mobile.glb",
+        "transferSize": 5973036
+      },
+      {
+        "decodedBodySize": 60027,
+        "duration": 4.300000000046566,
+        "encodedBodySize": 60027,
+        "initiatorType": "xmlhttprequest",
+        "name": "http://127.0.0.1:4186/models/blue-hour.jpg",
+        "transferSize": 60327
+      }
+    ],
+    "longTasks": [
+      {
+        "duration": 95,
+        "start": 905.0999999998604
+      }
+    ],
+    "heapAfter": 23076160
+  },
+  {
+    "name": "legacy",
+    "viewport": "emulated-mobile",
+    "cache": "warm-browser",
+    "initial": {
+      "imageFirst": false,
+      "modelBeforeOptIn": []
+    },
+    "environment": {
+      "cores": 32,
+      "dpr": 1,
+      "memory": 16,
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "heapBefore": 36392029,
+    "rafSchedulingIntervalsMs": {
+      "mean": 6.84082191780822,
+      "median": 6.099999999999909,
+      "p95": 12.100000000000364,
+      "samples": 365
+    },
+    "navigation": [
+      {
+        "activationStart": 0,
+        "confidence": {},
+        "connectEnd": 0.5999999998603016,
+        "connectStart": 0.5999999998603016,
+        "contentEncoding": "gzip",
+        "contentType": "text/html",
+        "criticalCHRestart": 0,
+        "decodedBodySize": 3412,
+        "deliveryType": "cache",
+        "domComplete": 41.39999999990687,
+        "domContentLoadedEventEnd": 41.0999999998603,
+        "domContentLoadedEventStart": 41.0999999998603,
+        "domInteractive": 35.799999999813735,
+        "domainLookupEnd": 0.5999999998603016,
+        "domainLookupStart": 0.5999999998603016,
+        "duration": 41.39999999990687,
+        "encodedBodySize": 1521,
+        "entryType": "navigation",
+        "fetchStart": 0.5999999998603016,
+        "finalResponseHeadersStart": 4.2999999998137355,
+        "firstInterimResponseStart": 0,
+        "initiatorType": "navigation",
+        "loadEventEnd": 41.39999999990687,
+        "loadEventStart": 41.39999999990687,
+        "name": "http://127.0.0.1:4186/#home",
+        "navigationId": 5772,
+        "nextHopProtocol": "",
+        "notRestoredReasons": null,
+        "redirectCount": 0,
+        "redirectEnd": 0,
+        "redirectStart": 0,
+        "renderBlockingStatus": "non-blocking",
+        "requestStart": 1.7999999998137357,
+        "responseEnd": 5,
+        "responseStart": 4.2999999998137355,
+        "responseStatus": 200,
+        "secureConnectionStart": 0,
+        "serverTiming": [],
+        "startTime": 0,
+        "transferSize": 300,
+        "type": "reload",
+        "unloadEventEnd": 11,
+        "unloadEventStart": 11,
+        "workerCacheLookupStart": 0,
+        "workerFinalSourceType": "",
+        "workerMatchedSourceType": "",
+        "workerRouterEvaluationStart": 0,
+        "workerStart": 0
+      }
+    ],
+    "resources": [
+      {
+        "decodedBodySize": 11470,
+        "duration": 3.1000000000931323,
+        "encodedBodySize": 5282,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4186/assets/studio-BsPzjhTE.js",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 2193,
+        "duration": 3.3999999999068677,
+        "encodedBodySize": 1065,
+        "initiatorType": "other",
+        "name": "http://127.0.0.1:4186/assets/preload-helper-CFijIu3R.js",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 6796,
+        "duration": 3.6000000000931323,
+        "encodedBodySize": 2240,
+        "initiatorType": "link",
+        "name": "http://127.0.0.1:4186/assets/studio-Dvor0B6X.css",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 0,
+        "duration": 3.800000000046566,
+        "encodedBodySize": 0,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4186/media/home.webp",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 2498256,
+        "duration": 11.100000000093132,
+        "encodedBodySize": 638484,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4186/assets/src-DtptDQoW.js",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 5972736,
+        "duration": 36.199999999953434,
+        "encodedBodySize": 5972736,
+        "initiatorType": "xmlhttprequest",
+        "name": "http://127.0.0.1:4186/models/studio-mobile.glb",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 60027,
+        "duration": 1.8999999999068675,
+        "encodedBodySize": 60027,
+        "initiatorType": "xmlhttprequest",
+        "name": "http://127.0.0.1:4186/models/blue-hour.jpg",
+        "transferSize": 300
+      }
+    ],
+    "longTasks": [],
+    "heapAfter": 36829726
+  },
+  {
+    "name": "r3f",
+    "viewport": "emulated-mobile",
+    "cache": "cold-browser",
+    "initial": {
+      "imageFirst": true,
+      "modelBeforeOptIn": []
+    },
+    "environment": {
+      "cores": 32,
+      "dpr": 1,
+      "memory": 16,
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "heapBefore": 25022906,
+    "rafSchedulingIntervalsMs": {
+      "mean": 6.871703296703298,
+      "median": 6.099999999999454,
+      "p95": 6.199999999999818,
+      "samples": 364
+    },
+    "navigation": [
+      {
+        "activationStart": 0,
+        "confidence": {},
+        "connectEnd": 0.6999999999534339,
+        "connectStart": 0.6999999999534339,
+        "contentEncoding": "",
+        "contentType": "text/html",
+        "criticalCHRestart": 0,
+        "decodedBodySize": 412,
+        "deliveryType": "",
+        "domComplete": 367.5,
+        "domContentLoadedEventEnd": 367.30000000004657,
+        "domContentLoadedEventStart": 367.30000000004657,
+        "domInteractive": 264.89999999990687,
+        "domainLookupEnd": 0.6999999999534339,
+        "domainLookupStart": 0.6999999999534339,
+        "duration": 367.5,
+        "encodedBodySize": 412,
+        "entryType": "navigation",
+        "fetchStart": 0.6999999999534339,
+        "finalResponseHeadersStart": 257.69999999995343,
+        "firstInterimResponseStart": 0,
+        "initiatorType": "navigation",
+        "loadEventEnd": 367.5,
+        "loadEventStart": 367.5,
+        "name": "http://127.0.0.1:4187/#home",
+        "navigationId": 8532,
+        "nextHopProtocol": "http/1.1",
+        "notRestoredReasons": null,
+        "redirectCount": 0,
+        "redirectEnd": 0,
+        "redirectStart": 0,
+        "renderBlockingStatus": "non-blocking",
+        "requestStart": 254.5,
+        "responseEnd": 258.10000000009313,
+        "responseStart": 257.69999999995343,
+        "responseStatus": 200,
+        "secureConnectionStart": 0,
+        "serverTiming": [],
+        "startTime": 0,
+        "transferSize": 712,
+        "type": "navigate",
+        "unloadEventEnd": 0,
+        "unloadEventStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerFinalSourceType": "",
+        "workerMatchedSourceType": "",
+        "workerRouterEvaluationStart": 0,
+        "workerStart": 0
+      }
+    ],
+    "resources": [
+      {
+        "decodedBodySize": 202372,
+        "duration": 63.800000000046566,
+        "encodedBodySize": 64218,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4187/assets/index-ETbihH4Q.js",
+        "transferSize": 64518
+      },
+      {
+        "decodedBodySize": 4506,
+        "duration": 12.400000000139698,
+        "encodedBodySize": 1753,
+        "initiatorType": "link",
+        "name": "http://127.0.0.1:4187/assets/index-D7Rxnub5.css",
+        "transferSize": 2053
+      },
+      {
+        "decodedBodySize": 126588,
+        "duration": 24.4000000001397,
+        "encodedBodySize": 126588,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4187/media/home.webp",
+        "transferSize": 126888
+      },
+      {
+        "decodedBodySize": 0,
+        "duration": 3.300000000046566,
+        "encodedBodySize": 0,
+        "initiatorType": "other",
+        "name": "http://127.0.0.1:4187/favicon.ico",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 894984,
+        "duration": 45.5,
+        "encodedBodySize": 236728,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4187/assets/StudioCanvas-Ctkwt1Kv.js",
+        "transferSize": 237028
+      },
+      {
+        "decodedBodySize": 5972736,
+        "duration": 57.9000000001397,
+        "encodedBodySize": 5972736,
+        "initiatorType": "fetch",
+        "name": "http://127.0.0.1:4187/models/studio-mobile.glb",
+        "transferSize": 5973036
+      },
+      {
+        "decodedBodySize": 60027,
+        "duration": 4.199999999953434,
+        "encodedBodySize": 60027,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4187/models/blue-hour.jpg",
+        "transferSize": 60327
+      }
+    ],
+    "longTasks": [
+      {
+        "duration": 140,
+        "start": 1184.5
+      }
+    ],
+    "heapAfter": 24235117,
+    "renderer": {
+      "dpr": 1,
+      "memory": {
+        "geometries": 15,
+        "textures": 10
+      },
+      "programs": 4,
+      "render": {
+        "calls": 20,
+        "frame": 202,
+        "lines": 0,
+        "points": 0,
+        "triangles": 103840
+      }
+    }
+  },
+  {
+    "name": "r3f",
+    "viewport": "emulated-mobile",
+    "cache": "warm-browser",
+    "initial": {
+      "imageFirst": true,
+      "modelBeforeOptIn": []
+    },
+    "environment": {
+      "cores": 32,
+      "dpr": 1,
+      "memory": 16,
+      "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "heapBefore": 35859726,
+    "rafSchedulingIntervalsMs": {
+      "mean": 6.501038961038962,
+      "median": 6.099999999999909,
+      "p95": 12.099999999999454,
+      "samples": 385
+    },
+    "navigation": [
+      {
+        "activationStart": 0,
+        "confidence": {},
+        "connectEnd": 1.8999999999068675,
+        "connectStart": 1.8999999999068675,
+        "contentEncoding": "",
+        "contentType": "text/html",
+        "criticalCHRestart": 0,
+        "decodedBodySize": 412,
+        "deliveryType": "cache",
+        "domComplete": 42.89999999990687,
+        "domContentLoadedEventEnd": 42.800000000046566,
+        "domContentLoadedEventStart": 42.699999999953434,
+        "domInteractive": 17,
+        "domainLookupEnd": 1.8999999999068675,
+        "domainLookupStart": 1.8999999999068675,
+        "duration": 42.89999999990687,
+        "encodedBodySize": 412,
+        "entryType": "navigation",
+        "fetchStart": 1.8999999999068675,
+        "finalResponseHeadersStart": 7.199999999953434,
+        "firstInterimResponseStart": 0,
+        "initiatorType": "navigation",
+        "loadEventEnd": 42.89999999990687,
+        "loadEventStart": 42.89999999990687,
+        "name": "http://127.0.0.1:4187/#home",
+        "navigationId": 3299,
+        "nextHopProtocol": "",
+        "notRestoredReasons": null,
+        "redirectCount": 0,
+        "redirectEnd": 0,
+        "redirectStart": 0,
+        "renderBlockingStatus": "non-blocking",
+        "requestStart": 3.3999999999068677,
+        "responseEnd": 7.800000000046566,
+        "responseStart": 7.199999999953434,
+        "responseStatus": 200,
+        "secureConnectionStart": 0,
+        "serverTiming": [],
+        "startTime": 0,
+        "transferSize": 300,
+        "type": "reload",
+        "unloadEventEnd": 11.100000000093132,
+        "unloadEventStart": 11.100000000093132,
+        "workerCacheLookupStart": 0,
+        "workerFinalSourceType": "",
+        "workerMatchedSourceType": "",
+        "workerRouterEvaluationStart": 0,
+        "workerStart": 0
+      }
+    ],
+    "resources": [
+      {
+        "decodedBodySize": 202372,
+        "duration": 20,
+        "encodedBodySize": 64218,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4187/assets/index-ETbihH4Q.js",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 4506,
+        "duration": 19.5,
+        "encodedBodySize": 1753,
+        "initiatorType": "link",
+        "name": "http://127.0.0.1:4187/assets/index-D7Rxnub5.css",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 0,
+        "duration": 2.300000000046566,
+        "encodedBodySize": 0,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4187/media/home.webp",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 894984,
+        "duration": 22.69999999995343,
+        "encodedBodySize": 236728,
+        "initiatorType": "script",
+        "name": "http://127.0.0.1:4187/assets/StudioCanvas-Ctkwt1Kv.js",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 5972736,
+        "duration": 8.5,
+        "encodedBodySize": 5972736,
+        "initiatorType": "fetch",
+        "name": "http://127.0.0.1:4187/models/studio-mobile.glb",
+        "transferSize": 300
+      },
+      {
+        "decodedBodySize": 0,
+        "duration": 1.800000000046566,
+        "encodedBodySize": 0,
+        "initiatorType": "img",
+        "name": "http://127.0.0.1:4187/models/blue-hour.jpg",
+        "transferSize": 300
+      }
+    ],
+    "longTasks": [
+      {
+        "duration": 53,
+        "start": 755.1000000000931
+      }
+    ],
+    "heapAfter": 30090677,
+    "renderer": {
+      "dpr": 1,
+      "memory": {
+        "geometries": 15,
+        "textures": 10
+      },
+      "programs": 4,
+      "render": {
+        "calls": 20,
+        "frame": 212,
+        "lines": 0,
+        "points": 0,
+        "triangles": 103840
+      }
+    }
+  }
+]

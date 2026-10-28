@@ -1,0 +1,7 @@
+[
+  {
+    "name": "no covered projected markers RED",
+    "pass": false,
+    "error": "('home', 'visible marker covered by interface', [{'background': 'rgb(21, 35, 36)', 'color': 'rgb(243, 238, 228)', 'hidden': False, 'hit': True, 'label': 'Inspect The shared center', 'x': 960, 'y': 572.154}, {'background': 'rgb(21, 35, 36)', 'color': 'rgb(243, 238, 228)', 'hidden': False, 'hit': False, 'label': 'Inspect Material language', 'x': 899.047, 'y': 735.458}, {'background': 'rgb(21, 35, 36)', 'color': 'rgb(243, 238, 228)', 'hidden': False, 'hit': True, 'label': 'Inspect At blue hour', 'x': 960, 'y': 473.992}])"
+  }
+]

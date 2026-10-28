@@ -1,0 +1,136 @@
+{
+  "method": "Screenshot left interior fill strip, outside text/border; computed opaque text color; screenshots visually inspected. Scope: locked desktop anchors only. Axe incomplete retained, not suppressed.",
+  "textToFillRatio": 13.993996541496845,
+  "markers": {
+    "home": [
+      {
+        "label": "Inspect The shared center",
+        "paintedFillMedianRGB": [
+          21.0,
+          35.0,
+          36.0
+        ],
+        "computedTextRGB": [
+          243,
+          238,
+          228
+        ],
+        "declaredContrast": 13.993996541496845,
+        "physicallyClickable": true
+      },
+      {
+        "label": "Inspect At blue hour",
+        "paintedFillMedianRGB": [
+          21.0,
+          35.0,
+          36.0
+        ],
+        "computedTextRGB": [
+          243,
+          238,
+          228
+        ],
+        "declaredContrast": 13.993996541496845,
+        "physicallyClickable": true
+      }
+    ],
+    "motion": [
+      {
+        "label": "Inspect Motion display",
+        "paintedFillMedianRGB": [
+          21.0,
+          35.0,
+          36.0
+        ],
+        "computedTextRGB": [
+          243,
+          238,
+          228
+        ],
+        "declaredContrast": 13.993996541496845,
+        "physicallyClickable": true
+      }
+    ],
+    "clinical": [
+      {
+        "label": "Inspect Anatomy prints",
+        "paintedFillMedianRGB": [
+          21.0,
+          35.0,
+          36.0
+        ],
+        "computedTextRGB": [
+          243,
+          238,
+          228
+        ],
+        "declaredContrast": 13.993996541496845,
+        "physicallyClickable": true
+      }
+    ],
+    "engineering": [
+      {
+        "label": "Inspect Actuator study",
+        "paintedFillMedianRGB": [
+          21.0,
+          35.0,
+          36.0
+        ],
+        "computedTextRGB": [
+          243,
+          238,
+          228
+        ],
+        "declaredContrast": 13.993996541496845,
+        "physicallyClickable": true
+      },
+      {
+        "label": "Inspect Electronics bench",
+        "paintedFillMedianRGB": [
+          21.0,
+          35.0,
+          36.0
+        ],
+        "computedTextRGB": [
+          243,
+          238,
+          228
+        ],
+        "declaredContrast": 13.993996541496845,
+        "physicallyClickable": true
+      },
+      {
+        "label": "Inspect Tool wall",
+        "paintedFillMedianRGB": [
+          21.0,
+          35.0,
+          36.0
+        ],
+        "computedTextRGB": [
+          243,
+          238,
+          228
+        ],
+        "declaredContrast": 13.993996541496845,
+        "physicallyClickable": true
+      }
+    ],
+    "projects": [
+      {
+        "label": "Inspect Project wall",
+        "paintedFillMedianRGB": [
+          21.0,
+          35.0,
+          36.0
+        ],
+        "computedTextRGB": [
+          243,
+          238,
+          228
+        ],
+        "declaredContrast": 13.993996541496845,
+        "physicallyClickable": true
+      }
+    ]
+  }
+}

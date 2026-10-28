@@ -1,0 +1,25 @@
+[
+  {
+    "name": "inspection continuity",
+    "pass": true,
+    "observed": {
+      "after": [
+        0,
+        3.1639999999999997,
+        17.3
+      ],
+      "before": [
+        0,
+        3.1639999999999997,
+        17.3
+      ],
+      "from": "0,3.05,15.2",
+      "firstFrameDisplacement": 0.0
+    }
+  },
+  {
+    "name": "focus routes RED",
+    "pass": false,
+    "error": "{'controls': None, 'tag': 'BODY'}"
+  }
+]
