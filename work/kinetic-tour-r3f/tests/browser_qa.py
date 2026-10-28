@@ -47,6 +47,7 @@ def three():
  click('#mode');wait_mode('three');time.sleep(1.5);shot('prototype-home-3d.png')
  assert_(ev('document.querySelector("canvas").dataset.position==="0,3.05,15.2"'))
  result=ev('''new Promise(resolve=>{const start=performance.now();document.querySelector('[data-zone=motion]').click();let firstDone=null,mid=null;function tick(){const elapsed=performance.now()-start;const c=document.querySelector('canvas');if(elapsed>=500&&!mid)mid=c.dataset.position;if(c.dataset.transition==='false'&&elapsed>100&&!firstDone)firstDone=elapsed;if(elapsed>1550)resolve({firstDone,mid,end:c.dataset.position});else requestAnimationFrame(tick);}requestAnimationFrame(tick);})''')
+ (E/'camera-timing.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
  assert_(result['end']=='-8.4,2.25,5.2');assert_(1200<result['firstDone']<1550);shot('prototype-motion-3d.png')
  # select repeatedly while moving, then verify actual last destination
  ev('document.querySelector("[data-zone=home]").click();setTimeout(()=>document.querySelector("[data-zone=motion]").click(),120);true');time.sleep(1.7)

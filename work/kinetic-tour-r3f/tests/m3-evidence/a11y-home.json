@@ -1,0 +1,68 @@
+{
+  "axeVersion": "4.12.1",
+  "counts": {
+    "inapplicable": 54,
+    "incomplete": 1,
+    "passes": 35,
+    "violations": 0
+  },
+  "incomplete": [
+    {
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axeAPI",
+      "id": "color-contrast",
+      "impact": "serious",
+      "nodeCount": 3,
+      "nodes": [
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<button aria-label=\"Inspect The shared center\" style=\"left: 960px; top: 572.154px;\">1</button>",
+          "target": [
+            "button[aria-label=\"Inspect The shared center\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+          "html": "<button aria-label=\"Inspect At blue hour\" style=\"left: 960px; top: 473.992px;\">3</button>",
+          "target": [
+            "button[aria-label=\"Inspect At blue hour\"]"
+          ]
+        },
+        {
+          "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+          "html": "<span aria-hidden=\"true\">\u2212</span>",
+          "target": [
+            "button[aria-controls=\"detail-0\"] > span[aria-hidden=\"true\"]"
+          ]
+        }
+      ],
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ]
+    }
+  ],
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 11677035664275010974
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "not_configured",
+    "reused": true,
+    "saveStatus": "not_attempted"
+  },
+  "url": "http://127.0.0.1:4183/#home",
+  "violations": []
+}

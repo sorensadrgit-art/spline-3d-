@@ -1,0 +1,49 @@
+[
+  {
+    "name": "unit",
+    "command": [
+      "npm.cmd",
+      "test"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m3-20261028\\work\\kinetic-tour-r3f",
+    "exit": 0
+  },
+  {
+    "name": "build",
+    "command": [
+      "npm.cmd",
+      "run",
+      "build"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m3-20261028\\work\\kinetic-tour-r3f",
+    "exit": 0
+  },
+  {
+    "name": "legacy-unit",
+    "command": [
+      "npm.cmd",
+      "test"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m3-20261028\\work\\kinetic-tour",
+    "exit": 0
+  },
+  {
+    "name": "legacy-build",
+    "command": [
+      "npm.cmd",
+      "run",
+      "build"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m3-20261028\\work\\kinetic-tour",
+    "exit": 0
+  },
+  {
+    "name": "validator",
+    "command": [
+      "node",
+      "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m3-20261028\\work\\kinetic-tour-r3f\\tests\\m3-evidence\\validate-models.mjs"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m3-20261028",
+    "exit": 0
+  }
+]
