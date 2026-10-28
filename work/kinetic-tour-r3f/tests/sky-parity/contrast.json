@@ -1,0 +1,15 @@
+{
+  "foreground": [
+    243,
+    238,
+    228
+  ],
+  "background": [
+    21,
+    35,
+    36
+  ],
+  "ratio": 13.993996541496845,
+  "method": "WCAG sRGB linearization, relative luminance .2126 R + .7152 G + .0722 B; (Llighter+.05)/(Ldarker+.05)",
+  "scope": "All three markers share opaque computed colors at both anchors. Ancestor opacity/filter/blend observed in live-observations.json; stylesheet puts hotspots z2 above scene pseudo overlay z1. Text/background ratio passes 4.5:1. Axe compositing incomplete retained as MANUAL REVIEW; no blanket accessibility PASS."
+}

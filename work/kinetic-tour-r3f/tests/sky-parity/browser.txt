@@ -1,0 +1,9 @@
+PASS image/history/keyboard/skip {"images": 2, "history": true, "skipFocus": true, "keyboard": true}
+PASS model/camera/rapid/wheel/reset/Escape {"end": "-8.4,2.25,5.2", "firstDone": 1363, "mid": "-2.5390364439714768,2.8081870053360496,12.177337566700622"}
+PASS reduced-motion/drag/focus {"reducedMotionCut": true, "boundedDrag": {"distance": 1, "pitch": 0.3, "yaw": 0.15}, "staleDragCancelled": true, "hotspotFocus": true}
+PASS mobile {"imageFirst": true, "mobileModel": true, "overflow": false}
+PASS model failure/retry {"mode": "three", "status": "3D ready. Drag to inspect; wheel adjusts distance."}
+PASS sky failure/retry {"mode": "three", "status": "3D ready. Drag to inspect; wheel adjusts distance."}
+PASS timeout {"mode": "images", "status": "3D loading timed out. Image navigation remains ready."}
+PASS no WebGL {"mode": "images", "status": "WebGL unavailable. Image navigation remains ready."}
+PASS context loss {"mode": "images", "status": "Graphics context lost. Image navigation remains ready."}

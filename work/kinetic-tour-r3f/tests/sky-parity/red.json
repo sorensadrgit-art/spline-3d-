@@ -1,0 +1,152 @@
+{
+  "home": {
+    "reference": {
+      "path": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-sky-parity-20261028\\work\\kinetic-tour-r3f\\tests\\evidence\\legacy-home-3d.png",
+      "patches": [
+        {
+          "box": [
+            300,
+            110,
+            340,
+            140
+          ],
+          "rgb": [
+            27.0,
+            35.0,
+            97.0
+          ],
+          "hue": 233.14285714285717,
+          "redBlue": 0.27835051546391754
+        },
+        {
+          "box": [
+            1500,
+            110,
+            1540,
+            140
+          ],
+          "rgb": [
+            99.0,
+            96.0,
+            205.0
+          ],
+          "hue": 241.651376146789,
+          "redBlue": 0.48292682926829267
+        }
+      ],
+      "direction": 0.20457631380437513
+    },
+    "candidate": {
+      "path": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-sky-parity-20261028\\work\\kinetic-tour-r3f\\tests\\evidence\\prototype-home-3d.png",
+      "patches": [
+        {
+          "box": [
+            300,
+            110,
+            340,
+            140
+          ],
+          "rgb": [
+            78.0,
+            68.0,
+            123.0
+          ],
+          "hue": 250.90909090909088,
+          "redBlue": 0.6341463414634146
+        },
+        {
+          "box": [
+            1500,
+            110,
+            1540,
+            140
+          ],
+          "rgb": [
+            37.0,
+            45.0,
+            117.0
+          ],
+          "hue": 234.0,
+          "redBlue": 0.3162393162393162
+        }
+      ],
+      "direction": -0.3179070252240984
+    },
+    "pass": false
+  },
+  "motion": {
+    "reference": {
+      "path": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-sky-parity-20261028\\work\\kinetic-tour-r3f\\tests\\evidence\\legacy-motion-3d.png",
+      "patches": [
+        {
+          "box": [
+            300,
+            110,
+            340,
+            140
+          ],
+          "rgb": [
+            25.0,
+            32.0,
+            79.0
+          ],
+          "hue": 232.22222222222223,
+          "redBlue": 0.31645569620253167
+        },
+        {
+          "box": [
+            1550,
+            200,
+            1590,
+            225
+          ],
+          "rgb": [
+            104.0,
+            83.0,
+            142.0
+          ],
+          "hue": 261.35593220338984,
+          "redBlue": 0.7323943661971831
+        }
+      ],
+      "direction": 0.41593866999465146
+    },
+    "candidate": {
+      "path": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-sky-parity-20261028\\work\\kinetic-tour-r3f\\tests\\evidence\\prototype-motion-3d.png",
+      "patches": [
+        {
+          "box": [
+            300,
+            110,
+            340,
+            140
+          ],
+          "rgb": [
+            87.0,
+            65.0,
+            101.0
+          ],
+          "hue": 276.6666666666667,
+          "redBlue": 0.8613861386138614
+        },
+        {
+          "box": [
+            1550,
+            200,
+            1590,
+            225
+          ],
+          "rgb": [
+            34.0,
+            37.0,
+            88.0
+          ],
+          "hue": 236.66666666666669,
+          "redBlue": 0.38636363636363635
+        }
+      ],
+      "direction": -0.475022502250225
+    },
+    "pass": false
+  }
+}
