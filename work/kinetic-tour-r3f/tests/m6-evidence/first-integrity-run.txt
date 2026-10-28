@@ -1,0 +1,6 @@
+FINAL_IMMUTABLE_PASS 11 protected-source-diff empty
+Traceback (most recent call last):
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\m6-evidence\final_integrity.py", line 14, in <module>
+    d=json.loads(f.read_text());assert d['counts']['violations']==0;a.append({'file':f.name,'axe':d['axeVersion'],'counts':d['counts'],'incompleteRules':[x['id'] for x in d['incomplete']]})
+                                       ~^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str

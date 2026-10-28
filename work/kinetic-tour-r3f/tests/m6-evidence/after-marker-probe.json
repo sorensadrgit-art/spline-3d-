@@ -1,0 +1,51 @@
+{
+  "markers": [
+    {
+      "centerHit": true,
+      "hidden": false,
+      "label": "Inspect The shared center",
+      "rect": {
+        "height": 44,
+        "width": 44,
+        "x": 173,
+        "y": 197.359375
+      }
+    },
+    {
+      "centerHit": false,
+      "hidden": true,
+      "label": "Inspect Material language",
+      "rect": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "centerHit": false,
+      "hidden": true,
+      "label": "Inspect At blue hour",
+      "rect": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "modelResources": [
+    "http://127.0.0.1:4192/models/studio-mobile.glb"
+  ],
+  "overlap": [],
+  "semanticDetails": [
+    "01 The shared center+",
+    "02 Material language+",
+    "03 At blue hour+"
+  ],
+  "viewport": [
+    390,
+    844
+  ],
+  "status": "PASS"
+}

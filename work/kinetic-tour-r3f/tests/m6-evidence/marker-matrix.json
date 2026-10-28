@@ -1,0 +1,1102 @@
+[
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect The shared center",
+        "w": 44,
+        "x": 138,
+        "y": 197.359375
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Material language",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect At blue hour",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      320,
+      844
+    ],
+    "zone": "home",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 160,
+        "y": 219.37127201819425
+      },
+      {
+        "x": 144.1310483428112,
+        "y": 261.88707935638024
+      },
+      {
+        "x": 160,
+        "y": 193.8149579876063
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Capture rig",
+        "w": 44,
+        "x": 7.734375,
+        "y": 146.9375
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Calibration floor",
+        "w": 44,
+        "x": 137.515625,
+        "y": 258.3125
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Motion display",
+        "w": 44,
+        "x": 194.65625,
+        "y": 187.578125
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      320,
+      844
+    ],
+    "zone": "motion",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 29.740118701726068,
+        "y": 168.9522585766149
+      },
+      {
+        "x": 159.52804819532244,
+        "y": 280.3198153165475
+      },
+      {
+        "x": 216.66087176612285,
+        "y": 209.58707320450617
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Study model",
+        "w": 44,
+        "x": 67.03125,
+        "y": 221.6875
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Anatomy prints",
+        "w": 44,
+        "x": 121.0625,
+        "y": 149.03125
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Analysis desk",
+        "w": 44,
+        "x": 144.578125,
+        "y": 243.421875
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      320,
+      844
+    ],
+    "zone": "clinical",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 89.0369359696095,
+        "y": 243.6963023153943
+      },
+      {
+        "x": 143.06848422879494,
+        "y": 171.0404262310567
+      },
+      {
+        "x": 166.5787974414829,
+        "y": 265.4220332221038
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Actuator study",
+        "w": 44,
+        "x": 175.25,
+        "y": 214.546875
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Electronics bench",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Tool wall",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      320,
+      844
+    ],
+    "zone": "engineering",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 197.2641717575578,
+        "y": 236.5539528808276
+      },
+      {
+        "x": 164.6619900480104,
+        "y": 262.07588771989873
+      },
+      {
+        "x": 155.143198535298,
+        "y": 191.96119785165817
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Materials table",
+        "w": 44,
+        "x": 138.34375,
+        "y": 242.0625
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Project wall",
+        "w": 44,
+        "x": 178.65625,
+        "y": 144.703125
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Shared seating",
+        "w": 44,
+        "x": 74.921875,
+        "y": 278.078125
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      320,
+      844
+    ],
+    "zone": "projects",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 160.3568392371594,
+        "y": 264.06613461929237
+      },
+      {
+        "x": 200.66130468971792,
+        "y": 166.70709705684698
+      },
+      {
+        "x": 96.93146078902188,
+        "y": 300.08966248509046
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect The shared center",
+        "w": 44,
+        "x": 173,
+        "y": 197.359375
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Material language",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect At blue hour",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      390,
+      844
+    ],
+    "zone": "home",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 195,
+        "y": 219.37127201819425
+      },
+      {
+        "x": 179.13104834281123,
+        "y": 261.88707935638024
+      },
+      {
+        "x": 195,
+        "y": 193.8149579876063
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Capture rig",
+        "w": 44,
+        "x": 42.734375,
+        "y": 146.9375
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Calibration floor",
+        "w": 44,
+        "x": 172.515625,
+        "y": 258.3125
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Motion display",
+        "w": 44,
+        "x": 229.65625,
+        "y": 187.578125
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      390,
+      844
+    ],
+    "zone": "motion",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 64.74011870172608,
+        "y": 168.9522585766149
+      },
+      {
+        "x": 194.52804819532244,
+        "y": 280.3198153165475
+      },
+      {
+        "x": 251.66087176612285,
+        "y": 209.58707320450617
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Study model",
+        "w": 44,
+        "x": 102.03125,
+        "y": 221.6875
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Anatomy prints",
+        "w": 44,
+        "x": 156.0625,
+        "y": 149.03125
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Analysis desk",
+        "w": 44,
+        "x": 179.578125,
+        "y": 243.421875
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      390,
+      844
+    ],
+    "zone": "clinical",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 124.0369359696095,
+        "y": 243.6963023153943
+      },
+      {
+        "x": 178.06848422879494,
+        "y": 171.0404262310567
+      },
+      {
+        "x": 201.57879744148292,
+        "y": 265.4220332221038
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Actuator study",
+        "w": 44,
+        "x": 210.25,
+        "y": 214.546875
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Electronics bench",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Tool wall",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      390,
+      844
+    ],
+    "zone": "engineering",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 232.2641717575578,
+        "y": 236.5539528808276
+      },
+      {
+        "x": 199.6619900480104,
+        "y": 262.07588771989873
+      },
+      {
+        "x": 190.143198535298,
+        "y": 191.96119785165817
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Materials table",
+        "w": 44,
+        "x": 173.34375,
+        "y": 242.0625
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Project wall",
+        "w": 44,
+        "x": 213.65625,
+        "y": 144.703125
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Shared seating",
+        "w": 44,
+        "x": 109.921875,
+        "y": 278.078125
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      390,
+      844
+    ],
+    "zone": "projects",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 195.3568392371594,
+        "y": 264.06613461929237
+      },
+      {
+        "x": 235.6613046897179,
+        "y": 166.70709705684698
+      },
+      {
+        "x": 131.93146078902188,
+        "y": 300.08966248509046
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect The shared center",
+        "w": 44,
+        "x": 193,
+        "y": 197.359375
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Material language",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect At blue hour",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      430,
+      844
+    ],
+    "zone": "home",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 215,
+        "y": 219.37127201819425
+      },
+      {
+        "x": 199.1310483428112,
+        "y": 261.88707935638024
+      },
+      {
+        "x": 215,
+        "y": 193.8149579876063
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Capture rig",
+        "w": 44,
+        "x": 62.734375,
+        "y": 146.9375
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Calibration floor",
+        "w": 44,
+        "x": 192.515625,
+        "y": 258.3125
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Motion display",
+        "w": 44,
+        "x": 249.65625,
+        "y": 187.578125
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      430,
+      844
+    ],
+    "zone": "motion",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 84.74011870172605,
+        "y": 168.9522585766149
+      },
+      {
+        "x": 214.52804819532244,
+        "y": 280.3198153165475
+      },
+      {
+        "x": 271.6608717661229,
+        "y": 209.58707320450617
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Study model",
+        "w": 44,
+        "x": 122.03125,
+        "y": 221.6875
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Anatomy prints",
+        "w": 44,
+        "x": 176.0625,
+        "y": 149.03125
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Analysis desk",
+        "w": 44,
+        "x": 199.578125,
+        "y": 243.421875
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      430,
+      844
+    ],
+    "zone": "clinical",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 144.0369359696095,
+        "y": 243.6963023153943
+      },
+      {
+        "x": 198.06848422879497,
+        "y": 171.0404262310567
+      },
+      {
+        "x": 221.5787974414829,
+        "y": 265.4220332221038
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Actuator study",
+        "w": 44,
+        "x": 230.25,
+        "y": 214.546875
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Electronics bench",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Tool wall",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      430,
+      844
+    ],
+    "zone": "engineering",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 252.26417175755785,
+        "y": 236.5539528808276
+      },
+      {
+        "x": 219.6619900480104,
+        "y": 262.07588771989873
+      },
+      {
+        "x": 210.143198535298,
+        "y": 191.96119785165817
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Materials table",
+        "w": 44,
+        "x": 193.34375,
+        "y": 242.0625
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Project wall",
+        "w": 44,
+        "x": 233.65625,
+        "y": 144.703125
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Shared seating",
+        "w": 44,
+        "x": 129.921875,
+        "y": 278.078125
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      430,
+      844
+    ],
+    "zone": "projects",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-mobile.glb"
+    ],
+    "projections": [
+      {
+        "x": 215.3568392371594,
+        "y": 264.06613461929237
+      },
+      {
+        "x": 255.66130468971792,
+        "y": 166.70709705684698
+      },
+      {
+        "x": 151.93146078902186,
+        "y": 300.08966248509046
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect The shared center",
+        "w": 44,
+        "x": 938,
+        "y": 550.140625
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Material language",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect At blue hour",
+        "w": 44,
+        "x": 938,
+        "y": 451.984375
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      1920,
+      1080
+    ],
+    "zone": "home",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-desktop.glb"
+    ],
+    "projections": [
+      {
+        "x": 960,
+        "y": 572.1542335548762
+      },
+      {
+        "x": 899.0470197662559,
+        "y": 735.4583522067325
+      },
+      {
+        "x": 960,
+        "y": 473.9918887696039
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Capture rig",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Calibration floor",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Motion display",
+        "w": 44,
+        "x": 1155.625,
+        "y": 512.5625
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      1920,
+      1080
+    ],
+    "zone": "motion",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-desktop.glb"
+    ],
+    "projections": [
+      {
+        "x": 459.6690303466407,
+        "y": 378.4937324645423
+      },
+      {
+        "x": 958.1872230980828,
+        "y": 806.258882380692
+      },
+      {
+        "x": 1177.6356114376758,
+        "y": 534.5729181802348
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Study model",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Anatomy prints",
+        "w": 44,
+        "x": 872.953125,
+        "y": 364.5
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Analysis desk",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      1920,
+      1080
+    ],
+    "zone": "clinical",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-desktop.glb"
+    ],
+    "projections": [
+      {
+        "x": 687.4293644211298,
+        "y": 665.5871913784507
+      },
+      {
+        "x": 894.9656884447013,
+        "y": 386.5144287597683
+      },
+      {
+        "x": 985.2693006491616,
+        "y": 749.0361850566443
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Actuator study",
+        "w": 44,
+        "x": 1081.125,
+        "y": 616.140625
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Electronics bench",
+        "w": 44,
+        "x": 955.90625,
+        "y": 714.171875
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Tool wall",
+        "w": 44,
+        "x": 919.34375,
+        "y": 444.859375
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      1920,
+      1080
+    ],
+    "zone": "engineering",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-desktop.glb"
+    ],
+    "projections": [
+      {
+        "x": 1103.1324748876095,
+        "y": 638.1532755589127
+      },
+      {
+        "x": 977.9068027545198,
+        "y": 736.1835691396539
+      },
+      {
+        "x": 941.344922457868,
+        "y": 466.8715567296885
+      }
+    ]
+  },
+  {
+    "markers": [
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Materials table",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "h": 44,
+        "hidden": false,
+        "hit": true,
+        "label": "Inspect Project wall",
+        "w": 44,
+        "x": 1094.171875,
+        "y": 347.859375
+      },
+      {
+        "h": 0,
+        "hidden": true,
+        "hit": false,
+        "label": "Inspect Shared seating",
+        "w": 0,
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      1920,
+      1080
+    ],
+    "zone": "projects",
+    "dpr": 1,
+    "resources": [
+      "http://127.0.0.1:4192/models/studio-desktop.glb"
+    ],
+    "projections": [
+      {
+        "x": 961.3706270860904,
+        "y": 743.8281497357549
+      },
+      {
+        "x": 1116.180934605587,
+        "y": 369.87001939941473
+      },
+      {
+        "x": 717.7524018635219,
+        "y": 882.1952850946323
+      }
+    ]
+  }
+]

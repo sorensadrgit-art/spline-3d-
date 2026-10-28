@@ -1,0 +1,2 @@
+python -u work/kinetic-tour-r3f/tests/m6-evidence/mobile_markers.py
+exit 1: AssertionError on two actual overlap pairs.

@@ -1,0 +1,9 @@
+# M6 Plan Forge
+Scope: isolated branch fix/kinetic-m6-mobile-hotspots-20261028 at 6a7f4e57bee502e0d762dce5d68036891ac29d8d. Owner explicitly authorizes the bounded collision repair in CODEX_M6_EXECUTION_BRIEF and current request.
+Alternatives: retain authoritative PlayCanvas; repair only sibling R3F marker visibility; reject Spline replacement and anchor shifts because they change geometry semantics or scope.
+Sequence: verify immutable assets and tooling; reproduce 390x844 Home with screenshot and failing browser exit; write deterministic geometry regression and observe assertion failure; implement stable anchor-order greedy selection with 44px rectangles and >=4px separation; transfer disappearing-marker focus to corresponding semantic detail; verify resize and camera motion; full unit/browser/build/hash/a11y matrix; independent read-only reviewer; draft PR linking #1 and #10.
+Acceptance: all visible projected markers remain grounded, >=44px, center-hit, pairwise separated >=4px; every semantic detail stays accessible. Five zones at 320/390/430 and desktop1920; existing controls, camera, assets, fallbacks and sky preserved.
+Ownership: Codex runtime/tests/docs only within R3F and M6 documents; reviewer read-only. No protected asset or PlayCanvas source edits. No main/merge/deploy.
+Rollback: revert scoped feature commit only; PlayCanvas remains authoritative. Real phone, Antigravity, manual screen reader and hardware GPU reset pending absent actual execution.
+
+Execution refinement: a real resize regression exposed one-step-stale projected coordinates under demand rendering. The bounded repair invalidates after viewport size commits; a four-resize browser probe checks independently projected coordinates and focus. No camera, anchor, asset, style or animation-owner changes.

@@ -1,0 +1,20 @@
+MATRIX_PASS 320 5
+Traceback (most recent call last):
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\m6-evidence\matrix.py", line 32, in <module>
+    run('focus','.details button[aria-controls=detail-'+str(i)+']');run('press','Enter')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\m6-evidence\browser.py", line 9, in run
+    return original_run(*(x.replace('127.0.0.1:4180','127.0.0.1:4192') if isinstance(x,str) else x for x in args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\browser_qa.py", line 8, in run
+    p=subprocess.run([*PREFIX,'--session',SESSION,*args,'--json'],capture_output=True,text=True,encoding='utf-8',timeout=60)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\soren\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\soren\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\soren\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1630, in _communicate
+    raise TimeoutExpired(self.args, orig_timeout)
+subprocess.TimeoutExpired: Command '['C:\\Program Files\\nodejs\\node.EXE', 'C:\\Users\\soren\\AppData\\Roaming\\npm\\node_modules\\agent-browser\\bin\\agent-browser.js', '--session', 'kinetic-m6-matrix', 'focus', '.details button[aria-controls=detail-0]', '--json']' timed out after 60 seconds

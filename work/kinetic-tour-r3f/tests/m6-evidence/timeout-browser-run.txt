@@ -1,0 +1,43 @@
+PASS baseline image/history/keys/skip {"images": 2, "history": true, "skipFocus": true, "keyboard": true}
+FAIL 1350ms/model/rapid/wheel/reset/Escape Command '['C:\\Program Files\\nodejs\\node.EXE', 'C:\\Users\\soren\\AppData\\Roaming\\npm\\node_modules\\agent-browser\\bin\\agent-browser.js', '--session', 'kinetic-m6-regression', 'snapshot', '-i', '--json']' timed out after 60 seconds
+Traceback (most recent call last):
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\m6-evidence\browser.py", line 115, in <module>
+    for name,fn in [('baseline image/history/keys/skip',b.basic),('1350ms/model/rapid/wheel/reset/Escape',b.three),('reduced/native drag/focus',b.reduced_and_drag),('mobile image/model/overflow',b.mobile),('model failure/retry',b.failure),('sky failure/retry',b.sky_failure),('accelerated timeout',b.timeout),('no WebGL',b.no_webgl),('synthetic context loss',b.loss),('cancelled stale load',stale_load)]:b.check(name,fn)
+                                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\browser_qa.py", line 21, in check
+    result=fn();checks.append({'name':name,'pass':True,'observed':result});print('PASS',name,json.dumps(result),flush=True)
+           ^^^^
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\browser_qa.py", line 58, in three
+    click('#reset');time.sleep(1.5);assert_(ev('JSON.parse(document.querySelector("canvas").dataset.orbit).distance===1'))
+    ^^^^^^^^^^^^^^^
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\browser_qa.py", line 18, in click
+    def click(selector):run('snapshot','-i');run('click',selector)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\m6-evidence\browser.py", line 9, in run
+    return original_run(*(x.replace('127.0.0.1:4180','127.0.0.1:4192') if isinstance(x,str) else x for x in args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\browser_qa.py", line 8, in run
+    p=subprocess.run([*PREFIX,'--session',SESSION,*args,'--json'],capture_output=True,text=True,encoding='utf-8',timeout=60)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\soren\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\soren\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\soren\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1630, in _communicate
+    raise TimeoutExpired(self.args, orig_timeout)
+subprocess.TimeoutExpired: Command '['C:\\Program Files\\nodejs\\node.EXE', 'C:\\Users\\soren\\AppData\\Roaming\\npm\\node_modules\\agent-browser\\bin\\agent-browser.js', '--session', 'kinetic-m6-regression', 'snapshot', '-i', '--json']' timed out after 60 seconds
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\m6-evidence\browser.py", line 127, in <module>
+    run('close')
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\m6-evidence\browser.py", line 9, in run
+    return original_run(*(x.replace('127.0.0.1:4180','127.0.0.1:4192') if isinstance(x,str) else x for x in args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\browser_qa.py", line 9, in run
+    if p.returncode:raise RuntimeError(p.stdout[-1200:]+p.stderr[-1200:])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: {"success":false,"data":null,"error":"Failed to read: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. (os error 10060) (the command reached the daemon but no response came back; it may or may not have run, so it was not retried)","code":"outcome_unknown"}

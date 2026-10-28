@@ -1,0 +1,15 @@
+PASS baseline image/history/keys/skip {"images": 2, "history": true, "skipFocus": true, "keyboard": true}
+PASS 1350ms/model/rapid/wheel/reset/Escape {"end": "-8.4,2.25,5.2", "firstDone": 1371, "mid": "-2.542497766559975,2.8078573555657167,12.173216944571458"}
+PASS reduced/native drag/focus {"reducedMotionCut": true, "boundedDrag": {"distance": 1, "pitch": 0.3, "yaw": 0.15}, "staleDragCancelled": true, "hotspotFocus": true}
+PASS mobile image/model/overflow {"imageFirst": true, "mobileModel": true, "overflow": false}
+PASS model failure/retry {"mode": "three", "status": "3D ready. Drag to inspect; wheel adjusts distance."}
+PASS sky failure/retry {"mode": "three", "status": "3D ready. Drag to inspect; wheel adjusts distance."}
+PASS accelerated timeout {"mode": "images", "status": "3D loading timed out. Image navigation remains ready."}
+PASS no WebGL {"mode": "images", "status": "WebGL unavailable. Image navigation remains ready."}
+PASS synthetic context loss {"mode": "images", "status": "Graphics context lost. Image navigation remains ready."}
+PASS cancelled stale load {"lateModelCannotReopen": true}
+PASS five real destinations/cameras/hotspots/details/history/keys {"home": {"actualPosition": [0, 3.05, 15.2], "target": "0,2.1,-2.3", "clickableMarkers": 2}, "motion": {"actualPosition": [-8.4, 2.25, 5.199999999999999], "target": "-8.55,1.55,-1.4", "clickableMarkers": 1}, "clinical": {"actualPosition": [-4.5, 2, 1.4000000000000012], "target": "-4.4,1.7,-4", "clickableMarkers": 1}, "engineering": {"actualPosition": [4.4, 2.05, 1.8000000000000007], "target": "4.95,1.75,-4.2", "clickableMarkers": 3}, "projects": {"actualPosition": [9.1, 2, 2.999999999999999], "target": "9.45,1.6,-2.7", "clickableMarkers": 1}}
+PASS five images and restored hashes {"allFiveImages": true, "reloadHashes": true}
+PASS cross-zone rapid retarget and all reduced cuts {"end": "9.1,2,3", "sameCanvas": true, "samples": ["-0.7159176710359842,2.882952543424937,13.004519142156315", "-0.3397840319552618,2.806435410415239,11.978021387837742"], "totalMs": 2106.7999999988824}
+PASS inspection continuity {"after": [0, 3.1639999999999997, 17.3], "before": [0, 3.1639999999999997, 17.3], "from": "0,3.05,15.2", "firstFrameDisplacement": 0.0}
+PASS focus after keyboard navigation and Escape {"afterKey": {"controls": null, "tag": "BUTTON", "zone": "projects"}, "afterEscape": "mode"}
