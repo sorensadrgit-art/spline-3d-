@@ -1,0 +1,17 @@
+[
+  {
+    "name": "baseline image/history/keys/skip",
+    "pass": true,
+    "observed": {
+      "images": 2,
+      "history": true,
+      "skipFocus": true,
+      "keyboard": true
+    }
+  },
+  {
+    "name": "1350ms/model/rapid/wheel/reset/Escape",
+    "pass": false,
+    "error": "{'mode': 'loading', 'status': 'Home selected.'}"
+  }
+]

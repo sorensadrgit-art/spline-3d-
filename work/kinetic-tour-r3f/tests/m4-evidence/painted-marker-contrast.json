@@ -1,0 +1,172 @@
+{
+  "home": [
+    {
+      "label": "Inspect The shared center",
+      "center": [
+        960,
+        572.154
+      ],
+      "foregroundPaintSample": [
+        243,
+        238,
+        228
+      ],
+      "opaqueInteriorModeSample": [
+        21,
+        35,
+        36
+      ],
+      "sampleContrast": 13.993996541496845,
+      "domHit": true,
+      "note": "Raster interior sample of marker numeral; excludes border; antialiased edges are not the solid glyph color."
+    },
+    {
+      "label": "Inspect At blue hour",
+      "center": [
+        960,
+        473.992
+      ],
+      "foregroundPaintSample": [
+        243,
+        238,
+        228
+      ],
+      "opaqueInteriorModeSample": [
+        21,
+        35,
+        36
+      ],
+      "sampleContrast": 13.993996541496845,
+      "domHit": true,
+      "note": "Raster interior sample of marker numeral; excludes border; antialiased edges are not the solid glyph color."
+    }
+  ],
+  "motion": [
+    {
+      "label": "Inspect Motion display",
+      "center": [
+        1177.64,
+        534.573
+      ],
+      "foregroundPaintSample": [
+        243,
+        238,
+        228
+      ],
+      "opaqueInteriorModeSample": [
+        21,
+        35,
+        36
+      ],
+      "sampleContrast": 13.993996541496845,
+      "domHit": true,
+      "note": "Raster interior sample of marker numeral; excludes border; antialiased edges are not the solid glyph color."
+    }
+  ],
+  "clinical": [
+    {
+      "label": "Inspect Anatomy prints",
+      "center": [
+        894.966,
+        386.514
+      ],
+      "foregroundPaintSample": [
+        243,
+        238,
+        228
+      ],
+      "opaqueInteriorModeSample": [
+        21,
+        35,
+        36
+      ],
+      "sampleContrast": 13.993996541496845,
+      "domHit": true,
+      "note": "Raster interior sample of marker numeral; excludes border; antialiased edges are not the solid glyph color."
+    }
+  ],
+  "engineering": [
+    {
+      "label": "Inspect Actuator study",
+      "center": [
+        1103.13,
+        638.153
+      ],
+      "foregroundPaintSample": [
+        243,
+        238,
+        228
+      ],
+      "opaqueInteriorModeSample": [
+        21,
+        35,
+        36
+      ],
+      "sampleContrast": 13.993996541496845,
+      "domHit": true,
+      "note": "Raster interior sample of marker numeral; excludes border; antialiased edges are not the solid glyph color."
+    },
+    {
+      "label": "Inspect Electronics bench",
+      "center": [
+        977.907,
+        736.184
+      ],
+      "foregroundPaintSample": [
+        243,
+        238,
+        228
+      ],
+      "opaqueInteriorModeSample": [
+        21,
+        35,
+        36
+      ],
+      "sampleContrast": 13.993996541496845,
+      "domHit": true,
+      "note": "Raster interior sample of marker numeral; excludes border; antialiased edges are not the solid glyph color."
+    },
+    {
+      "label": "Inspect Tool wall",
+      "center": [
+        941.345,
+        466.872
+      ],
+      "foregroundPaintSample": [
+        243,
+        238,
+        228
+      ],
+      "opaqueInteriorModeSample": [
+        21,
+        35,
+        36
+      ],
+      "sampleContrast": 13.993996541496845,
+      "domHit": true,
+      "note": "Raster interior sample of marker numeral; excludes border; antialiased edges are not the solid glyph color."
+    }
+  ],
+  "projects": [
+    {
+      "label": "Inspect Project wall",
+      "center": [
+        1116.18,
+        369.87
+      ],
+      "foregroundPaintSample": [
+        243,
+        238,
+        228
+      ],
+      "opaqueInteriorModeSample": [
+        21,
+        35,
+        36
+      ],
+      "sampleContrast": 13.993996541496845,
+      "domHit": true,
+      "note": "Raster interior sample of marker numeral; excludes border; antialiased edges are not the solid glyph color."
+    }
+  ]
+}
