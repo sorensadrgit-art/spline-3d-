@@ -1,0 +1,272 @@
+{
+  "home": {
+    "legacy": {
+      "region": [
+        1060,
+        540,
+        1100,
+        565
+      ],
+      "rgb": [
+        74.018,
+        75.255,
+        80.258
+      ],
+      "relativeLuminance": 0.07106385978150286,
+      "hueDegrees": 228.1057692307693,
+      "saturation": 0.04044699110684741,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "m3-historical": {
+      "region": [
+        1060,
+        540,
+        1100,
+        565
+      ],
+      "rgb": [
+        10.077,
+        15.158,
+        31.17
+      ],
+      "relativeLuminance": 0.005109828091254221,
+      "hueDegrees": 225.5468638884938,
+      "saturation": 0.511382646010619,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "m5": {
+      "region": [
+        1060,
+        540,
+        1100,
+        565
+      ],
+      "rgb": [
+        10.077,
+        15.158,
+        31.17
+      ],
+      "relativeLuminance": 0.005109828091254221,
+      "hueDegrees": 225.5468638884938,
+      "saturation": 0.511382646010619,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "declaredMarkerContrast": 13.993996541496845
+  },
+  "motion": {
+    "legacy": {
+      "region": [
+        1000,
+        540,
+        1040,
+        565
+      ],
+      "rgb": [
+        35.568,
+        34.329,
+        70.109
+      ],
+      "relativeLuminance": 0.01973870936663802,
+      "hueDegrees": 242.07769703745112,
+      "saturation": 0.3425956069629828,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "m3-historical": {
+      "region": [
+        1000,
+        540,
+        1040,
+        565
+      ],
+      "rgb": [
+        37.676,
+        33.822,
+        72.68
+      ],
+      "relativeLuminance": 0.02016646273011294,
+      "hueDegrees": 245.95089814195273,
+      "saturation": 0.3648569979906481,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "m5": {
+      "region": [
+        1000,
+        540,
+        1040,
+        565
+      ],
+      "rgb": [
+        37.676,
+        33.822,
+        72.68
+      ],
+      "relativeLuminance": 0.02016646273011294,
+      "hueDegrees": 245.95089814195273,
+      "saturation": 0.3648569979906481,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "declaredMarkerContrast": 13.993996541496845
+  },
+  "clinical": {
+    "legacy": {
+      "region": [
+        1000,
+        540,
+        1040,
+        565
+      ],
+      "rgb": [
+        170.947,
+        115.678,
+        89.2
+      ],
+      "relativeLuminance": 0.21793282156274407,
+      "hueDegrees": 19.4341076736761,
+      "saturation": 0.32718038206465405,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "m3-historical": {
+      "region": [
+        1000,
+        540,
+        1040,
+        565
+      ],
+      "rgb": [
+        158.45,
+        91.006,
+        46.943
+      ],
+      "relativeLuminance": 0.15002793919024318,
+      "hueDegrees": 23.709542898652106,
+      "saturation": 0.5428958143656307,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "m5": {
+      "region": [
+        1000,
+        540,
+        1040,
+        565
+      ],
+      "rgb": [
+        158.45,
+        91.006,
+        46.943
+      ],
+      "relativeLuminance": 0.15002793919024318,
+      "hueDegrees": 23.709542898652106,
+      "saturation": 0.5428958143656307,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "declaredMarkerContrast": 13.993996541496845
+  },
+  "engineering": {
+    "legacy": {
+      "region": [
+        1000,
+        540,
+        1040,
+        565
+      ],
+      "rgb": [
+        96.621,
+        91.787,
+        88.17
+      ],
+      "relativeLuminance": 0.1084545633404887,
+      "hueDegrees": 25.679801206957762,
+      "saturation": 0.04573274672467806,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "m3-historical": {
+      "region": [
+        1000,
+        540,
+        1040,
+        565
+      ],
+      "rgb": [
+        61.594,
+        52.586,
+        44.707
+      ],
+      "relativeLuminance": 0.03706891500324301,
+      "hueDegrees": 27.994315153668488,
+      "saturation": 0.15886021768374708,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "m5": {
+      "region": [
+        1000,
+        540,
+        1040,
+        565
+      ],
+      "rgb": [
+        61.594,
+        52.586,
+        44.707
+      ],
+      "relativeLuminance": 0.03706891500324301,
+      "hueDegrees": 27.994315153668488,
+      "saturation": 0.15886021768374708,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "declaredMarkerContrast": 13.993996541496845
+  },
+  "projects": {
+    "legacy": {
+      "region": [
+        1000,
+        540,
+        1040,
+        565
+      ],
+      "rgb": [
+        77.472,
+        77.965,
+        79.861
+      ],
+      "relativeLuminance": 0.07618427621359117,
+      "hueDegrees": 227.61825031393892,
+      "saturation": 0.015184354204140337,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "m3-historical": {
+      "region": [
+        1000,
+        540,
+        1040,
+        565
+      ],
+      "rgb": [
+        6.094,
+        9.327,
+        19.6
+      ],
+      "relativeLuminance": 0.00290890870728718,
+      "hueDegrees": 225.63749444691246,
+      "saturation": 0.5256480112088425,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "m5": {
+      "region": [
+        1000,
+        540,
+        1040,
+        565
+      ],
+      "rgb": [
+        6.094,
+        9.327,
+        19.6
+      ],
+      "relativeLuminance": 0.00290890870728718,
+      "hueDegrees": 225.63749444691246,
+      "saturation": 0.5256480112088425,
+      "note": "Fixed central scene patch, not material/color accuracy or Cycles pixel parity"
+    },
+    "declaredMarkerContrast": 13.993996541496845
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "before": {
+    "focus": true,
+    "label": "Inspect The shared center"
+  },
+  "after": {
+    "active": "BUTTON",
+    "activeLabel": "Inspect The shared center",
+    "hidden": false,
+    "visibleFocus": true
+  }
+}

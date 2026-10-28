@@ -1,0 +1,9 @@
+{
+  "command": "python -u work/kinetic-tour-r3f/tests/m5-evidence/browser.py",
+  "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m5-main-qa-20261028",
+  "exit": 0,
+  "groups": 15,
+  "passed": 15,
+  "earlierFailure": "first-browser-failure.json",
+  "thresholdsUnchanged": true
+}
