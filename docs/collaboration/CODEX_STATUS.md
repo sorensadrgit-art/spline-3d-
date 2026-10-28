@@ -49,3 +49,10 @@ NEXT GATE: draft feature PR review, Antigravity critique and owner visual review
 
 ## Tool / skill provenance
 Read actual local skill bodies: kinetic-studio-collab, soren-learning-loop, using-superpowers, brainstorming, router, threejs-react-three-fiber, test-driven-development, agent-browser (plus version-matched CLI core), ui-skills-root, soren-universal-deployment and verification-before-completion. Explicit task scope/preaccepted M2 governs. Universal deployment read-only preflight detected Vite/npm and no issues; no hosted deployment used. No callable soren-skills, Open Design or Lightswind tools were exposed by this client's tool discovery; no registry/client configurations changed. Requested caveman/chisle were not found in the installed local skill roots. Native independent reviewer session was real; Antigravity was not simulated.
+
+## Publication receipt
+RESULT: DRAFT ONLY. Code/evidence delivery commit 0daeda232cb23b90ec03ec2a966faa9f29eee1f6 pushed on feat/kinetic-r3f-pilot-20261028-codex. Draft PR https://github.com/sorensadrgit-art/spline-3d-/pull/4 targets collab/kinetic-antigravity-20261028 and references issue https://github.com/sorensadrgit-art/spline-3d-/issues/1. No main push, merge or deployment. This receipt adds documentation only after the verified code commit. Git identity was missing; commit used the existing repository author identity through command-scoped -c options, with no global/local identity configuration changes.
+CHANGES: publication status only.
+VALIDATION: feature push and gh pr create completed exit 0; draft URL returned by GitHub. Final gh pr view/status check follows publication.
+BLOCKERS: Antigravity, visual/device acceptance remain as above.
+NEXT GATE: review draft PR #4; retain PlayCanvas.
