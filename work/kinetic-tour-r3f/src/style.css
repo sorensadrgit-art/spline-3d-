@@ -1,0 +1,345 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f3eee4;
+  background: #11191b;
+  font-synthesis: none;
+  color-scheme: dark;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+button:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #f1c293;
+  outline-offset: 5px;
+}
+a {
+  color: inherit;
+}
+.skip {
+  position: fixed;
+  left: 16px;
+  top: -100px;
+  z-index: 20;
+  background: #151d20;
+  padding: 16px;
+}
+.skip:focus {
+  top: 16px;
+}
+main {
+  position: relative;
+  min-height: 100svh;
+  isolation: isolate;
+  overflow: hidden;
+}
+.scene {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: #11191b;
+}
+.scene:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(9, 16, 19, 0.88), transparent 65%),
+    linear-gradient(0deg, rgba(9, 16, 19, 0.95), transparent 50%);
+  z-index: 1;
+}
+#poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.canvas-layer {
+  position: absolute;
+  inset: 0;
+}
+.canvas-layer canvas {
+  touch-action: none;
+}
+#hotspots {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+#hotspots button {
+  pointer-events: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 1px solid #e4be91;
+  background: #152324e8;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 32px 4vw;
+}
+.wordmark {
+  text-decoration: none;
+  font-size: 25px;
+  letter-spacing: 0.16em;
+}
+.wordmark span {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  margin-top: 8px;
+}
+.edition,
+.eyebrow,
+.proof-note,
+.keys {
+  font-size: 11px;
+  letter-spacing: 0.13em;
+  color: #d7c6ad;
+}
+.edition {
+  margin-top: 6px;
+}
+.intro {
+  margin: 10vh 4vw 0;
+  max-width: 490px;
+}
+.eyebrow {
+  color: #e1b788;
+}
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(44px, 5.8vw, 88px);
+  line-height: 1.03;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  margin: 20px 0;
+}
+h1 em {
+  font-weight: 400;
+  color: #ddbd96;
+}
+.description {
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 365px;
+  color: #e0dfd8;
+}
+.proof-note {
+  font-size: 10px;
+  margin-top: 25px;
+}
+.details {
+  position: absolute;
+  right: 4vw;
+  top: 28vh;
+  width: 270px;
+  padding: 18px 20px;
+  background: #101a1de8;
+  border-left: 1px solid #947c60;
+}
+.details h2 {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0 0 15px;
+  color: #dbc6ab;
+}
+.details button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 0;
+  border-top: 1px solid #526064;
+  background: transparent;
+  text-align: left;
+  width: 100%;
+  padding: 16px 0;
+  font-size: 12px;
+  min-height: 44px;
+}
+.details button span:first-of-type {
+  flex: 1;
+}
+.details p {
+  line-height: 1.6;
+  font-size: 12px;
+  color: #dfdfd9;
+}
+footer {
+  padding: 24px 4vw 20px;
+  margin-top: 8vh;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 50px;
+}
+.controls button {
+  border: 1px solid #a18c73;
+  background: #182427;
+  padding: 12px 18px;
+  min-height: 44px;
+}
+.controls #mode {
+  background: #e2c09a;
+  color: #162023;
+  border-color: #e2c09a;
+}
+#status {
+  font-size: 12px;
+  color: #d3d9d7;
+  max-width: 360px;
+  line-height: 1.5;
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 1px solid #657071;
+  margin-top: 25px;
+}
+nav button {
+  background: transparent;
+  border: 0;
+  border-top: 2px solid transparent;
+  text-align: left;
+  padding: 18px 10px;
+  min-height: 75px;
+  font-size: 13px;
+}
+nav button[aria-current] {
+  border-top-color: #e4b989;
+  background: #223131b3;
+}
+.nav-number {
+  color: #e1b788;
+  font-size: 10px;
+  display: block;
+  margin-bottom: 7px;
+}
+nav small {
+  display: block;
+  font-size: 10px;
+  color: #c6ceca;
+  margin-top: 6px;
+}
+.keys {
+  font-size: 9px;
+  color: #bec7c4;
+}
+#studio[data-mode="loading"] .canvas-layer {
+  visibility: hidden;
+}
+#studio[data-mode="three"] .scene:after {
+  background:
+    linear-gradient(90deg, #0a1012c9, transparent 48%),
+    linear-gradient(0deg, #0a1012e8, transparent 32%);
+}
+@media (min-width: 1400px) {
+  footer {
+    margin-top: 12vh;
+  }
+}
+@media (max-width: 900px) {
+  .details {
+    width: 220px;
+  }
+  .edition {
+    display: none;
+  }
+  .intro {
+    max-width: 46%;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    padding: 24px;
+  }
+  .intro {
+    margin: 36vh 24px 0;
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  .scene {
+    position: fixed;
+  }
+  .scene:after {
+    background: linear-gradient(0deg, #11191b 12%, #11191b99 55%, transparent);
+  }
+  .description {
+    max-width: 100%;
+    font-size: 14px;
+  }
+  .details {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 25px 24px;
+    width: auto;
+  }
+  .controls {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  footer {
+    margin-top: 0;
+    padding: 20px 24px;
+  }
+  .controls #status {
+    flex-basis: 100%;
+    max-width: none;
+  }
+  nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  nav button:last-child {
+    grid-column: 1/-1;
+  }
+  .keys {
+    line-height: 1.8;
+  }
+  .scene:after {
+    z-index: 1;
+  }
+  #studio[data-mode="three"] .scene {
+    height: 50svh;
+    position: absolute;
+  }
+  #studio[data-mode="three"] .intro {
+    margin-top: 36vh;
+  }
+  #studio[data-mode="three"] .scene:after {
+    background: linear-gradient(0deg, #11191b, transparent 45%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+}
+#hotspots{z-index:2}#hotspots button{background:#152324}

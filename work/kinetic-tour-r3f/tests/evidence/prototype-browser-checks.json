@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Home/Motion images, history, keyboard, skip focus",
+    "pass": true,
+    "observed": {
+      "images": 2,
+      "history": true,
+      "skipFocus": true,
+      "keyboard": true
+    }
+  },
+  {
+    "name": "real model, 1350ms camera, rapid retarget, wheel, reset, Escape",
+    "pass": true,
+    "observed": {
+      "end": "-8.4,2.25,5.2",
+      "firstDone": 1364.89999999851,
+      "mid": "-2.5113891273635804,2.81082008310823,12.21025103885288"
+    }
+  },
+  {
+    "name": "reduced motion and native bounded drag",
+    "pass": true,
+    "observed": {
+      "reducedMotionCut": true,
+      "boundedDrag": {
+        "distance": 1,
+        "pitch": 0.3,
+        "yaw": 0.15
+      },
+      "staleDragCancelled": true,
+      "hotspotFocus": true
+    }
+  },
+  {
+    "name": "mobile image-first, lighter model, no overflow",
+    "pass": true,
+    "observed": {
+      "imageFirst": true,
+      "mobileModel": true,
+      "overflow": false
+    }
+  },
+  {
+    "name": "model error retains navigation and retry succeeds",
+    "pass": true,
+    "observed": {
+      "mode": "three",
+      "status": "3D ready. Drag to inspect; wheel adjusts distance."
+    }
+  },
+  {
+    "name": "sky asset failure recovers on retry",
+    "pass": true,
+    "observed": {
+      "mode": "three",
+      "status": "3D ready. Drag to inspect; wheel adjusts distance."
+    }
+  },
+  {
+    "name": "asset timeout retains navigation (timer accelerated)",
+    "pass": true,
+    "observed": {
+      "mode": "images",
+      "status": "3D loading timed out. Image navigation remains ready."
+    }
+  },
+  {
+    "name": "no WebGL returns to images immediately",
+    "pass": true,
+    "observed": {
+      "mode": "images",
+      "status": "WebGL unavailable. Image navigation remains ready."
+    }
+  },
+  {
+    "name": "context loss retains image navigation",
+    "pass": true,
+    "observed": {
+      "mode": "images",
+      "status": "Graphics context lost. Image navigation remains ready."
+    }
+  }
+]
