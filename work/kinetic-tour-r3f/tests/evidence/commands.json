@@ -1,0 +1,26 @@
+[
+  {
+    "command": "npm.cmd test",
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-codex-collab-20261028\\work\\kinetic-tour",
+    "exit": 0,
+    "log": "legacy-test.txt"
+  },
+  {
+    "command": "npm.cmd run build",
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-codex-collab-20261028\\work\\kinetic-tour",
+    "exit": 0,
+    "log": "legacy-build.txt"
+  },
+  {
+    "command": "npm.cmd test",
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-codex-collab-20261028\\work\\kinetic-tour-r3f",
+    "exit": 0,
+    "log": "prototype-test.txt"
+  },
+  {
+    "command": "npm.cmd run build",
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-codex-collab-20261028\\work\\kinetic-tour-r3f",
+    "exit": 0,
+    "log": "prototype-build.txt"
+  }
+]

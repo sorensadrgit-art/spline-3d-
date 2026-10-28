@@ -1,0 +1,110 @@
+{
+  "legacy": {
+    "firstNavigation": [
+      {
+        "domContentLoaded": 76.29999999701977,
+        "duration": 77.29999999701977,
+        "transferSize": 1821
+      }
+    ],
+    "modelResources": [
+      {
+        "duration": 86.19999999552965,
+        "encodedBodySize": 12023904,
+        "name": "http://127.0.0.1:4181/models/studio-desktop.glb",
+        "transferSize": 12024204
+      }
+    ],
+    "browser": {
+      "dpr": 1,
+      "memory": {
+        "totalJSHeapSize": 44813976,
+        "usedJSHeapSize": 36046376
+      },
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "gpu": {
+      "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A788) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "vendor": "Google Inc. (Intel)"
+    },
+    "homePose": {
+      "position": "0,3.05,15.2",
+      "target": "0,2.1,-2.3"
+    },
+    "motionPose": {
+      "position": "-8.4,2.25,5.199999999999999",
+      "target": "-8.55,1.55,-1.4"
+    },
+    "transitionRafIntervals": {
+      "averageMs": 10.086281588447656,
+      "medianMs": 12,
+      "p95Ms": 18.200000000000728,
+      "samples": 277
+    },
+    "warmNavigation": [
+      {
+        "domContentLoaded": 64.10000000149012,
+        "duration": 64.79999999701977,
+        "transferSize": 300
+      }
+    ]
+  },
+  "prototype": {
+    "firstNavigation": [
+      {
+        "domContentLoaded": 51.5,
+        "duration": 51.60000000149011,
+        "transferSize": 712
+      }
+    ],
+    "modelResources": [
+      {
+        "duration": 98.10000000149012,
+        "encodedBodySize": 12023904,
+        "name": "http://127.0.0.1:4180/models/studio-desktop.glb",
+        "transferSize": 12024204
+      }
+    ],
+    "browser": {
+      "dpr": 1,
+      "memory": {
+        "totalJSHeapSize": 44093977,
+        "usedJSHeapSize": 25704437
+      },
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    "gpu": {
+      "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x0000A788) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "vendor": "Google Inc. (Intel)"
+    },
+    "homePose": {
+      "position": "0,3.05,15.2",
+      "target": "0,2.1,-2.3"
+    },
+    "motionPose": {
+      "position": "-8.4,2.25,5.2",
+      "target": "-8.55,1.55,-1.4"
+    },
+    "transitionRafIntervals": {
+      "averageMs": 7.291666666666667,
+      "medianMs": 6.100000000000364,
+      "p95Ms": 12.199999999999818,
+      "samples": 384
+    },
+    "warmNavigation": [
+      {
+        "domContentLoaded": 58.70000000298023,
+        "duration": 58.80000000447035,
+        "transferSize": 300
+      }
+    ]
+  }
+}
