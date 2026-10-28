@@ -1,0 +1,28 @@
+✔ keeps first grounded target and rejects both colliding mobile Home targets (3.8435ms)
+✔ keeps separated desktop targets and accepts exactly four pixels of space (0.2344ms)
+✔ ineligible or invalid targets cannot suppress later valid anchors (0.13ms)
+✔ navigation and reset start from the displayed inspected pose (1.4287ms)
+✔ home: actual UI enables 3D, selects its image/details and has no pending label (8.7038ms)
+✔ motion: actual UI enables 3D, selects its image/details and has no pending label (2.4668ms)
+✔ clinical: actual UI enables 3D, selects its image/details and has no pending label (1.3464ms)
+✔ engineering: actual UI enables 3D, selects its image/details and has no pending label (1.0914ms)
+✔ projects: actual UI enables 3D, selects its image/details and has no pending label (1.1429ms)
+✔ every ordered zone pair retargets continuously and reaches exact position and target (1.5198ms)
+✔ shared model resources dispose once, including bitmap source (6.752ms)
+✔ camera data has no drift from delivered tour (6.6984ms)
+✔ 1350ms transition reaches target and clamps (1.3562ms)
+✔ rapid retarget samples actual pose without jump (1.3151ms)
+✔ reduced motion immediately cuts and reset restores destination (0.3603ms)
+✔ unknown route returns Home and five destinations remain discoverable (15.9196ms)
+✔ orbit clamps drag and wheel to original safe bounds (1.1545ms)
+✔ late load cannot reopen a failed or dismissed generation (0.1766ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 542.5593
+npm notice run kinetic-studio-r3f-proof@0.1.0 test
+npm notice run node --experimental-strip-types --test tests/*.test.ts

@@ -1,0 +1,13 @@
+✔ all five destinations have distinct poses and three factual details (0.8877ms)
+✔ unknown hashes return Home and browser history hashes map deterministically (0.1844ms)
+✔ camera interpolation clamps and can retarget from its actual intermediate pose (0.165ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 97.1133
+npm notice run kinetic-studio-tour@1.0.0 test
+npm notice run node --experimental-strip-types --test tests/*.test.ts

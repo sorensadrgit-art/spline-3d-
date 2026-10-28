@@ -1,0 +1,14 @@
+{
+  "node": {
+    "exit": 0,
+    "output": "v24.19.0"
+  },
+  "npm": {
+    "exit": 0,
+    "output": "12.1.0"
+  },
+  "browser": {
+    "exit": 0,
+    "output": "agent-browser 0.39.4"
+  }
+}

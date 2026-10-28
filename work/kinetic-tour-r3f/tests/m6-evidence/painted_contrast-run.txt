@@ -1,0 +1,3 @@
+PAINTED_CONTRAST_PASS 8 visible markers
+C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\m6-evidence\painted_contrast.py:16: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  counts=collections.Counter(im.crop((x-12,y-12,x+13,y+13)).getdata())

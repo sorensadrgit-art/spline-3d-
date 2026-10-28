@@ -1,0 +1,8 @@
+{
+  "command": [
+    "C:\\Users\\soren\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-u",
+    "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m6-mobile-markers-20261028\\work\\kinetic-tour-r3f\\tests\\m6-evidence\\legacy_browser_qa.py"
+  ],
+  "exit": 0
+}

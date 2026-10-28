@@ -1,0 +1,9 @@
+MATRIX_PASS 320 5
+MATRIX_PASS 390 10
+MATRIX_PASS 430 15
+MATRIX_PASS 1920 20
+Traceback (most recent call last):
+  File "C:\ProgramData\SentinelX\workspace\kinetic-m6-mobile-markers-20261028\work\kinetic-tour-r3f\tests\m6-evidence\matrix.py", line 40, in <module>
+    run('focus','#hotspots button:nth-child(2)');assert b.ev('document.activeElement===document.querySelectorAll("#hotspots button")[1]')
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

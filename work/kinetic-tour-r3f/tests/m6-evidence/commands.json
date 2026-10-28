@@ -1,0 +1,93 @@
+[
+  {
+    "name": "kinetic-tour-install",
+    "command": [
+      "npm.cmd",
+      "ci"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m6-mobile-markers-20261028\\work\\kinetic-tour",
+    "exit": 0
+  },
+  {
+    "name": "kinetic-tour-unit",
+    "command": [
+      "npm.cmd",
+      "test"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m6-mobile-markers-20261028\\work\\kinetic-tour",
+    "exit": 0
+  },
+  {
+    "name": "kinetic-tour-build",
+    "command": [
+      "npm.cmd",
+      "run",
+      "build"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m6-mobile-markers-20261028\\work\\kinetic-tour",
+    "exit": 0
+  },
+  {
+    "name": "kinetic-tour-r3f-install",
+    "command": [
+      "npm.cmd",
+      "ci"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m6-mobile-markers-20261028\\work\\kinetic-tour-r3f",
+    "exit": 0
+  },
+  {
+    "name": "kinetic-tour-r3f-unit",
+    "command": [
+      "npm.cmd",
+      "test"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m6-mobile-markers-20261028\\work\\kinetic-tour-r3f",
+    "exit": 0
+  },
+  {
+    "name": "kinetic-tour-r3f-build",
+    "command": [
+      "npm.cmd",
+      "run",
+      "build"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m6-mobile-markers-20261028\\work\\kinetic-tour-r3f",
+    "exit": 0
+  },
+  {
+    "name": "protected-diff",
+    "command": [
+      "git",
+      "diff",
+      "44ad922826da34bbcaf7bb83646b24cd694d084c",
+      "--",
+      "work/kinetic-tour",
+      "work/kinetic-blender",
+      "work/kinetic-splat"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m6-mobile-markers-20261028",
+    "exit": 0
+  },
+  {
+    "name": "validator",
+    "command": [
+      "node",
+      "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m6-mobile-markers-20261028\\work\\kinetic-tour-r3f\\tests\\m6-evidence\\validate-models.mjs"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m6-mobile-markers-20261028",
+    "exit": 0
+  },
+  {
+    "name": "provenance",
+    "command": [
+      "git",
+      "diff",
+      "--name-status",
+      "44ad922826da34bbcaf7bb83646b24cd694d084c",
+      "HEAD"
+    ],
+    "cwd": "C:\\ProgramData\\SentinelX\\workspace\\kinetic-m6-mobile-markers-20261028",
+    "exit": 0
+  }
+]

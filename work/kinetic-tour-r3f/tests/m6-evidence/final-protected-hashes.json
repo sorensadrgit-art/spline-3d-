@@ -1,0 +1,116 @@
+{
+  "kinetic-blender\\kinetic-studio-proof-v006.blend": {
+    "expected": {
+      "bytes": 74025533,
+      "sha256": "8b121564f8895917a9a0f820f95da5d0ef8069ea2715e8312d51f1096e962cfe"
+    },
+    "actual": {
+      "bytes": 74025533,
+      "sha256": "8b121564f8895917a9a0f820f95da5d0ef8069ea2715e8312d51f1096e962cfe"
+    },
+    "pass": true
+  },
+  "kinetic-blender\\kinetic-studio-proof-v006.png": {
+    "expected": {
+      "bytes": 4465732,
+      "sha256": "a963c7d6346dff769b6dabcc333cea99b755bb1d6d26ed4abe05ec1f1c29459e"
+    },
+    "actual": {
+      "bytes": 4465732,
+      "sha256": "a963c7d6346dff769b6dabcc333cea99b755bb1d6d26ed4abe05ec1f1c29459e"
+    },
+    "pass": true
+  },
+  "kinetic-blender\\kinetic-studio-motion-v006.png": {
+    "expected": {
+      "bytes": 1805728,
+      "sha256": "c3719c3fb5a2931ab43537227537ccbbb42f75d6052e1cd741bdec1cdc59d323"
+    },
+    "actual": {
+      "bytes": 1805728,
+      "sha256": "c3719c3fb5a2931ab43537227537ccbbb42f75d6052e1cd741bdec1cdc59d323"
+    },
+    "pass": true
+  },
+  "kinetic-blender\\kinetic-studio-clinical-v006.png": {
+    "expected": {
+      "bytes": 1820322,
+      "sha256": "fe907ef76795ae1bc60d7f4783bf4f3f6a2dda882fda135eb1d82f5c57d592cc"
+    },
+    "actual": {
+      "bytes": 1820322,
+      "sha256": "fe907ef76795ae1bc60d7f4783bf4f3f6a2dda882fda135eb1d82f5c57d592cc"
+    },
+    "pass": true
+  },
+  "kinetic-blender\\kinetic-studio-engineering-v006.png": {
+    "expected": {
+      "bytes": 1801552,
+      "sha256": "4771d2bf555c54bbc795babc75ec6e86e1abb34410a4f939167bfb5b2fdc63ac"
+    },
+    "actual": {
+      "bytes": 1801552,
+      "sha256": "4771d2bf555c54bbc795babc75ec6e86e1abb34410a4f939167bfb5b2fdc63ac"
+    },
+    "pass": true
+  },
+  "kinetic-blender\\kinetic-studio-projects-v006.png": {
+    "expected": {
+      "bytes": 1682778,
+      "sha256": "7f05a0b82fdf972dd2b4c66cab2721910665f9c46c917e28a2adf7c6d7f86e1a"
+    },
+    "actual": {
+      "bytes": 1682778,
+      "sha256": "7f05a0b82fdf972dd2b4c66cab2721910665f9c46c917e28a2adf7c6d7f86e1a"
+    },
+    "pass": true
+  },
+  "kinetic-tour\\public\\models\\studio-desktop.glb": {
+    "expected": {
+      "bytes": 12023904,
+      "sha256": "6a586e3d2115d226664a042c021f9432672f324b37cb9f29e50b27855a96c913"
+    },
+    "actual": {
+      "bytes": 12023904,
+      "sha256": "6a586e3d2115d226664a042c021f9432672f324b37cb9f29e50b27855a96c913"
+    },
+    "pass": true
+  },
+  "kinetic-tour\\public\\models\\studio-mobile.glb": {
+    "expected": {
+      "bytes": 5972736,
+      "sha256": "d0c5fc11b5d7ac0b24523aed651e66d1d8df5aedfa53c639f4b77110911451e9"
+    },
+    "actual": {
+      "bytes": 5972736,
+      "sha256": "d0c5fc11b5d7ac0b24523aed651e66d1d8df5aedfa53c639f4b77110911451e9"
+    },
+    "pass": true
+  },
+  "kinetic-splat\\kinetic-engineering-pilot-v001.ssproj": {
+    "expected": {
+      "bytes": 5274326,
+      "sha256": "777a4c64ba9e1993f5472dfb1712b414ffc99fc0666d0c7dad68e3d3f92c1016"
+    },
+    "actual": {
+      "bytes": 5274326,
+      "sha256": "777a4c64ba9e1993f5472dfb1712b414ffc99fc0666d0c7dad68e3d3f92c1016"
+    },
+    "pass": true
+  },
+  "kinetic-splat\\kinetic-engineering-pilot-v001.sog": {
+    "expected": {
+      "bytes": 957256,
+      "sha256": "055943172455e5bb8984fec74d4e1ff1123a7e126f73179c9c56c77fc4875e20"
+    },
+    "actual": {
+      "bytes": 957256,
+      "sha256": "055943172455e5bb8984fec74d4e1ff1123a7e126f73179c9c56c77fc4875e20"
+    },
+    "pass": true
+  },
+  "sky": {
+    "sha256": "c45d164f9ebcc307feb66f9adcdd19182e1701e8ec2f51e1099cb0aaf7e8bc40",
+    "pass": true
+  }
+}

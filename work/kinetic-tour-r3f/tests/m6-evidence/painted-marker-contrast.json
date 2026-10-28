@@ -1,0 +1,202 @@
+[
+  {
+    "zone": "home",
+    "label": "Inspect The shared center",
+    "center": [
+      960,
+      572
+    ],
+    "computedForeground": "rgb(243, 238, 228)",
+    "computedBackground": "rgb(21, 35, 36)",
+    "paintedForeground": [
+      243,
+      238,
+      228
+    ],
+    "foregroundPixels": 3,
+    "paintedBackground": [
+      21,
+      35,
+      36
+    ],
+    "backgroundPixels": 585,
+    "contrast": 13.993996541496845,
+    "hit": true,
+    "pass": true
+  },
+  {
+    "zone": "home",
+    "label": "Inspect At blue hour",
+    "center": [
+      960,
+      474
+    ],
+    "computedForeground": "rgb(243, 238, 228)",
+    "computedBackground": "rgb(21, 35, 36)",
+    "paintedForeground": [
+      243,
+      238,
+      228
+    ],
+    "foregroundPixels": 5,
+    "paintedBackground": [
+      21,
+      35,
+      36
+    ],
+    "backgroundPixels": 570,
+    "contrast": 13.993996541496845,
+    "hit": true,
+    "pass": true
+  },
+  {
+    "zone": "motion",
+    "label": "Inspect Motion display",
+    "center": [
+      1178,
+      535
+    ],
+    "computedForeground": "rgb(243, 238, 228)",
+    "computedBackground": "rgb(21, 35, 36)",
+    "paintedForeground": [
+      243,
+      238,
+      228
+    ],
+    "foregroundPixels": 8,
+    "paintedBackground": [
+      21,
+      35,
+      36
+    ],
+    "backgroundPixels": 570,
+    "contrast": 13.993996541496845,
+    "hit": true,
+    "pass": true
+  },
+  {
+    "zone": "clinical",
+    "label": "Inspect Anatomy prints",
+    "center": [
+      895,
+      387
+    ],
+    "computedForeground": "rgb(243, 238, 228)",
+    "computedBackground": "rgb(21, 35, 36)",
+    "paintedForeground": [
+      243,
+      238,
+      228
+    ],
+    "foregroundPixels": 10,
+    "paintedBackground": [
+      21,
+      35,
+      36
+    ],
+    "backgroundPixels": 573,
+    "contrast": 13.993996541496845,
+    "hit": true,
+    "pass": true
+  },
+  {
+    "zone": "engineering",
+    "label": "Inspect Actuator study",
+    "center": [
+      1103,
+      638
+    ],
+    "computedForeground": "rgb(243, 238, 228)",
+    "computedBackground": "rgb(21, 35, 36)",
+    "paintedForeground": [
+      243,
+      238,
+      228
+    ],
+    "foregroundPixels": 3,
+    "paintedBackground": [
+      21,
+      35,
+      36
+    ],
+    "backgroundPixels": 583,
+    "contrast": 13.993996541496845,
+    "hit": true,
+    "pass": true
+  },
+  {
+    "zone": "engineering",
+    "label": "Inspect Electronics bench",
+    "center": [
+      978,
+      736
+    ],
+    "computedForeground": "rgb(243, 238, 228)",
+    "computedBackground": "rgb(21, 35, 36)",
+    "paintedForeground": [
+      243,
+      238,
+      228
+    ],
+    "foregroundPixels": 10,
+    "paintedBackground": [
+      21,
+      35,
+      36
+    ],
+    "backgroundPixels": 573,
+    "contrast": 13.993996541496845,
+    "hit": true,
+    "pass": true
+  },
+  {
+    "zone": "engineering",
+    "label": "Inspect Tool wall",
+    "center": [
+      941,
+      467
+    ],
+    "computedForeground": "rgb(243, 238, 228)",
+    "computedBackground": "rgb(21, 35, 36)",
+    "paintedForeground": [
+      243,
+      238,
+      228
+    ],
+    "foregroundPixels": 7,
+    "paintedBackground": [
+      21,
+      35,
+      36
+    ],
+    "backgroundPixels": 572,
+    "contrast": 13.993996541496845,
+    "hit": true,
+    "pass": true
+  },
+  {
+    "zone": "projects",
+    "label": "Inspect Project wall",
+    "center": [
+      1116,
+      370
+    ],
+    "computedForeground": "rgb(243, 238, 228)",
+    "computedBackground": "rgb(21, 35, 36)",
+    "paintedForeground": [
+      243,
+      238,
+      228
+    ],
+    "foregroundPixels": 12,
+    "paintedBackground": [
+      21,
+      35,
+      36
+    ],
+    "backgroundPixels": 575,
+    "contrast": 13.993996541496845,
+    "hit": true,
+    "pass": true
+  }
+]

@@ -10,6 +10,7 @@ import {
 } from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import type { Object3D } from "three";
+import { visibleMarkers } from "./hotspots.ts";
 import { disposeScene } from "./resources.ts";
 import { anchors, type Zone } from "./tour.ts";
 import { boundedOrbit, CameraMotion } from "./state.ts";
@@ -67,6 +68,8 @@ function CameraDirector({
   const deadline = useRef(0);
   const interactionEpoch = useRef(0);
   const point = useRef(new Vector3());
+  // Demand rendering needs a frame after React receives the new viewport size.
+  useEffect(() => invalidate(), [size.width, size.height, invalidate]);
   useEffect(() => {
     interactionEpoch.current++;
     motion.current.select(zone, performance.now(), reduced.current, {
@@ -170,9 +173,7 @@ function CameraDirector({
     const overlays = Array.from(document.querySelectorAll(
       "#studio header, #studio .intro, #studio .details, #studio footer",
     ), (node) => node.getBoundingClientRect());
-    anchors[zone.id].forEach((anchor, i) => {
-      const marker = markers.current[i];
-      if (!marker) return;
+    const projected = anchors[zone.id].map((anchor) => {
       const p = point.current.set(...anchor).project(camera);
       const x = ((p.x + 1) * size.width) / 2;
       const y = ((1 - p.y) * size.height) / 2;
@@ -180,8 +181,21 @@ function CameraDirector({
         x + bounds.left + 22 > r.left && x + bounds.left - 22 < r.right &&
         y + bounds.top + 22 > r.top && y + bounds.top - 22 < r.bottom,
       );
-      marker.hidden = covered ||
-        p.z < -1 || p.z > 1 || Math.abs(p.x) > 0.92 || Math.abs(p.y) > 0.82;
+      return { x, y, eligible: !covered &&
+        p.z >= -1 && p.z <= 1 && Math.abs(p.x) <= 0.92 && Math.abs(p.y) <= 0.82 };
+    });
+    const visible = visibleMarkers(projected);
+    projected.forEach(({ x, y }, i) => {
+      const marker = markers.current[i];
+      if (!marker) return;
+      // Move keyboard focus before hiding a target during orbit, resize or motion.
+      if (!visible[i] && document.activeElement === marker) {
+        const fallback = document.querySelector<HTMLButtonElement>(
+          '.details button[aria-controls="detail-' + i + '"]',
+        ) ?? document.getElementById("mode");
+        fallback?.focus({ preventScroll: true });
+      }
+      marker.hidden = !visible[i];
       marker.style.left = x + "px";
       marker.style.top = y + "px";
     });
