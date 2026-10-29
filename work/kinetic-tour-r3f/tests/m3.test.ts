@@ -21,7 +21,11 @@ const domClientShim =
 const canvasStub =
   "Promise.resolve({ default: () => null, clearFailedSkyCache: () => {} })";
 
-const resolveTo = (id: string) => JSON.stringify(import.meta.resolve(id));
+// React is CJS, so named imports from its resolved entry are not dependable.
+// tests/react-shim.ts is a real ESM module that re-exports the same names.
+const reactShim = JSON.stringify(
+  new URL("./react-shim.ts", import.meta.url).href,
+);
 
 const transpiled = ts.transpileModule(
   'import React from "react";\n' + entrySource,
@@ -40,7 +44,7 @@ const moduleSource =
     .replace(/import\s*"\.\/style\.css";?/g, "")
     // Mounting is replaced by a no-op root, so importing the entry is inert.
     .replace(/from\s*"react-dom\/client"/g, `from ${JSON.stringify(domClientShim)}`)
-    .replace(/from\s*"react"/g, `from ${resolveTo("react")}`)
+    .replace(/from\s*"react"/g, `from ${reactShim}`)
     .replace(
       /from\s*"\.\/(tour|state)\.ts"/g,
       (_match, name: string) =>
