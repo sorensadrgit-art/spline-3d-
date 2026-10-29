@@ -14,6 +14,16 @@ import { visibleMarkers } from "./hotspots.ts";
 import { disposeScene } from "./resources.ts";
 import { anchors, type Zone } from "./tour.ts";
 import { boundedOrbit, CameraMotion } from "./state.ts";
+
+// Class names covered by interface chrome. Hoisted so the frame loop does not
+// rebuild the selector string on every rendered frame.
+const OVERLAYS =
+  "#studio header, #studio .intro, #studio .details, #studio footer";
+
+// Overlay geometry only changes on resize, zone change or a detail toggle, so
+// it is re-measured at this interval instead of once per frame.
+const OVERLAY_TTL_MS = 400;
+
 type Props = {
   zone: Zone;
   reset: number;
@@ -22,6 +32,28 @@ type Props = {
   onFailure: (message: string) => void;
   onDetail: (i: number) => void;
 };
+
+// The delivered GLB is 12.0 MB desktop and 6.0 MB mobile. Dismissing the canvas
+// aborts the request and disposes the parsed scene, which is correct for GPU
+// memory but means a slow re-download on every image/3D toggle. Retain only the
+// most recent model's bytes; the parsed scene is still disposed.
+let cachedBytes: { url: string; bytes: ArrayBuffer } | undefined;
+
+async function loadModelBytes(url: string, signal: AbortSignal) {
+  if (cachedBytes?.url === url) return cachedBytes.bytes;
+  const response = await fetch(url, { signal });
+  if (!response.ok) throw new Error("Model HTTP " + response.status);
+  const bytes = await response.arrayBuffer();
+  if (!signal.aborted) cachedBytes = { url, bytes };
+  return bytes;
+}
+
+// Release the retained bytes when the page is torn down.
+if (typeof addEventListener === "function")
+  addEventListener("pagehide", () => {
+    cachedBytes = undefined;
+  });
+
 function Model({
   scene,
   onReady,
@@ -36,6 +68,7 @@ function Model({
   }, [scene, onReady, generation]);
   return <primitive object={scene} dispose={null} />;
 }
+
 function Sky() {
   const texture = useLoader(TextureLoader, "/models/blue-hour.jpg");
   texture.colorSpace = SRGBColorSpace;
@@ -50,6 +83,7 @@ function Sky() {
     </mesh>
   );
 }
+
 function CameraDirector({
   zone,
   reset,
@@ -68,6 +102,12 @@ function CameraDirector({
   const deadline = useRef(0);
   const interactionEpoch = useRef(0);
   const point = useRef(new Vector3());
+  // Serialising the orbit every frame allocated a string per frame; the value
+  // is only written when an interaction actually changed it.
+  const orbitRevision = useRef(0);
+  const writtenRevision = useRef(-1);
+  const overlays = useRef<DOMRect[]>([]);
+  const overlaysAt = useRef(0);
   // Demand rendering needs a frame after React receives the new viewport size.
   useEffect(() => invalidate(), [size.width, size.height, invalidate]);
   useEffect(() => {
@@ -78,6 +118,9 @@ function CameraDirector({
     });
     deadline.current = performance.now() + 1350;
     orbit.current = { yaw: 0, pitch: 0, distance: 1 };
+    orbitRevision.current++;
+    // A new zone renders a different detail panel, so cached rects expire.
+    overlaysAt.current = 0;
     invalidate();
   }, [zone, reset, camera, invalidate]);
   useEffect(() => {
@@ -91,6 +134,9 @@ function CameraDirector({
   }, [invalidate]);
   useEffect(() => {
     const el = gl.domElement;
+    // Vertical page scrolling must keep working over the canvas on small
+    // screens; horizontal drags still rotate the view.
+    el.style.touchAction = "pan-y";
     let drag:
       | { x: number; y: number; yaw: number; pitch: number; epoch: number }
       | undefined;
@@ -115,19 +161,25 @@ function CameraDirector({
         drag.pitch + (e.clientY - drag.y) * 0.002,
         orbit.current.distance,
       );
+      orbitRevision.current++;
       invalidate();
     };
     const end = () => {
       drag = undefined;
     };
     const wheel = (e: WheelEvent) => {
-      e.preventDefault();
       if (performance.now() < deadline.current && !reduced.current) return;
-      orbit.current = boundedOrbit(
+      const next = boundedOrbit(
         orbit.current.yaw,
         orbit.current.pitch,
         orbit.current.distance + e.deltaY * 0.0003,
       );
+      // Claim the gesture only when the zoom actually moves. At the clamp limit
+      // the page must still be able to scroll past the canvas.
+      if (next.distance === orbit.current.distance) return;
+      e.preventDefault();
+      orbit.current = next;
+      orbitRevision.current++;
       invalidate();
     };
     el.addEventListener("pointerdown", down);
@@ -162,27 +214,39 @@ function CameraDirector({
     );
     camera.lookAt(...pose.target);
     camera.updateMatrixWorld();
+
+    // Measure before writing. Reading layout after the dataset writes below
+    // forces a synchronous style recalculation inside every animated frame.
     const el = gl.domElement;
-    el.dataset.position = pose.position.join(",");
-    el.dataset.target = pose.target.join(",");
-    el.dataset.orbit = JSON.stringify(o);
-    el.dataset.transition = String(!reduced.current && now < deadline.current);
-    // Keep markers out of UI hit areas; all details remain in the side panel.
-    // Read layout once before writing marker styles (demand-rendered frames only).
     const bounds = el.getBoundingClientRect();
-    const overlays = Array.from(document.querySelectorAll(
-      "#studio header, #studio .intro, #studio .details, #studio footer",
-    ), (node) => node.getBoundingClientRect());
+    if (now - overlaysAt.current > OVERLAY_TTL_MS || !overlays.current.length) {
+      overlays.current = Array.from(
+        document.querySelectorAll(OVERLAYS),
+        (node) => node.getBoundingClientRect(),
+      );
+      overlaysAt.current = now;
+    }
+    const covered = overlays.current;
     const projected = anchors[zone.id].map((anchor) => {
       const p = point.current.set(...anchor).project(camera);
       const x = ((p.x + 1) * size.width) / 2;
       const y = ((1 - p.y) * size.height) / 2;
-      const covered = overlays.some((r) =>
-        x + bounds.left + 22 > r.left && x + bounds.left - 22 < r.right &&
-        y + bounds.top + 22 > r.top && y + bounds.top - 22 < r.bottom,
+      const hidden = covered.some((r) =>
+        x + bounds.left + 22 > r.left &&
+        x + bounds.left - 22 < r.right &&
+        y + bounds.top + 22 > r.top &&
+        y + bounds.top - 22 < r.bottom,
       );
-      return { x, y, eligible: !covered &&
-        p.z >= -1 && p.z <= 1 && Math.abs(p.x) <= 0.92 && Math.abs(p.y) <= 0.82 };
+      return {
+        x,
+        y,
+        eligible:
+          !hidden &&
+          p.z >= -1 &&
+          p.z <= 1 &&
+          Math.abs(p.x) <= 0.92 &&
+          Math.abs(p.y) <= 0.82,
+      };
     });
     const visible = visibleMarkers(projected);
     projected.forEach(({ x, y }, i) => {
@@ -199,10 +263,19 @@ function CameraDirector({
       marker.style.left = x + "px";
       marker.style.top = y + "px";
     });
+
+    el.dataset.position = pose.position.join(",");
+    el.dataset.target = pose.target.join(",");
+    el.dataset.transition = String(!reduced.current && now < deadline.current);
+    if (writtenRevision.current !== orbitRevision.current) {
+      el.dataset.orbit = JSON.stringify(o);
+      writtenRevision.current = orbitRevision.current;
+    }
     if (now < deadline.current && !reduced.current) invalidate();
   });
   return null;
 }
+
 function ContextGuard({ onFailure }: { onFailure: Props["onFailure"] }) {
   const gl = useThree((s) => s.gl);
   useEffect(() => {
@@ -215,6 +288,7 @@ function ContextGuard({ onFailure }: { onFailure: Props["onFailure"] }) {
   }, [gl, onFailure]);
   return null;
 }
+
 function Unavailable({ onFailure }: { onFailure: Props["onFailure"] }) {
   useEffect(
     () => onFailure("WebGL unavailable. Image navigation remains ready."),
@@ -222,6 +296,7 @@ function Unavailable({ onFailure }: { onFailure: Props["onFailure"] }) {
   );
   return null;
 }
+
 export default function StudioCanvas(props: Props) {
   const mobile = useRef(matchMedia("(max-width: 700px)").matches).current;
   const markers = useRef<(HTMLButtonElement | null)[]>([]);
@@ -245,9 +320,7 @@ export default function StudioCanvas(props: Props) {
     let owned: Object3D | undefined;
     void (async () => {
       try {
-        const response = await fetch(model, { signal: abort.signal });
-        if (!response.ok) throw new Error("Model HTTP " + response.status);
-        const bytes = await response.arrayBuffer();
+        const bytes = await loadModelBytes(model, abort.signal);
         if (abort.signal.aborted) return;
         const gltf = await new GLTFLoader().parseAsync(bytes, "/models/");
         if (abort.signal.aborted) {
