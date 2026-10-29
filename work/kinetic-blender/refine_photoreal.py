@@ -230,13 +230,14 @@ def _create_leaflet(name, base, wing, az, side, root):
     for p in me.polygons:
         p.use_smooth = True
 
-def _create_frond(name, az, length, start, root):
+def _create_frond(name, h, frond, x, y, root):
+    az = frond * 2.399
+    length = h * (.37 + .15 * random.random())
+    start = Vector((x, y, h * (.72 + .22 * random.random())))
+
     def center(t):
-        return start + Vector((
-            math.cos(az) * length * t,
-            math.sin(az) * length * t,
-            math.sin(t * math.pi) * length * .25 - length * t * .3
-        ))
+        return start + Vector((math.cos(az) * length * t, math.sin(az) * length * t, math.sin(t * math.pi) * length * .25 - length * t * .3))
+
     stem = path(name + ' arching frond', [tuple(center(i / 7)) for i in range(8)], .006, stemmat)
     stem.parent = root
     for j in range(16):
@@ -254,10 +255,7 @@ def palm(name, x, y, h):
     trunk = path(name + ' stem', [(x, y, .40), (x + .03, y, h * .65), (x, y, h * .87)], .018, stemmat)
     trunk.parent = root
     for frond in range(11):
-        az = frond * 2.399
-        length = h * (.37 + .15 * random.random())
-        start = Vector((x, y, h * (.72 + .22 * random.random())))
-        _create_frond(name, az, length, start, root)
+        _create_frond(name, h, frond, x, y, root)
     return root
 palm('Left accent palm',-11.12,1.8,2.25)
 palm('Engineering accent palm',6.93,4.1,2.25)
