@@ -57,26 +57,40 @@ p.inputs['Coat Weight'].default_value=.12;p.inputs['Coat Roughness'].default_val
 
 thread=material('Leather edge piping',(.055,.033,.019),.58)
 wrinkle=bpy.data.textures.new('Subtle upholstery settling',type='CLOUDS');wrinkle.noise_scale=.12;wrinkle.noise_depth=2
+def compute_cushion_piping_points(obj):
+    pts = []
+    if 'seat' in obj.name.lower():
+        obj.rotation_euler[2] = random.uniform(-.015, .015)
+        w, d = .89, .72
+        z = obj.location.z + .052
+        seat_corners = [(w/2 - .055, d/2 - .055, 0), (-w/2 + .055, d/2 - .055, 90), (-w/2 + .055, -d/2 + .055, 180), (w/2 - .055, -d/2 + .055, 270)]
+        for cx, cy, start in seat_corners:
+            for k in range(7):
+                a = math.radians(start + k * 15)
+                pts.append((obj.location.x + cx + .055 * math.cos(a), obj.location.y + cy + .055 * math.sin(a), z))
+    else:
+        other_corners = [(.40, .185, 0), (-.40, .185, 90), (-.40, -.185, 180), (.40, -.185, 270)]
+        for cx, cz, start in other_corners:
+            for k in range(7):
+                a = math.radians(start + k * 15)
+                pts.append((obj.location.x + cx + .04 * math.cos(a), obj.location.y - .094, obj.location.z + cz + .04 * math.sin(a)))
+    return pts
+
 for o in list(bpy.data.objects['Foreground leather sofa'].children):
-    if 'cushion' in o.name.lower():
-        sub=o.modifiers.new('Editable cushion softness','SUBSURF');sub.levels=2;sub.render_levels=3
-        disp=o.modifiers.new('Small natural cushion variation','DISPLACE');disp.texture=wrinkle;disp.strength=.0025;disp.texture_coords='GLOBAL'
-        for face in o.data.polygons:face.use_smooth=True
-        if 'seat' in o.name.lower():
-            o.rotation_euler[2]=random.uniform(-.015,.015)
-            w,d=.89,.72;z=o.location.z+.052
-            pts=[]
-            for cx,cy,start in [(w/2-.055,d/2-.055,0),(-w/2+.055,d/2-.055,90),(-w/2+.055,-d/2+.055,180),(w/2-.055,-d/2+.055,270)]:
-                for k in range(7):
-                    a=math.radians(start+k*15)
-                    pts.append((o.location.x+cx+.055*math.cos(a),o.location.y+cy+.055*math.sin(a),z))
-        else:
-            pts=[]
-            for cx,cz,start in [(.40,.185,0),(-.40,.185,90),(-.40,-.185,180),(.40,-.185,270)]:
-                for k in range(7):
-                    a=math.radians(start+k*15)
-                    pts.append((o.location.x+cx+.04*math.cos(a),o.location.y-.094,o.location.z+cz+.04*math.sin(a)))
-        seam=path('Editable upholstery piping',pts,.0028,thread,True);seam.parent=o.parent
+    if 'cushion' not in o.name.lower():
+        continue
+    sub = o.modifiers.new('Editable cushion softness', 'SUBSURF')
+    sub.levels = 2
+    sub.render_levels = 3
+    disp = o.modifiers.new('Small natural cushion variation', 'DISPLACE')
+    disp.texture = wrinkle
+    disp.strength = .0025
+    disp.texture_coords = 'GLOBAL'
+    for face in o.data.polygons:
+        face.use_smooth = True
+    pts = compute_cushion_piping_points(o)
+    seam = path('Editable upholstery piping', pts, .0028, thread, True)
+    seam.parent = o.parent
 
 # Give the central chair a curved, genuinely see-through woven back.
 chair=bpy.data.objects['Central ergonomic chair']
