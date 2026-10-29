@@ -1,0 +1,67 @@
+name: diagnose
+
+# Temporary: GitHub Actions logs are not readable through the tooling available
+# to this session, so the failing R3F job reports its own output as a PR comment.
+# Delete this workflow once the suite is green.
+
+on:
+  push:
+    paths:
+      - .github/workflows/diagnose.yml
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  diagnose:
+    name: Report R3F suite output
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.x
+          cache: npm
+          cache-dependency-path: work/kinetic-tour-r3f/package-lock.json
+
+      - name: Run checks and collect output
+        id: checks
+        working-directory: work/kinetic-tour-r3f
+        run: |
+          set +e
+          report="$RUNNER_TEMP/report.md"
+          {
+            echo "### R3F suite diagnosis"
+            echo ""
+            echo "\`\`\`"
+            echo "node $(node -v) / npm $(npm -v)"
+            echo "cwd $(pwd)"
+            echo "tests: $(ls tests/*.test.ts 2>/dev/null | tr '\n' ' ')"
+            echo ""
+          } > "$report"
+
+          npm ci >> "$report" 2>&1
+          echo "npm ci exit=$?" >> "$report"
+          echo "" >> "$report"
+
+          npm test >> "$report" 2>&1
+          echo "npm test exit=$?" >> "$report"
+          echo "" >> "$report"
+
+          npm run build >> "$report" 2>&1
+          echo "npm run build exit=$?" >> "$report"
+
+          echo "\`\`\`" >> "$report"
+          tail -c 55000 "$report" > "$RUNNER_TEMP/report-trimmed.md"
+
+      - name: Publish result as a PR comment
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr comment 28 --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/report-trimmed.md" \
+            || gh issue comment 28 --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/report-trimmed.md" \
+            || echo "report publishing failed"
