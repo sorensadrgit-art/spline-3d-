@@ -28,9 +28,14 @@ export const zones: Zone[] = [
     position:[9.1,2,3],target:[9.45,1.6,-2.7],image:'projects',
     details:[['Materials table','Walnut, aluminum and copper samples connect the room palette to the design process.'],['Project wall','The pin-up studies and presentation display contain authored concept content, not client work.'],['Shared seating','Woven seat pads, polished supports and restrained lighting support a quieter collaborative zone.']]}
 ];
+
+const zoneMap = new Map<string, Zone>(zones.map(z => [z.id, z]));
+
 export function zoneFromHash(hash: string): Zone {
-  return zones.find(z => z.id === hash.replace(/^#/, '')) ?? zones[0];
+  const id = hash.startsWith('#') ? hash.slice(1) : hash;
+  return zoneMap.get(id) ?? zones[0];
 }
+
 export const anchors:Record<ZoneId,Point[]>={
   home:[[0,1.6,-3.0],[-.6,.45,2.8],[0,3.0,-5.7]],
   motion:[[-10.4,2.35,.4],[-8.55,.25,-1.0],[-7.3,1.5,-2.2]],
@@ -38,6 +43,7 @@ export const anchors:Record<ZoneId,Point[]>={
   engineering:[[5.6,1.3,-4],[5,.88,-3.86],[4.9,2.1,-4.7]],
   projects:[[9.4,.88,-1.8],[10.55,2.5,-4.85],[8.6,.7,-.8]]
 };
+
 export function blend(a: Point, b: Point, t: number): Point {
   const v = Math.min(1, Math.max(0,t));
   const e = v*v*(3-2*v);
