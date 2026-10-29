@@ -1,0 +1,67 @@
+name: ci
+
+# Unit tests, builds and delivered-artifact hashes run on every push and PR.
+# Browser QA is intentionally NOT automated here: it needs the agent-browser CLI
+# plus a real display, and the milestone receipts stay manual evidence.
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  proof:
+    name: R3F proof - unit + build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: work/kinetic-tour-r3f
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.x
+          cache: npm
+          cache-dependency-path: work/kinetic-tour-r3f/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+
+  tour:
+    name: PlayCanvas tour - unit + GLB + build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: work/kinetic-tour
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.x
+          cache: npm
+          cache-dependency-path: work/kinetic-tour/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - run: node tests/validate-models.mjs
+      - run: npm run build
+
+  manifest:
+    name: Delivered artifact hashes
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.x
+      - run: node tools/verify-manifest.mjs
