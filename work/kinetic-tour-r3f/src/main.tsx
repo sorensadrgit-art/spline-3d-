@@ -13,7 +13,7 @@ import { zones, type Zone } from "./tour.ts";
 import { route, loadState, type LoadState } from "./state.ts";
 import "./style.css";
 const StudioCanvas = lazy(() => import("./StudioCanvas.tsx"));
-class GraphicsBoundary extends Component<
+export class GraphicsBoundary extends Component<
   { children: ReactNode; onFailure: (message: string) => void },
   { failed: boolean }
 > {
