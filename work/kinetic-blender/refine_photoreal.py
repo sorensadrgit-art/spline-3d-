@@ -171,17 +171,18 @@ def _process_asset_object(o, asset):
         for n in m.node_tree.nodes:
             _relink_texture_node(n, asset)
 
-def _load_asset(asset):
-    source = ASSETS / asset / (asset + '_1k.blend')
-    with bpy.data.libraries.load(str(source), link=False) as (src, dst):
+def _load_asset_to_cache(asset):
+    source = ASSETS/asset/(asset+'_1k.blend')
+    with bpy.data.libraries.load(str(source),link=False) as (src,dst):
         dst.objects = src.objects
-    obs = [o for o in dst.objects if o and o.type == 'MESH']
+    obs = [o for o in dst.objects if o and o.type=='MESH']
     for o in obs:
         _process_asset_object(o, asset)
     points = [o.matrix_world @ Vector(corner) for o in obs for corner in o.bound_box]
     low = Vector(tuple(min(p[a] for p in points) for a in range(3)))
     high = Vector(tuple(max(p[a] for p in points) for a in range(3)))
-    return obs, low, high
+    cache[asset] = (obs,low,high)
+    return obs,low,high
 
 def asset_instance(asset, name, loc, height, rotation=0, slender=1):
     if asset not in cache:
