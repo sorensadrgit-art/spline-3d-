@@ -57,9 +57,15 @@ const moduleSource =
   // avoids editing the source to make it importable.
   "\nexport { AppShell };\n";
 
+// The entry's one mount call reads document.getElementById at import time.
+const hadDocument = "document" in globalThis;
+if (!hadDocument)
+  Object.assign(globalThis, { document: { getElementById: () => null } });
 const { AppShell, GraphicsBoundary } = await import(
   "data:text/javascript;base64," + Buffer.from(moduleSource).toString("base64")
-);
+).finally(() => {
+  if (!hadDocument) delete (globalThis as { document?: unknown }).document;
+});
 
 test("harness loads the real entry without mounting it", () => {
   assert.equal(typeof AppShell, "function");
@@ -80,7 +86,7 @@ test("GraphicsBoundary error handling lifecycle and fallback UI rendering", () =
   });
 
   assert.deepEqual(boundary.state, { failed: false });
-  assert.equal(renderToStaticMarkup(boundary.render()), " Canvas Child ");
+  assert.equal(renderToStaticMarkup(boundary.render()), "<div>Canvas Child</div>");
 
   boundary.componentDidCatch();
   assert.equal(
