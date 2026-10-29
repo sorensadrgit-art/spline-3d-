@@ -182,26 +182,55 @@ for i,(x,y,h) in enumerate([(-10.9,-.55,1.7),(-6.07,3.0,1.55),(-2.75,3.6,1.85),(
 for i,(x,y,z,h) in enumerate([(.58,-2.85,.42,.34),(-1.76,2.9,.82,.28),(-3.28,4.44,1.74,.38),(6.6,4.5,2.94,.35)]):
     asset_instance('potted_plant_04',f'Detailed succulent {i+1:02}',(x,y,z),h,i*.8)
 
-def palm(name,x,y,h):
-    root=bpy.data.objects.new(name,None);COL.objects.link(root)
-    pot=tube(name+' tall stoneware pot',(x,y,.035),(x,y,.48),.22,ceramic,.27,48);pot.parent=root
-    trunk=path(name+' stem',[(x,y,.40),(x+.03,y,h*.65),(x,y,h*.87)],.018,stemmat);trunk.parent=root
+def _create_leaflet(name, base, wing, az, side, root):
+    a = az + side * 1.05
+    d = Vector((math.cos(a), math.sin(a), -.28))
+    cross = Vector((-math.sin(a), math.cos(a), 0))
+    verts = []
+    for k in range(6):
+        u = k / 5
+        point = base + d * wing * u + Vector((0, 0, .04 * math.sin(u * math.pi)))
+        w = .018 * math.sin(u * math.pi)
+        verts.extend([tuple(point - cross * w), tuple(point + cross * w)])
+    faces = [(k * 2, k * 2 + 1, k * 2 + 3, k * 2 + 2) for k in range(5)]
+    me = bpy.data.meshes.new(name + ' leaflet mesh')
+    me.from_pydata(verts, [], faces)
+    me.update()
+    ob = bpy.data.objects.new(name + ' separate leaflet', me)
+    COL.objects.link(ob)
+    ob.data.materials.append(leaf)
+    ob.parent = root
+    for p in me.polygons:
+        p.use_smooth = True
+
+def _create_frond(name, az, length, start, root):
+    def center(t):
+        return start + Vector((
+            math.cos(az) * length * t,
+            math.sin(az) * length * t,
+            math.sin(t * math.pi) * length * .25 - length * t * .3
+        ))
+    stem = path(name + ' arching frond', [tuple(center(i / 7)) for i in range(8)], .006, stemmat)
+    stem.parent = root
+    for j in range(16):
+        t = .12 + j * .05
+        base = center(t)
+        wing = length * .22 * math.sin(t * math.pi)
+        for side in [-1, 1]:
+            _create_leaflet(name, base, wing, az, side, root)
+
+def palm(name, x, y, h):
+    root = bpy.data.objects.new(name, None)
+    COL.objects.link(root)
+    pot = tube(name + ' tall stoneware pot', (x, y, .035), (x, y, .48), .22, ceramic, .27, 48)
+    pot.parent = root
+    trunk = path(name + ' stem', [(x, y, .40), (x + .03, y, h * .65), (x, y, h * .87)], .018, stemmat)
+    trunk.parent = root
     for frond in range(11):
-        az=frond*2.399;length=h*(.37+.15*random.random());start=Vector((x,y,h*(.72+.22*random.random())))
-        def center(t):return start+Vector((math.cos(az)*length*t,math.sin(az)*length*t,math.sin(t*math.pi)*length*.25-length*t*.3))
-        stem=path(name+' arching frond',[tuple(center(i/7)) for i in range(8)],.006,stemmat);stem.parent=root
-        for j in range(16):
-            t=.12+j*.05;base=center(t);wing=length*.22*math.sin(t*math.pi)
-            for side in [-1,1]:
-                a=az+side*1.05;d=Vector((math.cos(a),math.sin(a),-.28));cross=Vector((-math.sin(a),math.cos(a),0))
-                verts=[]
-                for k in range(6):
-                    u=k/5;point=base+d*wing*u+Vector((0,0,.04*math.sin(u*math.pi)));w=.018*math.sin(u*math.pi)
-                    verts.extend([tuple(point-cross*w),tuple(point+cross*w)])
-                faces=[(k*2,k*2+1,k*2+3,k*2+2) for k in range(5)]
-                me=bpy.data.meshes.new(name+' leaflet mesh');me.from_pydata(verts,[],faces);me.update()
-                ob=bpy.data.objects.new(name+' separate leaflet',me);COL.objects.link(ob);ob.data.materials.append(leaf);ob.parent=root
-                for p in me.polygons:p.use_smooth=True
+        az = frond * 2.399
+        length = h * (.37 + .15 * random.random())
+        start = Vector((x, y, h * (.72 + .22 * random.random())))
+        _create_frond(name, az, length, start, root)
     return root
 palm('Left accent palm',-11.12,1.8,2.25)
 palm('Engineering accent palm',6.93,4.1,2.25)
