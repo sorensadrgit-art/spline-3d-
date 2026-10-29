@@ -189,11 +189,15 @@ def asset_instance(asset,name,loc,height,rotation=0,slender=1):
     scale=height/(high.z-low.z);root.scale=(scale*slender,scale*slender,scale)
     center=Vector(((low.x+high.x)/2,(low.y+high.y)/2,low.z))
     for src in obs:
-        o=src.copy();o.data=src.data;COL.objects.link(o);o.name=name+' / '+src.name;o.parent=root
-        o.matrix_basis=Matrix.Translation(-center)@src.matrix_world
-        o.hide_render=False;o.hide_set(False)
+        o = src.copy()
+        o.data = src.data
+        COL.objects.link(o)
+        o.name = name + ' / ' + src.name
+        o.parent = root
+        o.matrix_basis = Matrix.Translation(-center) @ src.matrix_world
+        o.hide_render = False
+        o.hide_set(False)
     return root
-
 hide_tree(bpy.data.objects['Foreground lounge chair'])
 asset_instance('mid_century_lounge_chair','Detailed leather lounge chair',(4.85,-3.25,.04),1.25,-.35)
 
