@@ -29,11 +29,8 @@ export const zones: Zone[] = [
     details:[['Materials table','Walnut, aluminum and copper samples connect the room palette to the design process.'],['Project wall','The pin-up studies and presentation display contain authored concept content, not client work.'],['Shared seating','Woven seat pads, polished supports and restrained lighting support a quieter collaborative zone.']]}
 ];
 
-const zoneMap = new Map<string, Zone>(zones.map(z => [z.id, z]));
-
 export function zoneFromHash(hash: string): Zone {
-  const id = hash.startsWith('#') ? hash.slice(1) : hash;
-  return zoneMap.get(id) ?? zones[0];
+  return zones.find(z => z.id === hash.replace(/^#/, '')) ?? zones[0];
 }
 
 export const anchors:Record<ZoneId,Point[]>={
