@@ -144,23 +144,43 @@ nt.links.new(patch.outputs['Fac'],ramp.inputs[0]);nt.links.new(ramp.outputs[0],p
 
 # Append mesh data only; relink source textures and retain direct editability.
 cache={}
+def _relink_texture_node(n, asset):
+    if n.type != 'TEX_IMAGE' or not n.image:
+        return
+    candidate = ASSETS/asset/'textures'/Path(n.image.filepath.replace('\\','/')).name
+    if candidate.exists():
+        n.image.filepath = str(candidate)
+        n.image.reload()
+    if any(s in n.image.name.lower() for s in ['rough','metal','nor_','alpha','arm']):
+        n.image.colorspace_settings.name = 'Non-Color'
+
+def _prepare_mesh_object(o, asset):
+    world = o.matrix_world.copy()
+    o.parent = None
+    o.matrix_world = world
+    o.animation_data_clear()
+    for m in o.data.materials:
+        if not m or not m.use_nodes:
+            continue
+        for n in m.node_tree.nodes:
+            _relink_texture_node(n, asset)
+
+def _load_asset_to_cache(asset):
+    source = ASSETS/asset/(asset+'_1k.blend')
+    with bpy.data.libraries.load(str(source),link=False) as (src,dst):
+        dst.objects = src.objects
+    obs = [o for o in dst.objects if o and o.type=='MESH']
+    for o in obs:
+        _prepare_mesh_object(o, asset)
+    points = [o.matrix_world@Vector(corner) for o in obs for corner in o.bound_box]
+    low = Vector(tuple(min(p[a] for p in points) for a in range(3)))
+    high = Vector(tuple(max(p[a] for p in points) for a in range(3)))
+    cache[asset] = (obs,low,high)
+    return obs,low,high
+
 def asset_instance(asset,name,loc,height,rotation=0,slender=1):
     if asset not in cache:
-        source=ASSETS/asset/(asset+'_1k.blend')
-        with bpy.data.libraries.load(str(source),link=False) as (src,dst):dst.objects=src.objects
-        obs=[o for o in dst.objects if o and o.type=='MESH']
-        for o in obs:
-            world=o.matrix_world.copy();o.parent=None;o.matrix_world=world;o.animation_data_clear()
-            for m in o.data.materials:
-                if not m or not m.use_nodes:continue
-                for n in m.node_tree.nodes:
-                    if n.type=='TEX_IMAGE' and n.image:
-                        candidate=ASSETS/asset/'textures'/Path(n.image.filepath.replace('\\','/')).name
-                        if candidate.exists():n.image.filepath=str(candidate);n.image.reload()
-                        if any(s in n.image.name.lower() for s in ['rough','metal','nor_','alpha','arm']):n.image.colorspace_settings.name='Non-Color'
-        points=[o.matrix_world@Vector(corner) for o in obs for corner in o.bound_box]
-        low=Vector(tuple(min(p[a] for p in points) for a in range(3)));high=Vector(tuple(max(p[a] for p in points) for a in range(3)))
-        cache[asset]=(obs,low,high)
+        _load_asset_to_cache(asset)
     obs,low,high=cache[asset]
     root=bpy.data.objects.new(name,None);COL.objects.link(root);root.location=loc;root.rotation_euler[2]=rotation
     scale=height/(high.z-low.z);root.scale=(scale*slender,scale*slender,scale)
