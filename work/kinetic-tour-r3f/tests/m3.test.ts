@@ -16,8 +16,29 @@ const source = readFileSync(new URL('../src/main.tsx', import.meta.url), 'utf8')
   .replace('function AppShell()', 'export function AppShell()');
 let js = ts.transpileModule('import React from "react";' + source, { compilerOptions: { jsx: ts.JsxEmit.React, module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
 js = js.replace(/from "react"/g, 'from ' + JSON.stringify(import.meta.resolve('react')))
-  .replace(/from "\.\/(tour|state)\.ts"/g, (_, name) => 'from ' + JSON.stringify(new URL('../src/' + name + '.ts', import.meta.url).href));
-const { AppShell } = await import('data:text/javascript;base64,' + Buffer.from(js).toString('base64'));
+  .replace(/from "\.\/(tour|state)\.ts"/g, (_, name) => 'from ' + JSON.stringify(new URL('../src/' + name + '.ts', import.meta.url).href))
+  .replace(/import\("\.\/StudioCanvas\.tsx"\)/g, 'Promise.resolve({ clearFailedSkyCache: () => {} })');
+const { AppShell, GraphicsBoundary } = await import('data:text/javascript;base64,' + Buffer.from(js).toString('base64'));
+
+test('GraphicsBoundary error handling lifecycle and fallback UI rendering', () => {
+  assert.equal(typeof GraphicsBoundary, 'function');
+  assert.deepEqual(GraphicsBoundary.getDerivedStateFromError(), { failed: true });
+
+  let failureMsg = '';
+  const boundary = new GraphicsBoundary({
+    onFailure: (msg: string) => { failureMsg = msg; },
+    children: React.createElement('div', null, 'Canvas Child'),
+  });
+
+  assert.deepEqual(boundary.state, { failed: false });
+  assert.equal(renderToStaticMarkup(boundary.render()), '<div>Canvas Child</div>');
+
+  boundary.componentDidCatch();
+  assert.equal(failureMsg, '3D is unavailable. Image navigation remains ready.');
+
+  boundary.state = GraphicsBoundary.getDerivedStateFromError();
+  assert.equal(boundary.render(), null);
+});
 
 for (const z of zones) {
   test(z.id + ': actual UI enables 3D, selects its image/details and has no pending label', () => {

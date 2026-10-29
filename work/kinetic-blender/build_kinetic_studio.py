@@ -371,6 +371,16 @@ for r,z,mat in [(1.22,4.56,black),(1.16,4.515,amber)]:
 for a in [0,2.094,4.189]:tube('Pendant suspension',(1.1*math.cos(a),1.8+1.1*math.sin(a),4.58),(1.1*math.cos(a),1.8+1.1*math.sin(a),5.45),.003,black)
 
 collection('03_ZONE_01_MOTION_SYSTEMS')
+def _build_capture_upright(xx, yy):
+    tube('Capture frame upright',(xx,yy,.24),(xx,yy,2.85),.04,black)
+    box('Capture base plate',(xx,yy,.26),(.25,.25,.04),black,.008)
+    for dx, dy in [(-.08,-.08),(-.08,.08),(.08,-.08),(.08,.08)]:
+        tube('Anchor bolt',(xx+dx,yy+dy,.28),(xx+dx,yy+dy,.30),.012,chrome,vertices=6)
+    tube('Frame locking collar',(xx,yy,2.65),(xx,yy,2.73),.058,black)
+    box('Capture camera',(xx,yy-.12,2.35),(.19,.16,.13),black,.009)
+    tube('Capture lens',(xx,yy-.205,2.35),(xx,yy-.26,2.35),.043,chrome,vertices=24)
+    tube('Lens glass',(xx,yy-.26,2.35),(xx,yy-.263,2.35),.033,screenmat,vertices=24)
+
 def motion():
     box('Capture platform',(0,0,.115),(4.5,3.8,.20),black,.025)
     box('Capture rubber surface',(0,0,.223),(4.38,3.68,.02),rubber,.006)
@@ -378,18 +388,11 @@ def motion():
     for yy in [-1.88,1.88]:box('Platform cyan front rear',(0,yy,.15),(4.45,.014,.025),cyan)
     for xx in [-1.85,1.85]:
         for yy in [-1.45,1.45]:
-            tube('Capture frame upright',(xx,yy,.24),(xx,yy,2.85),.04,black)
-            box('Capture base plate',(xx,yy,.26),(.25,.25,.04),black,.008)
-            for dx in [-.08,.08]:
-                for dy in [-.08,.08]:tube('Anchor bolt',(xx+dx,yy+dy,.28),(xx+dx,yy+dy,.30),.012,chrome,vertices=6)
-            tube('Frame locking collar',(xx,yy,2.65),(xx,yy,2.73),.058,black)
-            box('Capture camera',(xx,yy-.12,2.35),(.19,.16,.13),black,.009)
-            tube('Capture lens',(xx,yy-.205,2.35),(xx,yy-.26,2.35),.043,chrome,vertices=24)
-            tube('Lens glass',(xx,yy-.26,2.35),(xx,yy-.263,2.35),.033,screenmat,vertices=24)
+            _build_capture_upright(xx, yy)
         tube('Capture upper side rail',(xx,-1.45,2.85),(xx,1.45,2.85),.04,black)
     for yy in [-1.45,1.45]:tube('Capture top crossbar',(-1.85,yy,2.85),(1.85,yy,2.85),.04,black)
-    for xx in [-.7,.7]:
-        for yy in [-.75,.75]:box('Calibration floor marker',(xx,yy,.237),(.085,.085,.001),cream)
+    for xx, yy in [(-.7,-.75),(-.7,.75),(.7,-.75),(.7,.75)]:
+        box('Calibration floor marker',(xx,yy,.237),(.085,.085,.001),cream)
     monitor('Motion tall display',1.25,1.20,1.46,.88,2.24,'skeleton')
     for row in range(2):
         points=[(.91+i*.012,1.143,.45+row*.1+.025*math.sin(i*.7)) for i in range(55)]
