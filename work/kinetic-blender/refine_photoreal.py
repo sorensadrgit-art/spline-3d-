@@ -144,33 +144,60 @@ nt.links.new(patch.outputs['Fac'],ramp.inputs[0]);nt.links.new(ramp.outputs[0],p
 
 # Append mesh data only; relink source textures and retain direct editability.
 cache={}
+
+def _relink_node_image(node, asset):
+    if node.type != 'TEX_IMAGE' or not node.image:
+        return
+    candidate = ASSETS / asset / 'textures' / Path(node.image.filepath.replace('\\', '/')).name
+    if candidate.exists():
+        node.image.filepath = str(candidate)
+        node.image.reload()
+    if any(s in node.image.name.lower() for s in ['rough', 'metal', 'nor_', 'alpha', 'arm']):
+        node.image.colorspace_settings.name = 'Non-Color'
+
+def _relink_material_textures(material, asset):
+    if not material or not material.use_nodes:
+        return
+    for node in material.node_tree.nodes:
+        _relink_node_image(node, asset)
+
+def _prepare_asset_object(obj, asset):
+    world = obj.matrix_world.copy()
+    obj.parent = None
+    obj.matrix_world = world
+    obj.animation_data_clear()
+    for mat in obj.data.materials:
+        _relink_material_textures(mat, asset)
+
+def _load_asset(asset):
+    source = ASSETS / asset / (asset + '_1k.blend')
+    with bpy.data.libraries.load(str(source), link=False) as (src, dst):
+        dst.objects = src.objects
+    obs = [o for o in dst.objects if o and o.type == 'MESH']
+    for o in obs:
+        _prepare_asset_object(o, asset)
+    points = [o.matrix_world @ Vector(corner) for o in obs for corner in o.bound_box]
+    low = Vector(tuple(min(p[a] for p in points) for a in range(3)))
+    high = Vector(tuple(max(p[a] for p in points) for a in range(3)))
+    return obs, low, high
+
 def asset_instance(asset,name,loc,height,rotation=0,slender=1):
     if asset not in cache:
-        source=ASSETS/asset/(asset+'_1k.blend')
-        with bpy.data.libraries.load(str(source),link=False) as (src,dst):dst.objects=src.objects
-        obs=[o for o in dst.objects if o and o.type=='MESH']
-        for o in obs:
-            world=o.matrix_world.copy();o.parent=None;o.matrix_world=world;o.animation_data_clear()
-            for m in o.data.materials:
-                if not m or not m.use_nodes:continue
-                for n in m.node_tree.nodes:
-                    if n.type=='TEX_IMAGE' and n.image:
-                        candidate=ASSETS/asset/'textures'/Path(n.image.filepath.replace('\\','/')).name
-                        if candidate.exists():n.image.filepath=str(candidate);n.image.reload()
-                        if any(s in n.image.name.lower() for s in ['rough','metal','nor_','alpha','arm']):n.image.colorspace_settings.name='Non-Color'
-        points=[o.matrix_world@Vector(corner) for o in obs for corner in o.bound_box]
-        low=Vector(tuple(min(p[a] for p in points) for a in range(3)));high=Vector(tuple(max(p[a] for p in points) for a in range(3)))
-        cache[asset]=(obs,low,high)
+        cache[asset] = _load_asset(asset)
     obs,low,high=cache[asset]
     root=bpy.data.objects.new(name,None);COL.objects.link(root);root.location=loc;root.rotation_euler[2]=rotation
     scale=height/(high.z-low.z);root.scale=(scale*slender,scale*slender,scale)
     center=Vector(((low.x+high.x)/2,(low.y+high.y)/2,low.z))
     for src in obs:
-        o=src.copy();o.data=src.data;COL.objects.link(o);o.name=name+' / '+src.name;o.parent=root
-        o.matrix_basis=Matrix.Translation(-center)@src.matrix_world
-        o.hide_render=False;o.hide_set(False)
+        o = src.copy()
+        o.data = src.data
+        COL.objects.link(o)
+        o.name = name + ' / ' + src.name
+        o.parent = root
+        o.matrix_basis = Matrix.Translation(-center) @ src.matrix_world
+        o.hide_render = False
+        o.hide_set(False)
     return root
-
 hide_tree(bpy.data.objects['Foreground lounge chair'])
 asset_instance('mid_century_lounge_chair','Detailed leather lounge chair',(4.85,-3.25,.04),1.25,-.35)
 
@@ -182,26 +209,53 @@ for i,(x,y,h) in enumerate([(-10.9,-.55,1.7),(-6.07,3.0,1.55),(-2.75,3.6,1.85),(
 for i,(x,y,z,h) in enumerate([(.58,-2.85,.42,.34),(-1.76,2.9,.82,.28),(-3.28,4.44,1.74,.38),(6.6,4.5,2.94,.35)]):
     asset_instance('potted_plant_04',f'Detailed succulent {i+1:02}',(x,y,z),h,i*.8)
 
-def palm(name,x,y,h):
-    root=bpy.data.objects.new(name,None);COL.objects.link(root)
-    pot=tube(name+' tall stoneware pot',(x,y,.035),(x,y,.48),.22,ceramic,.27,48);pot.parent=root
-    trunk=path(name+' stem',[(x,y,.40),(x+.03,y,h*.65),(x,y,h*.87)],.018,stemmat);trunk.parent=root
+def _create_leaflet(name, base, wing, az, side, root):
+    a = az + side * 1.05
+    d = Vector((math.cos(a), math.sin(a), -.28))
+    cross = Vector((-math.sin(a), math.cos(a), 0))
+    verts = []
+    for k in range(6):
+        u = k / 5
+        point = base + d * wing * u + Vector((0, 0, .04 * math.sin(u * math.pi)))
+        w = .018 * math.sin(u * math.pi)
+        verts.extend([tuple(point - cross * w), tuple(point + cross * w)])
+    faces = [(k * 2, k * 2 + 1, k * 2 + 3, k * 2 + 2) for k in range(5)]
+    me = bpy.data.meshes.new(name + ' leaflet mesh')
+    me.from_pydata(verts, [], faces)
+    me.update()
+    ob = bpy.data.objects.new(name + ' separate leaflet', me)
+    COL.objects.link(ob)
+    ob.data.materials.append(leaf)
+    ob.parent = root
+    for p in me.polygons:
+        p.use_smooth = True
+
+def _create_frond(name, h, frond, x, y, root):
+    az = frond * 2.399
+    length = h * (.37 + .15 * random.random())
+    start = Vector((x, y, h * (.72 + .22 * random.random())))
+
+    def center(t):
+        return start + Vector((math.cos(az) * length * t, math.sin(az) * length * t, math.sin(t * math.pi) * length * .25 - length * t * .3))
+
+    stem = path(name + ' arching frond', [tuple(center(i / 7)) for i in range(8)], .006, stemmat)
+    stem.parent = root
+    for j in range(16):
+        t = .12 + j * .05
+        base = center(t)
+        wing = length * .22 * math.sin(t * math.pi)
+        for side in [-1, 1]:
+            _create_leaflet(name, base, wing, az, side, root)
+
+def palm(name, x, y, h):
+    root = bpy.data.objects.new(name, None)
+    COL.objects.link(root)
+    pot = tube(name + ' tall stoneware pot', (x, y, .035), (x, y, .48), .22, ceramic, .27, 48)
+    pot.parent = root
+    trunk = path(name + ' stem', [(x, y, .40), (x + .03, y, h * .65), (x, y, h * .87)], .018, stemmat)
+    trunk.parent = root
     for frond in range(11):
-        az=frond*2.399;length=h*(.37+.15*random.random());start=Vector((x,y,h*(.72+.22*random.random())))
-        def center(t):return start+Vector((math.cos(az)*length*t,math.sin(az)*length*t,math.sin(t*math.pi)*length*.25-length*t*.3))
-        stem=path(name+' arching frond',[tuple(center(i/7)) for i in range(8)],.006,stemmat);stem.parent=root
-        for j in range(16):
-            t=.12+j*.05;base=center(t);wing=length*.22*math.sin(t*math.pi)
-            for side in [-1,1]:
-                a=az+side*1.05;d=Vector((math.cos(a),math.sin(a),-.28));cross=Vector((-math.sin(a),math.cos(a),0))
-                verts=[]
-                for k in range(6):
-                    u=k/5;point=base+d*wing*u+Vector((0,0,.04*math.sin(u*math.pi)));w=.018*math.sin(u*math.pi)
-                    verts.extend([tuple(point-cross*w),tuple(point+cross*w)])
-                faces=[(k*2,k*2+1,k*2+3,k*2+2) for k in range(5)]
-                me=bpy.data.meshes.new(name+' leaflet mesh');me.from_pydata(verts,[],faces);me.update()
-                ob=bpy.data.objects.new(name+' separate leaflet',me);COL.objects.link(ob);ob.data.materials.append(leaf);ob.parent=root
-                for p in me.polygons:p.use_smooth=True
+        _create_frond(name, h, frond, x, y, root)
     return root
 palm('Left accent palm',-11.12,1.8,2.25)
 palm('Engineering accent palm',6.93,4.1,2.25)
