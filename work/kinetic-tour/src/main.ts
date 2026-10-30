@@ -182,7 +182,7 @@ async function start3D(open=true) {
     if(generation===loadGeneration){starting=false;mode.disabled=false;}
   }
 }
-document.querySelectorAll<HTMLButtonElement>('[data-zone]').forEach(button=>button.addEventListener('click',()=>select(zones.find(z=>z.id===button.dataset.zone)!)));
+document.querySelectorAll<HTMLButtonElement>('[data-zone]').forEach(button=>button.addEventListener('click',()=>select(zoneFromHash(button.dataset.zone!))));
 mode.addEventListener('click',()=>interactive?showImages():void start3D());
 retry.addEventListener('click',()=>void start3D());
 reset.addEventListener('click',()=>select(active,false));
