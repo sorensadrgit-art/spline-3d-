@@ -41,8 +41,8 @@ scene.view_settings.view_transform = 'AgX'
 scene.view_settings.exposure = .35
 try:
     scene.view_settings.look = 'AgX - Medium High Contrast'
-except TypeError:
-    pass
+except (TypeError, ValueError, AttributeError) as exc:
+    print('LOOK_SETTING_UNAVAILABLE', str(exc))
 
 devices = []
 prefs = bpy.context.preferences.addons['cycles'].preferences
