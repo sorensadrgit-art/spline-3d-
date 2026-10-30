@@ -1,6 +1,5 @@
-import { blend, zones, type Zone, type Point } from "./tour.ts";
-export const route = (hash: string) =>
-  zones.find((z) => "#" + z.id === hash) ?? zones[0];
+import { blend, zoneFromHash, zones, type Zone, type Point } from "./tour.ts";
+export const route = (hash: string) => zoneFromHash(hash);
 export const boundedOrbit = (yaw: number, pitch: number, distance: number) => ({
   yaw: Math.max(-0.15, Math.min(0.15, yaw)),
   pitch: Math.max(-0.35, Math.min(0.35, pitch)),

@@ -32,7 +32,7 @@ export const zones: Zone[] = [
 const zoneMap = new Map<string, Zone>(zones.map(z => [z.id, z]));
 
 export function zoneFromHash(hash: string): Zone {
-  const id = hash.startsWith('#') ? hash.slice(1) : hash;
+  const id = hash.charCodeAt(0) === 35 ? hash.slice(1) : hash;
   return zoneMap.get(id) ?? zones[0];
 }
 
