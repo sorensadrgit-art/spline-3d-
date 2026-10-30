@@ -186,16 +186,19 @@ def _relink_texture_node(n, asset):
     if any(s in n.image.name.lower() for s in ['rough', 'metal', 'nor_', 'alpha', 'arm']):
         n.image.colorspace_settings.name = 'Non-Color'
 
+def _process_material_nodes(m, asset):
+    if not m or not m.use_nodes:
+        return
+    for n in m.node_tree.nodes:
+        _relink_texture_node(n, asset)
+
 def _process_asset_object(o, asset):
     world = o.matrix_world.copy()
     o.parent = None
     o.matrix_world = world
     o.animation_data_clear()
     for m in o.data.materials:
-        if not m or not m.use_nodes:
-            continue
-        for n in m.node_tree.nodes:
-            _relink_texture_node(n, asset)
+        _process_material_nodes(m, asset)
 
 def _load_asset_to_cache(asset):
     source = ASSETS/asset/(asset+'_1k.blend')
@@ -212,7 +215,7 @@ def _load_asset_to_cache(asset):
 
 def asset_instance(asset, name, loc, height, rotation=0, slender=1):
     if asset not in cache:
-        cache[asset] = _load_asset(asset)
+        _load_asset_to_cache(asset)
     obs, low, high = cache[asset]
     root = bpy.data.objects.new(name, None)
     COL.objects.link(root)
