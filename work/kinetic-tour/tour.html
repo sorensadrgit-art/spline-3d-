@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111715">
+  <meta name="description" content="Explore the Kinetic Studio: motion, clinical thinking, creative engineering and projects.">
+  <title>Kinetic Studio — A space for connected thinking</title>
+</head>
+<body>
+  <a class="skip-link" href="#zone-content">Skip to studio description</a>
+  <main id="studio">
+    <div class="stage" aria-label="Kinetic Studio visual tour">
+      <img id="poster" src="/media/home.webp" alt="Warm walnut and graphite studio with four work zones overlooking mountains at dusk.">
+      <canvas id="scene" aria-label="Interactive 3D studio. Use zone buttons to navigate." hidden></canvas>
+      <div class="vignette" aria-hidden="true"></div>
+      <div id="hotspots" aria-label="Points of interest"></div>
+    </div>
+    <header class="masthead">
+      <a href="#home" class="brand" aria-label="Kinetic Studio home"><span class="brand-mark" aria-hidden="true">K<span> / </span>S</span><span>KINETIC<br>STUDIO</span></a>
+      <span class="edition">SPACES FOR CONNECTED THINKING<span>DESIGN STUDY / 2026</span></span>
+    </header>
+    <div class="view-tools" role="group" aria-label="View settings">
+      <button id="mode" aria-pressed="false">Explore in 3D <span aria-hidden="true">↗</span></button>
+      <button id="reset" hidden>Reset view</button>
+    </div>
+    <section id="zone-content" class="story" tabindex="-1" aria-labelledby="zone-title">
+      <div class="eyebrow"><span id="zone-number">00 / OVERVIEW</span><i aria-hidden="true"></i><span>BLUE HOUR</span></div>
+      <h1 id="zone-title">Ideas take<br><em>shape here.</em></h1>
+      <p id="zone-description">Four connected disciplines. One shared workspace. A studio built around movement, investigation, and making.</p>
+      <div id="details" class="details"></div>
+    </section>
+    <aside class="status-wrap"><p id="status" role="status" aria-live="polite">Image tour ready. Choose a space, or explore in 3D.</p><button id="retry" hidden>Retry 3D</button></aside>
+    <nav class="zone-nav" aria-label="Studio zones">
+      <button data-zone="home" aria-current="page"><span>00</span>Workstation<small>THE SHARED CENTER</small></button>
+      <button data-zone="motion"><span>01</span>Motion systems<small>OBSERVE & MEASURE</small></button>
+      <button data-zone="clinical"><span>02</span>Clinical thinking<small>STUDY & UNDERSTAND</small></button>
+      <button data-zone="engineering"><span>03</span>Creative engineering<small>PROTOTYPE & MAKE</small></button>
+      <button data-zone="projects"><span>04</span>Projects<small>CONNECT & PRESENT</small></button>
+    </nav>
+    <footer><span id="view-label">CINEMATIC IMAGE TOUR</span><span>SELECT A ZONE <b aria-hidden="true">·</b> KEYS 0–4 <b aria-hidden="true">·</b> HOME TO RETURN</span><span>EDITABLE BLENDER MASTER / V006</span></footer>
+  </main>
+  <noscript><p class="no-script">Enable JavaScript for navigation. The studio overview remains available above.</p></noscript>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
