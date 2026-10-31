@@ -1,6 +1,7 @@
 """Bounded agent-browser regression checks against the local built tour."""
 import base64
 import json
+import os
 from pathlib import Path
 import shutil
 import subprocess
@@ -30,7 +31,7 @@ def evaluate(code):
 checks=[]
 try:
     run('set','viewport','1920','1080')
-    run('open','http://127.0.0.1:4177/#home')
+    run('open',os.environ.get('KINETIC_TOUR_URL', 'http://127.0.0.1:4177/tour.html#home'))
     for _ in range(40):
         state=evaluate('({ready:!document.querySelector("#scene").hidden,status:document.querySelector("#status").textContent})')
         if state['ready'] or '3D studio is loaded' in state['status']:break
